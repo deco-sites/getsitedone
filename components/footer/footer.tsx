@@ -16,7 +16,7 @@ function footer({ title, credits, backgroundColor }: Props) {
     return (
         <div class="w-full" style={{ backgroundColor }}>
             <footer class="container h-[241px] py-6 px-16 flex flex-col gap-8">
-                <p class="text-3xl text-[#0D1717] font-bold" style={clx(title.position)}>{title.text}</p>
+                <p class="text-[25px] text-[#0D1717] font-bold" style={clx(title.position)}>{title.text}</p>
                 <Divider />
                 <div class="flex items-center justify-between h-[35px]">
                     <p class="text-sm font-normal text-[#0D1717]">{credits}</p>

@@ -31,7 +31,7 @@ function Hero({ placeholder, buttonText, text, carousel, backgroundImage, number
     const input = useRef<HTMLInputElement>(null)
     const id = useId()
     return (
-        <div class="container flex flex-col justify-center items-center my-10 gap-10 w-11/12 relative">
+        <div class="container flex flex-col justify-center items-center py-24 gap-10 w-11/12 relative">
             {text && <div dangerouslySetInnerHTML={{ __html: text }} />}
             <form onSubmit={(event) => {
                 event.preventDefault()
