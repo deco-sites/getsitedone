@@ -33,7 +33,8 @@ function Hero({ placeholder, buttonText, text, carousel, backgroundImage, number
     return (
         <div class="container flex flex-col justify-center items-center my-10 gap-10 w-11/12 relative">
             {text && <div dangerouslySetInnerHTML={{ __html: text }} />}
-            <form onSubmit={() => {
+            <form onSubmit={(event) => {
+                event.preventDefault()
                 const whatsText = defaultMessage ? `${defaultMessage}${input.current?.value}` : input.current?.value
                 globalThis.open(`https://wa.me/${number}?text=${whatsText}`, '_blank')
             }} class="max-w-[540px] w-full h-14 relative">
