@@ -8,11 +8,12 @@ import * as $$$$$$0 from "./sections/Content/Cards.tsx";
 import * as $$$$$$1 from "./sections/Content/Cta.tsx";
 import * as $$$$$$2 from "./sections/Content/Faq.tsx";
 import * as $$$$$$3 from "./sections/Content/Hero.tsx";
-import * as $$$$$$4 from "./sections/Footer.tsx";
-import * as $$$$$$5 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$6 from "./sections/Header/Header.tsx";
-import * as $$$$$$7 from "./sections/ItWorks.tsx";
-import * as $$$$$$8 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$4 from "./sections/Content/Testimonials.tsx";
+import * as $$$$$$5 from "./sections/Footer.tsx";
+import * as $$$$$$6 from "./sections/Footer/Footer.tsx";
+import * as $$$$$$7 from "./sections/Header/Header.tsx";
+import * as $$$$$$8 from "./sections/ItWorks.tsx";
+import * as $$$$$$9 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -20,11 +21,12 @@ const manifest = {
     "site/sections/Content/Cta.tsx": $$$$$$1,
     "site/sections/Content/Faq.tsx": $$$$$$2,
     "site/sections/Content/Hero.tsx": $$$$$$3,
-    "site/sections/Footer.tsx": $$$$$$4,
-    "site/sections/Footer/Footer.tsx": $$$$$$5,
-    "site/sections/Header/Header.tsx": $$$$$$6,
-    "site/sections/ItWorks.tsx": $$$$$$7,
-    "site/sections/Theme/Theme.tsx": $$$$$$8,
+    "site/sections/Content/Testimonials.tsx": $$$$$$4,
+    "site/sections/Footer.tsx": $$$$$$5,
+    "site/sections/Footer/Footer.tsx": $$$$$$6,
+    "site/sections/Header/Header.tsx": $$$$$$7,
+    "site/sections/ItWorks.tsx": $$$$$$8,
+    "site/sections/Theme/Theme.tsx": $$$$$$9,
   },
   "apps": {
     "site/apps/decohub.ts": $$$$$$$$$$$0,

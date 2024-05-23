@@ -10,7 +10,8 @@ export type AvailableIcons =
   | "poweredBy"
   | "Plus"
   | "Close"
-  | "Outside";
+  | "Outside"
+  | "Next";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
