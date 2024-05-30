@@ -45,7 +45,7 @@ function Hero({ placeholder, buttonText, text, carousel, backgroundImage, number
             <div class="max-w-[1088px] w-full relative" id={id}>
                 <Slider class="carousel carousel-start flex items-center gap-6">
                     {carousel.map(({ text }, index) => <Slider.Item class="carousel-item" index={index}>
-                        <div class="flex items-center gap-2 w-[326px] h-5">
+                        <div class="flex items-center gap-2 h-5">
                             <Icon class="flex-shrink-0" id="circleCheck" height={17} width={17} />
                             <p class="whitespace-nowrap ">{text}</p>
                         </div>

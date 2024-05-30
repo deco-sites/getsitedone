@@ -90,13 +90,6 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
 
     const goToItem = (index: number) => {
         const item = items.item(index);
-        console.log(index)
-        dots?.forEach((elemento) => {
-            // Remove todas as classes do elemento
-            elemento.classList.remove("bg-primary");
-        });
-        const dot = dots?.item(index);
-        dot?.classList.add("bg-primary");
 
         if (!isHTMLElement(item)) {
             console.warn(
@@ -156,7 +149,13 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
         (elements) =>
             elements.forEach((item) => {
                 const index = Number(item.target.getAttribute("data-slider-item")) || 0;
+                const dot = dots?.item(index);
 
+                if (item.isIntersecting) {
+                    dot?.setAttribute("disabled", "");
+                } else {
+                    dot?.removeAttribute("disabled");
+                }
                 if (!infinite) {
                     if (index === 0) {
                         if (item.isIntersecting) {

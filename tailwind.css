@@ -24,6 +24,10 @@
 
 @layer components {
 
+  .container {
+    @apply w-11/12 xl:max-w-[1312px]
+  }
+
   /** Prevent scroll when modal is open */
   .no-scroll {
     overflow: hidden;
