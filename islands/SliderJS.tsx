@@ -65,14 +65,24 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
         return;
     }
 
+    const firstItem = items[0].cloneNode(true) as HTMLElement;
+    firstItem.setAttribute("data-slider-item", items.length.toString());
+    const secondItem = items[1].cloneNode(true) as HTMLElement;
+    secondItem.setAttribute("data-slider-item", (items.length + 1).toString());
+    slider.appendChild(firstItem)
+    slider.appendChild(secondItem)
+
+    const itemsWithClone = root?.querySelectorAll(`[${ATTRIBUTES["data-slider-item"]}]`)
+    const sliderWithClone = root?.querySelector(`[${ATTRIBUTES["data-slider"]}]`);
+
     let itemIndex = 0;
 
     const getElementsInsideContainer = () => {
         const indices: number[] = [];
-        const sliderRect = slider.getBoundingClientRect();
+        const sliderRect = sliderWithClone!.getBoundingClientRect();
 
-        for (let index = 0; index < items.length; index++) {
-            const item = items.item(index);
+        for (let index = 0; index < itemsWithClone.length; index++) {
+            const item = itemsWithClone.item(index);
             const rect = item.getBoundingClientRect();
 
             const ratio = intersectionX(
@@ -88,8 +98,8 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
         return indices;
     };
 
-    const goToItem = (index: number) => {
-        const item = items.item(index);
+    const goToItem = (index: number, reset?: boolean) => {
+        const item = itemsWithClone.item(index);
 
         if (!isHTMLElement(item)) {
             console.warn(
@@ -101,9 +111,9 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
 
         const offSet = item.clientWidth * index + (index === 1 ? gap : gap * 2)
 
-        slider.scrollTo({
+        sliderWithClone!.scrollTo({
             top: 0,
-            behavior: scroll,
+            behavior: reset ? "instant" : scroll,
             left: offSet,
         });
     };
@@ -128,9 +138,8 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
     };
 
     const onClickNext = () => {
-        console.log("click")
         const indices = getElementsInsideContainer();
-        const isShowingLast = indices[indices.length - 1] === items.length - 1;
+        const isShowingLast = indices[indices.length - 1] === itemsWithClone.length - 1;
         if (!isPerItem) {
             // Wow! items per page is how many elements are being displayed inside the container!!
             const itemsPerPage = indices.length;
@@ -145,11 +154,22 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
         }
     };
 
+    const scrollEndHandler = () => {
+        goToItem(0, true);
+    };
+
     const observer = new IntersectionObserver(
         (elements) =>
             elements.forEach((item) => {
                 const index = Number(item.target.getAttribute("data-slider-item")) || 0;
                 const dot = dots?.item(index);
+
+                if (index === items.length) {
+                    sliderWithClone?.addEventListener("scrollend", scrollEndHandler)
+                }
+                else {
+                    sliderWithClone?.removeEventListener("scrollend", scrollEndHandler)
+                }
 
                 if (item.isIntersecting) {
                     dot?.setAttribute("disabled", "");
@@ -164,7 +184,7 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
                             prev?.removeAttribute("disabled");
                         }
                     }
-                    if (index === items.length - 1) {
+                    if (index === itemsWithClone.length - 1) {
                         if (item.isIntersecting) {
                             next?.setAttribute("disabled", "");
                         } else {
@@ -176,7 +196,7 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
         { threshold: THRESHOLD, root: slider },
     );
 
-    items.forEach((item) => observer.observe(item));
+    itemsWithClone.forEach((item) => observer.observe(item));
 
     for (let it = 0; it < (dots?.length ?? 0); it++) {
         dots?.item(it).addEventListener("click", () => goToItem(it));
