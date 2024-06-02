@@ -158,6 +158,11 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
         goToItem(0, true);
     };
 
+    const scrollEndHandler2 = () => {
+        goToItem(1, true);
+    };
+
+
     const observer = new IntersectionObserver(
         (elements) =>
             elements.forEach((item) => {
@@ -167,8 +172,12 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
                 if (index === items.length) {
                     sliderWithClone?.addEventListener("scrollend", scrollEndHandler)
                 }
+                else if (index === items.length + 1) {
+                    sliderWithClone?.addEventListener("scrollend", scrollEndHandler2)
+                }
                 else {
                     sliderWithClone?.removeEventListener("scrollend", scrollEndHandler)
+                    sliderWithClone?.removeEventListener("scrollend", scrollEndHandler2)
                 }
 
                 if (item.isIntersecting) {
@@ -201,9 +210,26 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
     for (let it = 0; it < (dots?.length ?? 0); it++) {
         dots?.item(it).addEventListener("click", () => goToItem(it));
     }
+    const stopTouch = (event: Event) => {
+        event.preventDefault();
+        event.stopPropagation();
+    }
 
-    prev?.addEventListener("click", onClickPrev);
-    next?.addEventListener("click", onClickNext);
+    const removeClickEvent = () => {
+        removeEventListener("touchend", stopTouch)
+        next?.removeEventListener("click", onClickNext)
+        prev?.removeEventListener("click", onClickPrev)
+    }
+
+    const addClickEvent = () => {
+        addEventListener("touchmove", stopTouch)
+        next?.addEventListener("click", onClickNext)
+        prev?.addEventListener("click", onClickPrev)
+    }
+    sliderWithClone?.addEventListener("scroll", removeClickEvent)
+    sliderWithClone?.addEventListener("scrollend", addClickEvent)
+
+    addClickEvent()
 
     let timeout = interval && setInterval(onClickNext, interval);
 

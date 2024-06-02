@@ -52,7 +52,7 @@ function Testimonials({ testimonials }: Props) {
     const id = useId()
     return (
         <div class="container pb-28 pt-6">
-            <div class="flex flex-col gap-8 relative lg:ml-[256px]" id={id}>
+            <div class="flex flex-col gap-8 relative xl:ml-[256px]" id={id}>
                 <Slider class="carousel carousel-start flex gap-28">
                     {testimonials.map(({ user, project }, index) => <Slider.Item class="carousel-item max-lg:w-full"
                         index={index}>
