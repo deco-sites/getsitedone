@@ -10,6 +10,9 @@ export interface Card {
    * @format date
    */
   date: string;
+  /**
+   * @format textarea
+   */
   description: string;
   applications: number;
 }
@@ -19,7 +22,9 @@ export interface Props {
   cards: Card[];
 }
 
-const Card = ({ title, name, level, date, description, price }: Card) => {
+const Card = (
+  { title, name, level, date, description, price, applications }: Card,
+) => {
   const dateObject = new Date(date);
   const day = dateObject.getDate() < 10
     ? `0${dateObject.getDate()}`
@@ -63,7 +68,7 @@ const Card = ({ title, name, level, date, description, price }: Card) => {
         </div>
       </div>
       <p class="text-xs text-[#949E9E]">
-        {`${dateDifference(date)} atrás • ${3} aplicações`}
+        {`${dateDifference(date)} atrás • ${applications} aplicações`}
       </p>
     </div>
   );
