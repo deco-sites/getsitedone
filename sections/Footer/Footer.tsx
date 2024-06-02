@@ -1,1 +1,1 @@
-export { default } from "../../components/footer/footer.tsx"
+export { default } from "../../components/footer/footer.tsx";

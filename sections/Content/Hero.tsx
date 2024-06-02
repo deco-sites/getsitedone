@@ -1,1 +1,1 @@
-export { default } from "../../components/content/Hero.tsx"
+export { default } from "../../components/content/Hero.tsx";

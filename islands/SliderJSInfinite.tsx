@@ -1,1 +1,1 @@
-export { default } from "../components/ui/SliderJSInfinite.tsx"
+export { default } from "../components/ui/SliderJSInfinite.tsx";

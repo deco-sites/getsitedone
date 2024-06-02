@@ -1,4 +1,3 @@
-
 import type { ComponentChildren, JSX } from "preact";
 
 interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
