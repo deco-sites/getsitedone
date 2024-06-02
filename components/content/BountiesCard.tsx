@@ -1,6 +1,7 @@
 import Icon from "../../components/ui/Icon.tsx";
 import { dateDifference } from "../../sdk/date.ts";
 
+/** @titleBy name */
 export interface Card {
   price: string;
   title: string;

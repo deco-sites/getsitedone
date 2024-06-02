@@ -6,6 +6,7 @@ import { useId } from "../../sdk/useId.ts";
 import SliderJS from "../../islands/SliderJS.tsx";
 import { AppContext } from "../../apps/site.ts";
 
+/** @titleBy name */
 export interface Developer {
   image: ImageWidget;
   name: string;
@@ -13,6 +14,7 @@ export interface Developer {
   level: number;
 }
 
+/** @titleBy title */
 export interface Bounty {
   image: ImageWidget;
   title: string;
@@ -28,7 +30,6 @@ export interface Props {
 }
 
 export const loader = (props: Props, _req: Request, ctx: AppContext) => {
-  console.log(ctx.device);
   return { ...props, isDesktop: ctx.device === "desktop" };
 };
 

@@ -25,6 +25,7 @@ export interface Testimonial {
 }
 
 export interface Props {
+  title?: string;
   testimonials: Testimonial[];
 }
 
@@ -60,10 +61,11 @@ const Testimonial = ({ user, project }: Testimonial) => {
   );
 };
 
-function Testimonials({ testimonials }: Props) {
+function Testimonials({ testimonials, title }: Props) {
   const id = useId();
   return (
-    <div class="container pb-28 pt-6">
+    <div class="container flex flex-col gap-20 pb-28 pt-6">
+      {title && <p class="text-center font-bold text-[48px]">{title}</p>}
       <div class="flex flex-col gap-8 relative xl:ml-[256px]" id={id}>
         <Slider class="carousel carousel-start flex gap-28">
           {testimonials.map(({ user, project }, index) => (
