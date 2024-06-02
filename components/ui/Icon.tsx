@@ -14,7 +14,9 @@ export type AvailableIcons =
   | "Next"
   | "Star"
   | "ChevronLeft"
-  | "ChevronRight";
+  | "ChevronRight"
+  | "Diamond"
+  | "Calendar";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
