@@ -19,7 +19,7 @@ const ATTRIBUTES = {
 
 // Percentage of the item that has to be inside the container
 // for it it be considered as inside the container
-const THRESHOLD = 0.6;
+const THRESHOLD = 0.8;
 
 const intersectionX = (element: DOMRect, container: DOMRect): number => {
     const delta = container.width / 1_000;
@@ -108,9 +108,8 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
 
             return;
         }
-
-        const offSet = item.clientWidth * index + (index === 1 ? gap : gap * 2)
-
+        const distance = !index ? index : (index === 1 ? gap : gap * 2);
+        const offSet = item.clientWidth * index + distance;
         sliderWithClone!.scrollTo({
             top: 0,
             behavior: reset ? "instant" : scroll,
@@ -168,16 +167,15 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
             elements.forEach((item) => {
                 const index = Number(item.target.getAttribute("data-slider-item")) || 0;
                 const dot = dots?.item(index);
-
                 if (index === items.length) {
-                    sliderWithClone?.addEventListener("scrollend", scrollEndHandler)
+                    sliderWithClone?.addEventListener("scrollend", scrollEndHandler);
                 }
                 else if (index === items.length + 1) {
-                    sliderWithClone?.addEventListener("scrollend", scrollEndHandler2)
+                    sliderWithClone?.addEventListener("scrollend", scrollEndHandler2);
                 }
                 else {
-                    sliderWithClone?.removeEventListener("scrollend", scrollEndHandler)
-                    sliderWithClone?.removeEventListener("scrollend", scrollEndHandler2)
+                    sliderWithClone?.removeEventListener("scrollend", scrollEndHandler);
+                    sliderWithClone?.removeEventListener("scrollend", scrollEndHandler2);
                 }
 
                 if (item.isIntersecting) {
@@ -210,24 +208,18 @@ const setup = ({ rootId, scroll, interval, infinite, isPerItem, gap }: Props) =>
     for (let it = 0; it < (dots?.length ?? 0); it++) {
         dots?.item(it).addEventListener("click", () => goToItem(it));
     }
-    const stopTouch = (event: Event) => {
-        event.preventDefault();
-        event.stopPropagation();
-    }
 
     const removeClickEvent = () => {
-        removeEventListener("touchend", stopTouch)
-        next?.removeEventListener("click", onClickNext)
-        prev?.removeEventListener("click", onClickPrev)
+        next?.removeEventListener("click", onClickNext);
+        prev?.removeEventListener("click", onClickPrev);
     }
 
     const addClickEvent = () => {
-        addEventListener("touchmove", stopTouch)
-        next?.addEventListener("click", onClickNext)
-        prev?.addEventListener("click", onClickPrev)
+        next?.addEventListener("click", onClickNext);
+        prev?.addEventListener("click", onClickPrev);
     }
-    sliderWithClone?.addEventListener("scroll", removeClickEvent)
-    sliderWithClone?.addEventListener("scrollend", addClickEvent)
+    sliderWithClone?.addEventListener("scroll", removeClickEvent);
+    sliderWithClone?.addEventListener("scrollend", addClickEvent);
 
     addClickEvent()
 
