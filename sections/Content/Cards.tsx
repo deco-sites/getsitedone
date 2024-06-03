@@ -32,7 +32,7 @@ function Cards({ cards, title, backgroundColor }: Props) {
             { alt, description, icon, image, imageAlt, title, width, height },
           ) => (
             <div
-              class="flex flex-col gap-6 border-2 border-[#C9CFCF] rounded-[40px] bg-white p-12 text-black"
+              class="flex flex-col gap-6 border-2 border-[#C9CFCF] rounded-[40px] bg-white p-[32px] text-black"
               style={{ width, minHeight: height }}
             >
               <Image src={icon} alt={alt} width={40} height={40} />
