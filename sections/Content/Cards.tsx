@@ -37,7 +37,7 @@ function Cards({ cards, title, backgroundColor }: Props) {
             >
               <Image src={icon} alt={alt} width={40} height={40} />
               {image && (
-                <Image src={image} alt={imageAlt} width={229} height={200} />
+                <Image src={image} alt={imageAlt} width={266} height={200} />
               )}
               <p class="text-3xl font-bold">{title}</p>
               <div dangerouslySetInnerHTML={{ __html: description }} />
