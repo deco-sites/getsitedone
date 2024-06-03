@@ -5,7 +5,7 @@ import Image from "apps/website/components/Image.tsx";
 export interface Card {
   icon: ImageWidget;
   image?: ImageWidget;
-  imageAlt?: ImageWidget;
+  imageAlt?: string;
   alt: string;
   title: string;
   /** @format html */
