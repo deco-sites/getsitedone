@@ -62,7 +62,7 @@ function Hero(
           type="text"
           placeholder={placeholder}
         />
-        <button class="bg-[#9900E5] rounded-full h-10 text-white px-4 py-2 absolute right-2 top-2 bottom-2">
+        <button class="bg-[#9900E5] rounded-full h-10 text-white px-4 py-2 absolute right-2 top-2 bottom-2" id="bt-click-enviar">
           {buttonText}
         </button>
       </form>
