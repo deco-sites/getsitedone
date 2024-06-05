@@ -27,7 +27,7 @@ function Cards({ cards, title, backgroundColor }: Props) {
     <div style={{ backgroundColor }}>
       <div class="container flex flex-col gap-20 py-16">
         {title && <div dangerouslySetInnerHTML={{ __html: title }} />}
-        <div class="flex justify-between gap-8 items-center flex-wrap max-xl:justify-center">
+        <div class="flex gap-8 items-center flex-wrap justify-center">
           {cards.map((
             { alt, description, icon, image, imageAlt, title, width, height },
           ) => (
