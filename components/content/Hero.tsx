@@ -28,7 +28,8 @@ export interface Props {
    * @format color-input
    */
   backgroundColor?: string;
-  carousel: Carousel[];
+  singleText: string;
+  carousel?: Carousel[];
   id?: string;
 }
 
@@ -42,6 +43,7 @@ function Hero(
     number,
     defaultMessage,
     backgroundColor,
+    singleText,
     id: sectionId
   }: Props,
 ) {
@@ -74,8 +76,10 @@ function Hero(
             {buttonText}
           </button>
         </form>
-
-        <div class="max-w-[1088px] w-full relative" id={id}>
+        {singleText && <p class="text-center text-[#616b6b] font-regular">
+          {singleText}
+        </p>}
+        {carousel && <div class="max-w-[1088px] w-full relative" id={id}>
           <Slider class="carousel carousel-start flex items-center gap-6">
             {carousel.map(({ text }, index) => (
               <Slider.Item class="carousel-item" index={index}>
@@ -98,6 +102,7 @@ function Hero(
           </div>
           <SliderJSInfinite rootId={id} interval={1 * 1e3} isPerItem={true} />
         </div>
+        }
         {backgroundImage && <Image
           class="absolute -z-10"
           src={backgroundImage}
