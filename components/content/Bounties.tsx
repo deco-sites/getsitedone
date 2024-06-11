@@ -27,6 +27,7 @@ export interface Bounty {
 export interface Props {
   title: string;
   bounties: Bounty[];
+  id?: string;
 }
 
 export const loader = (props: Props, _req: Request, ctx: AppContext) => {
@@ -141,12 +142,12 @@ const Arrows = () => {
   );
 };
 
-function Bounties({ bounties, isDesktop, title }: ReturnType<typeof loader>) {
+function Bounties({ bounties, isDesktop, title, id: sectionId }: ReturnType<typeof loader>) {
   const id = useId();
   return (
-    <div class="container flex flex-col gap-20 py-16" id={id}>
+    <div class="container flex flex-col gap-20 py-16" id={sectionId}>
       <p class="text-center font-bold text-[48px]">{title}</p>
-      <div class="flex max-lg:flex-col gap-10 m-auto lg:w-fit w-full">
+      <div class="flex max-lg:flex-col gap-10 m-auto lg:w-fit w-full" id={id}>
         {isDesktop && <Dots bounties={bounties} isDesktop={isDesktop} />}
         <div class="max-w-[692px] w-full overflow-hidden relative">
           <Carousel bounties={bounties} />

@@ -13,17 +13,17 @@ export interface Props {
   titlePosition: "aside" | "collum";
   accordions: Accordion[];
   section?: Section;
+  id?: string;
 }
 
 function Faq({ accordions, title, titlePosition, section }: Props) {
   return (
     <div class="container flex flex-col gap-20 py-28">
       <div
-        class={`flex gap-20 max-lg:flex-wrap ${
-          titlePosition === "aside"
+        class={`flex gap-20 max-lg:flex-wrap ${titlePosition === "aside"
             ? "justify-between"
             : "flex-col items-center justify-center"
-        }`}
+          }`}
       >
         {title && <p class="font-bold text-5xl text-black">{title}</p>}
         <div class="flex flex-col justify-start gap-4">

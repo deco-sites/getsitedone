@@ -25,6 +25,7 @@ export interface Props {
 
   backgroundImage: ImageWidget;
   carousel: Carousel[];
+  id?: string;
 }
 
 function Hero(
@@ -36,12 +37,13 @@ function Hero(
     backgroundImage,
     number,
     defaultMessage,
+    id: sectionId
   }: Props,
 ) {
   const input = useRef<HTMLInputElement>(null);
   const id = useId();
   return (
-    <div class="container flex flex-col justify-center items-center py-24 gap-10 w-11/12 relative">
+    <div class="container flex flex-col justify-center items-center py-24 gap-10 w-11/12 relative" id={sectionId}>
       {text && <div dangerouslySetInnerHTML={{ __html: text }} />}
       <form
         onSubmit={(event) => {

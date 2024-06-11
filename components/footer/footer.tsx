@@ -9,12 +9,13 @@ export interface Props {
   credits: string;
   /** @format color-input */
   backgroundColor: string;
+  id?: string;
 }
 
-function footer({ title, credits, backgroundColor }: Props) {
+function footer({ title, credits, backgroundColor, id }: Props) {
   const Divider = () => <div class="w-full h-px bg-[#0D1717]" />;
   return (
-    <div class="w-full" style={{ backgroundColor }}>
+    <div class="w-full" style={{ backgroundColor }} id={id}>
       <footer class="container h-[241px] py-6 px-16 flex flex-col gap-8">
         <p
           class="text-[25px] text-[#0D1717] font-bold"

@@ -21,6 +21,7 @@ export interface Card {
 export interface Props {
   title: string;
   cards: Card[];
+  id?: string;
 }
 
 const Card = (
@@ -75,9 +76,9 @@ const Card = (
   );
 };
 
-function BountiesCard({ title, cards }: Props) {
+function BountiesCard({ title, cards, id }: Props) {
   return (
-    <div class="container flex flex-col gap-20 py-16">
+    <div class="container flex flex-col gap-20 py-16" id={id}>
       <p class="text-center font-bold text-[48px]">{title}</p>
       <div class="flex gap-6 lg:justify-between justify-center">
         {cards.map((props) => <Card {...props} />)}
