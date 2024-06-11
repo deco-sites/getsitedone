@@ -28,7 +28,7 @@ export interface Props {
    * @format color-input
    */
   backgroundColor?: string;
-  singleText: string;
+  singleText?: string;
   carousel?: Carousel[];
   id?: string;
 }
