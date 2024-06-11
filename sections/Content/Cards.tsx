@@ -20,11 +20,12 @@ export interface Props {
   /** @format html */
   title?: string;
   cards: Card[];
+  id?: string;
 }
 
-function Cards({ cards, title, backgroundColor }: Props) {
+function Cards({ cards, title, backgroundColor, id }: Props) {
   return (
-    <div style={{ backgroundColor }}>
+    <div style={{ backgroundColor }} id={id}>
       <div class="container flex flex-col gap-20 py-16">
         {title && <div dangerouslySetInnerHTML={{ __html: title }} />}
         <div class="flex gap-8 items-center flex-wrap justify-center">

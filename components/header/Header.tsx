@@ -1,4 +1,5 @@
 import clx from "../../sdk/clx.ts";
+import Drawer from "site/components/ui/Drawer.tsx";
 
 /** @titleBy label */
 export interface NavItem {
@@ -17,20 +18,29 @@ export interface Props {
 
 function Header({ title, navItens }: Props) {
   return (
-    <header class="container h-[85px] py-6 px-16 flex justify-between items-center">
+    <header class="container h-[85px] py-6 flex justify-between items-center">
       <p
         class="text-[25px] text-[#0D1717] font-bold"
         style={clx(title.position)}
       >
         {title.text}
       </p>
+      {/** DESKTOP */}
       {navItens && (
-        <div class="flex justify-start gap-6 h-5 items-center">
+        <div class="flex justify-start gap-6 h-5 items-center max-lg:hidden">
           {navItens?.map(({ label, url }) => (
             <a class="text-sm font-medium text-[#616B6B]" href={url}>{label}</a>
           ))}
         </div>
       )}
+      {/** MOBILE */}
+      {navItens && <Drawer>
+        <ul class="flex flex-col bg-white gap-4 h-full px-4 py-4 w-full">{navItens.map(({ label, url }) =>
+          <a href={url}>
+            <li>{label}</li>
+          </a>)}
+        </ul>
+      </Drawer>}
     </header>
   );
 }

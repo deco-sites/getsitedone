@@ -146,7 +146,7 @@ function Bounties({ bounties, isDesktop, title, id: sectionId }: ReturnType<type
   const id = useId();
   return (
     <div class="container flex flex-col gap-20 py-16" id={sectionId}>
-      <p class="text-center font-bold text-[48px]">{title}</p>
+      <p class="text-center font-bold text-[48px] max-md:text-3xl">{title}</p>
       <div class="flex max-lg:flex-col gap-10 m-auto lg:w-fit w-full" id={id}>
         {isDesktop && <Dots bounties={bounties} isDesktop={isDesktop} />}
         <div class="max-w-[692px] w-full overflow-hidden relative">

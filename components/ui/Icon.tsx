@@ -3,6 +3,7 @@ import type { JSX } from "preact";
 
 export type AvailableIcons =
   | "url"
+  | "Bars3"
   | "github"
   | "linkedin"
   | "chevron"
