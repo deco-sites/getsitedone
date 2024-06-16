@@ -77,7 +77,7 @@ function Hero(
           </button>
         </form>
 
-        {singleText && <p class="text-center text-[#616b6b] font-regular px-4 md:px-0 text-sm md:text-base mt-4">
+        {singleText && <p class="text-center text-[#616b6b] font-regular px-4 md:px-0 text-xs md:text-base mt-4">
           {singleText}
         </p>}
         {carousel && <div class="w-full max-w-xl relative mt-6" id={id}>
@@ -91,7 +91,7 @@ function Hero(
                     height={17}
                     width={17}
                   />
-                  <p class="whitespace-nowrap text-sm md:text-base">{text}</p>
+                  <p class="whitespace-nowrap text-xs md:text-base">{text}</p>
                 </div>
               </Slider.Item>
             ))}
