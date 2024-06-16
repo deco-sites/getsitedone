@@ -51,8 +51,8 @@ function Hero(
   const id = useId();
   return (
     <div class="w-full" style={{ backgroundColor }} id={sectionId}>
-      <div class="container flex flex-col justify-center items-center py-24 gap-10 w-11/12 relative">
-        {text && <div dangerouslySetInnerHTML={{ __html: text }} />}
+      <div class="container flex flex-col justify-center items-center py-8 md:py-24 gap-6 md:gap-10 w-full md:w-11/12 relative">
+        {text && <div class="w-full px-4 md:px-0 text-xs md:text-base" dangerouslySetInnerHTML={{ __html: text }} />}
         <form
           onSubmit={(event) => {
             event.preventDefault();
@@ -64,23 +64,24 @@ function Hero(
               "_blank",
             );
           }}
-          class="max-w-[540px] w-full h-14 relative"
+          class="w-full max-w-md flex flex-col md:flex-row items-center gap-4 relative mt-4"
         >
           <input
             ref={input}
-            class="w-full h-full rounded-full input border border-[#DA8FFF] shadow-[5px_5px_16px_0px] shadow-[#420AE040]/25 focus:outline-none focus:border-[#DA8FFF] focus:shadow-[5px_5px_16px_0px] focus:shadow-[#420AE040]/25"
+            class="w-full h-14 rounded-full border border-[#DA8FFF] shadow-lg px-4 focus:outline-none focus:border-[#DA8FFF] mb-2 md:mb-0"
             type="text"
             placeholder={placeholder}
           />
-          <button class="bg-[#9900E5] rounded-full h-10 text-white px-4 py-2 absolute right-2 top-2 bottom-2" id="bt-click-enviar">
+          <button class="bg-[#9900E5] rounded-full h-12 text-white px-6 py-2 mt-2 md:mt-0">
             {buttonText}
           </button>
         </form>
-        {singleText && <p class="text-center text-[#616b6b] font-regular">
+
+        {singleText && <p class="text-center text-[#616b6b] font-regular px-4 md:px-0 text-sm md:text-base mt-4">
           {singleText}
         </p>}
-        {carousel && <div class="max-w-[1088px] w-full relative" id={id}>
-          <Slider class="carousel carousel-start flex items-center gap-6">
+        {carousel && <div class="w-full max-w-xl relative mt-6" id={id}>
+          <Slider class="carousel carousel-start flex items-center gap-4 md:gap-6">
             {carousel.map(({ text }, index) => (
               <Slider.Item class="carousel-item" index={index}>
                 <div class="flex items-center gap-2 h-5">
@@ -90,19 +91,15 @@ function Hero(
                     height={17}
                     width={17}
                   />
-                  <p class="whitespace-nowrap ">{text}</p>
+                  <p class="whitespace-nowrap text-sm md:text-base">{text}</p>
                 </div>
               </Slider.Item>
             ))}
           </Slider>
-          {/* overflow */}
-          <div class="absolute inset-y-0 left-0 w-12 md:w-48 lg:w-96 bg-gradient-to-l from-transparent to-white">
-          </div>
-          <div class="absolute inset-y-0 right-0 w-12 md:w-48 lg:w-96 bg-gradient-to-r from-transparent to-white">
-          </div>
-          <SliderJSInfinite rootId={id} interval={1 * 1e3} isPerItem={true} />
-        </div>
-        }
+          <div class="absolute inset-y-0 left-0 w-12 bg-gradient-to-l from-transparent to-transparent"></div>
+          <div class="absolute inset-y-0 right-0 w-12 bg-gradient-to-r from-transparent to-white"></div>
+          <SliderJSInfinite rootId={id} interval={2 * 1e3} isPerItem={true} />
+        </div>}
         {backgroundImage && <Image
           class="absolute -z-10"
           src={backgroundImage}

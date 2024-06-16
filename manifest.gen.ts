@@ -15,6 +15,7 @@ import * as $$$$$$7 from "./sections/Footer.tsx";
 import * as $$$$$$8 from "./sections/Footer/Footer.tsx";
 import * as $$$$$$9 from "./sections/Header/Header.tsx";
 import * as $$$$$$10 from "./sections/ItWorks.tsx";
+import * as $$$$$$12 from "./sections/prices.tsx";
 import * as $$$$$$11 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
@@ -30,6 +31,7 @@ const manifest = {
     "site/sections/Footer/Footer.tsx": $$$$$$8,
     "site/sections/Header/Header.tsx": $$$$$$9,
     "site/sections/ItWorks.tsx": $$$$$$10,
+    "site/sections/prices.tsx": $$$$$$12,
     "site/sections/Theme/Theme.tsx": $$$$$$11,
   },
   "apps": {
