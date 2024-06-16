@@ -188,7 +188,7 @@
       "__resolveType": "site/sections/Content/Faq.tsx",
       "id": "faq",
       "title": "FAQ",
-      "titlePosition": "collum",
+      "titlePosition": "column",
       "accordions": [
         {
           "title": "Como a deco.cx seleciona os prestadores de serviços?",

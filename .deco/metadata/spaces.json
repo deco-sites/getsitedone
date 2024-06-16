@@ -25,73 +25,7 @@
       "name": "Pages",
       "pinned": true,
       "icon": "files",
-      "layout": {
-        "settings": {
-          "hasHeaders": true,
-          "constrainDragToContainer": true,
-          "reorderEnabled": true,
-          "selectionEnabled": false,
-          "popoutWholeStack": false,
-          "blockedPopoutsThrowError": true,
-          "closePopoutsOnUnload": true,
-          "showPopoutIcon": false,
-          "showMaximiseIcon": false,
-          "showCloseIcon": false,
-          "responsiveMode": "onload"
-        },
-        "dimensions": {
-          "borderWidth": 8,
-          "minItemHeight": 10,
-          "minItemWidth": 10,
-          "headerHeight": 40,
-          "dragProxyWidth": 300,
-          "dragProxyHeight": 200
-        },
-        "labels": {
-          "close": "close",
-          "maximise": "maximise",
-          "minimise": "minimise",
-          "popout": "open in new window",
-          "popin": "pop in",
-          "tabDropdown": "additional tabs"
-        },
-        "content": [
-          {
-            "type": "row",
-            "isClosable": true,
-            "reorderEnabled": true,
-            "title": "",
-            "content": [
-              {
-                "type": "stack",
-                "width": 100,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "pages::List::list::List::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-pages::List::list::List::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "pages::List::list::List::%7B%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "isClosable": true,
-        "reorderEnabled": true,
-        "title": "",
-        "openPopouts": [],
-        "maximisedItemId": null
-      },
+      "layout": [],
       "tabs": {
         "pages::List::list::List::%7B%7D": {
           "name": "List",
@@ -461,7 +395,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 30,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -483,7 +417,7 @@
               },
               {
                 "type": "stack",
-                "width": 70,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -497,6 +431,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D"
                     },
+                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -530,6 +465,7 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
+          "width": 70,
           "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
@@ -2554,6 +2490,177 @@
           "render": "function",
           "viewId": "Release",
           "id": "%7B%22oid%22%3A%22dc2b9fed8ed0b07ac2e293a02e266084cfa4ee16%22%2C%22short%22%3A%22dc2b9fe%22%2C%22commit%22%3A%7B%22message%22%3A%22hover%20adapt%20UI%5Cn%22%2C%22parent%22%3A%5B%22972c40672d845b7e1ab684c26fb3452cc14e1408%22%5D%2C%22tree%22%3A%226e438c888e6921647030b4269b46dfe90401ba01%22%2C%22author%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718560043%2C%22timezoneOffset%22%3A180%7D%2C%22committer%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718560043%2C%22timezoneOffset%22%3A180%7D%7D%7D::Release::rocket::Release::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "{\"oid\":\"03b7977618774040a152838f1227b08e53b24cd2\",\"short\":\"03b7977\",\"commit\":{\"message\":\"prices upgrade functional version\\n\",\"parent\":[\"c6df06a3f40c87f48728f3e4c3368d6b4952a570\"],\"tree\":\"125e845525fe8209f09e8b9e3662a2fde7024871\",\"author\":{\"name\":\"João Victor Barbosa\",\"email\":\"joaovgb5@gmail.com\",\"timestamp\":1718569202,\"timezoneOffset\":180},\"committer\":{\"name\":\"João Victor Barbosa\",\"email\":\"joaovgb5@gmail.com\",\"timestamp\":1718569202,\"timezoneOffset\":180}}}",
+      "name": "Release 03b7977",
+      "pinned": false,
+      "icon": "rocket",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 100,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%7B%22oid%22%3A%2203b7977618774040a152838f1227b08e53b24cd2%22%2C%22short%22%3A%2203b7977%22%2C%22commit%22%3A%7B%22message%22%3A%22prices%20upgrade%20functional%20version%5Cn%22%2C%22parent%22%3A%5B%22c6df06a3f40c87f48728f3e4c3368d6b4952a570%22%5D%2C%22tree%22%3A%22125e845525fe8209f09e8b9e3662a2fde7024871%22%2C%22author%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718569202%2C%22timezoneOffset%22%3A180%7D%2C%22committer%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718569202%2C%22timezoneOffset%22%3A180%7D%7D%7D::Release::rocket::Release::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%7B%22oid%22%3A%2203b7977618774040a152838f1227b08e53b24cd2%22%2C%22short%22%3A%2203b7977%22%2C%22commit%22%3A%7B%22message%22%3A%22prices%20upgrade%20functional%20version%5Cn%22%2C%22parent%22%3A%5B%22c6df06a3f40c87f48728f3e4c3368d6b4952a570%22%5D%2C%22tree%22%3A%22125e845525fe8209f09e8b9e3662a2fde7024871%22%2C%22author%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718569202%2C%22timezoneOffset%22%3A180%7D%2C%22committer%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718569202%2C%22timezoneOffset%22%3A180%7D%7D%7D::Release::rocket::Release::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%7B%22oid%22%3A%2203b7977618774040a152838f1227b08e53b24cd2%22%2C%22short%22%3A%2203b7977%22%2C%22commit%22%3A%7B%22message%22%3A%22prices%20upgrade%20functional%20version%5Cn%22%2C%22parent%22%3A%5B%22c6df06a3f40c87f48728f3e4c3368d6b4952a570%22%5D%2C%22tree%22%3A%22125e845525fe8209f09e8b9e3662a2fde7024871%22%2C%22author%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718569202%2C%22timezoneOffset%22%3A180%7D%2C%22committer%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718569202%2C%22timezoneOffset%22%3A180%7D%7D%7D::Release::rocket::Release::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "%7B%22oid%22%3A%2203b7977618774040a152838f1227b08e53b24cd2%22%2C%22short%22%3A%2203b7977%22%2C%22commit%22%3A%7B%22message%22%3A%22prices%20upgrade%20functional%20version%5Cn%22%2C%22parent%22%3A%5B%22c6df06a3f40c87f48728f3e4c3368d6b4952a570%22%5D%2C%22tree%22%3A%22125e845525fe8209f09e8b9e3662a2fde7024871%22%2C%22author%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718569202%2C%22timezoneOffset%22%3A180%7D%2C%22committer%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718569202%2C%22timezoneOffset%22%3A180%7D%7D%7D::Release::rocket::Release::%7B%7D": {
+          "name": "Release",
+          "icon": "rocket",
+          "render": "function",
+          "viewId": "Release",
+          "id": "%7B%22oid%22%3A%2203b7977618774040a152838f1227b08e53b24cd2%22%2C%22short%22%3A%2203b7977%22%2C%22commit%22%3A%7B%22message%22%3A%22prices%20upgrade%20functional%20version%5Cn%22%2C%22parent%22%3A%5B%22c6df06a3f40c87f48728f3e4c3368d6b4952a570%22%5D%2C%22tree%22%3A%22125e845525fe8209f09e8b9e3662a2fde7024871%22%2C%22author%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718569202%2C%22timezoneOffset%22%3A180%7D%2C%22committer%22%3A%7B%22name%22%3A%22Jo%C3%A3o%20Victor%20Barbosa%22%2C%22email%22%3A%22joaovgb5%40gmail.com%22%2C%22timestamp%22%3A1718569202%2C%22timezoneOffset%22%3A180%7D%7D%7D::Release::rocket::Release::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "build-log-03b7977618774040a152838f1227b08e53b24cd2",
+      "name": "Build Log 03b7977",
+      "pinned": false,
+      "icon": "news",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "width": 100,
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "build-log-03b7977618774040a152838f1227b08e53b24cd2::Build%20Logs::news::Build%20Logs::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-build-log-03b7977618774040a152838f1227b08e53b24cd2::Build%20Logs::news::Build%20Logs::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "build-log-03b7977618774040a152838f1227b08e53b24cd2::Build%20Logs::news::Build%20Logs::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "build-log-03b7977618774040a152838f1227b08e53b24cd2::Build%20Logs::news::Build%20Logs::%7B%7D": {
+          "name": "Build Logs",
+          "icon": "news",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Build Logs",
+          "id": "build-log-03b7977618774040a152838f1227b08e53b24cd2::Build%20Logs::news::Build%20Logs::%7B%7D",
           "state": {
             "__signal": null
           }
