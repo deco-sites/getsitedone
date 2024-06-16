@@ -154,12 +154,12 @@
       "__resolveType": "site/sections/Content/Cards.tsx",
       "cards": [
         {
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/1ebcfbdd-4845-4fdb-a96d-5010fa8c052d",
-          "title": "Controle total para editar em tempo real",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/fe60fb5e-b4d3-4fdd-9058-1daf36ad9187",
           "alt": "edit",
-          "description": "<p>Com o CMS da <strong>deco.cx</strong>, você está equipado para atualizar e editar seu site à medida que seu negócio evolui - sem a necessidade de desenvolvedores!</p>",
+          "description": "<p>Tenha acesso à equipe GetSiteDone pelo WhatsApp com humanos de verdade para qualquer necessidade do início ao fim da implementação do seu site. </p>",
           "width": 416,
-          "height": 324
+          "height": 324,
+          "title": "Suporte completo da equipe GetSitedone"
         },
         {
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/82ddfed5-4492-40ba-a7e9-9e39270d02df",
@@ -176,30 +176,6 @@
           "description": "<p>Acesse a criatividade e a experiência de mais de 3.000 desenvolvedores avaliados na nossa comunidade.</p>",
           "width": 416,
           "height": 320
-        },
-        {
-          "description": "<p>Obtenha mais visibilidade proporcionando experiências digitais de última geração que carregam instantaneamente.</p>",
-          "title": "Aumente o Core Web Vitals e o PageSpeed",
-          "height": 320,
-          "width": 416,
-          "alt": "performance",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/3b329bf3-5a9a-4b30-9108-a9ccb89a8294"
-        },
-        {
-          "title": "Integração perfeita com bases de dados ",
-          "description": "<p>Enriqueça a experiência dos seus visitantes aproveitando facilmente qualquer conteúdo e dados dinâmicos de terceiros.</p>",
-          "height": 320,
-          "width": 416,
-          "alt": "plug-connected",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/a1d7d7ef-daff-4e9c-997c-614e4f365a99"
-        },
-        {
-          "title": "Global edge para velocidade sem espera",
-          "description": "<p>Implemente seu site em uma infraestrutura global de ponta, projetada para escalabilidade instantânea.</p>",
-          "height": 320,
-          "width": 416,
-          "alt": "website",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/f1c936c5-4f8f-4606-af46-699cf74cfb0b"
         }
       ],
       "id": "benefits",
