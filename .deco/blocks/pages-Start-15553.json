@@ -61,7 +61,7 @@
         }
       ],
       "placeholder": "Preciso de um site para minha fintech",
-      "text": "<div style=\"display: flex; justify-content: center; align-itens: center; flex-direction: column; gap: 8px;\" data-mce-style=\"display: flex; justify-content: center; align-itens: center; flex-direction: column; gap: 8px;\"><p style=\"color: #0d1717; font-weight: 600; font-size: 80px; line-height: 80px; letter-spacing: -3%; text-align: center;\" data-mce-style=\"color: #0d1717; font-weight: 600; font-size: 80px; line-height: 80px; letter-spacing: -3%; text-align: center;\"><span style=\"font-size: 60pt;\" data-mce-style=\"font-size: pt;\">Solicite sites que seguem a sua identidade visual.</span></p><p style=\"font-weight: 400; font-size: 24px; line-height: 32px; letter-spacing: -0.4px; color: #616b6b; text-align: center;\" data-mce-style=\"font-weight: 400; font-size: 24px; line-height: 32px; letter-spacing: -0.4px; color: #616b6b; text-align: center;\">Descreva seu site e encontraremos o desenvolvedor ideal para o seu projeto.</p></div>",
+      "text": "<div style=\"display: flex; justify-content: center; align-itens: center; flex-direction: column; gap: 8px;\" data-mce-style=\"display: flex; justify-content: center; align-itens: center; flex-direction: column; gap: 8px;\"><p style=\"color: #0d1717; font-weight: 600; font-size: 80px; line-height: 80px; letter-spacing: -3%; text-align: center;\" data-mce-style=\"color: #0d1717; font-weight: 600; font-size: 80px; line-height: 80px; letter-spacing: -3%; text-align: center;\"><span style=\"font-size: 60pt;\" data-mce-style=\"font-size: 60pt;\">Solicite sites que seguem a sua identidade visual.</span></p><p style=\"font-weight: 400; font-size: 24px; line-height: 32px; letter-spacing: -0.4px; color: #616b6b; text-align: center;\" data-mce-style=\"font-weight: 400; font-size: 24px; line-height: 32px; letter-spacing: -0.4px; color: #616b6b; text-align: center;\">Descreva seu site e encontraremos o desenvolvedor ideal para o seu projeto.</p></div>",
       "defaultMessage": "Oi! Gostaria de saber como poderia fazer o meu site:",
       "buttonText": "Enviar",
       "id": "bt-click-enviar"
@@ -105,9 +105,12 @@
       "backgroundColor": "#fafafa"
     },
     {
+      "__resolveType": "site/sections/prices.tsx"
+    },
+    {
       "__resolveType": "site/sections/Content/Testimonials.tsx",
-      "title": "Sites implementados pelo GetSiteDone",
       "id": "sitesDones",
+      "title": "Sites implementados pelo GetSiteDone",
       "testimonials": [
         {
           "user": {
@@ -152,6 +155,8 @@
     },
     {
       "__resolveType": "site/sections/Content/Cards.tsx",
+      "title": "<p style=\"text-align: center; font-size: 40px; font-weight: bold;\" data-mce-style=\"text-align: center; font-size: 40px; font-weight: bold;\">Benefícios</p>",
+      "id": "benefits",
       "cards": [
         {
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/fe60fb5e-b4d3-4fdd-9058-1daf36ad9187",
@@ -177,12 +182,11 @@
           "width": 416,
           "height": 320
         }
-      ],
-      "id": "benefits",
-      "title": "<p style=\"text-align: center; font-size: 40px; font-weight: bold;\" data-mce-style=\"text-align: center; font-size: 40px; font-weight: bold;\">Benefícios</p>"
+      ]
     },
     {
       "__resolveType": "site/sections/Content/Faq.tsx",
+      "id": "faq",
       "title": "FAQ",
       "titlePosition": "collum",
       "accordions": [
@@ -204,11 +208,11 @@
         "title": "Tem alguma dúvida?",
         "buttonText": "Fale conosco",
         "url": "https://api.whatsapp.com/send/?phone=552139504860&text=Oi! Gostaria de saber como poderia fazer o meu site:&type=phone_number&app_absent=0"
-      },
-      "id": "faq"
+      }
     },
     {
       "__resolveType": "site/sections/Content/Hero.tsx",
+      "backgroundColor": "#fbf4ff",
       "id": "bt-click-enviar",
       "number": "552139504860",
       "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/b129906c-bdfc-4738-991c-e37efeec7310",
@@ -216,8 +220,7 @@
       "text": "<div style=\"display: flex; justify-content: center; align-itens: center; flex-direction: column; gap: 8px;\" data-mce-style=\"display: flex; justify-content: center; align-itens: center; flex-direction: column; gap: 8px;\"><p style=\"color: #0d1717; font-weight: 600; font-size: 40px; line-height: 40px; letter-spacing: -3%; text-align: center;\" data-mce-style=\"color: #0d1717; font-weight: 600; font-size: 40px; line-height: 40px; letter-spacing: -3%; text-align: center;\">Dê vida ao seu site. Comece agora:</p><p style=\"color: #616b6b; font-weight: 400; font-size: 24px; line-height: 32px; letter-spacing: -0.4px; text-align: center;\" data-mce-style=\"font-weight: 400; font-size: 24px; line-height: 32px; letter-spacing: -0.4px; color: #616b6b; text-align: center;\">Descreva seu site e encontraremos o desenvolvedor ideal para o seu projeto.</p></div>",
       "defaultMessage": "Oi! Gostaria de saber como poderia fazer o meu site:",
       "buttonText": "Enviar",
-      "singleText": "Não é necessário cartão de crédito em nenhuma etapa.",
-      "backgroundColor": "#fbf4ff"
+      "singleText": "Não é necessário cartão de crédito em nenhuma etapa."
     },
     {
       "__resolveType": "site/sections/Footer/Footer.tsx",
