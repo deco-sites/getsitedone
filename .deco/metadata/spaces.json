@@ -395,21 +395,20 @@
             "content": [
               {
                 "type": "stack",
-                "width": 30,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
+                "width": 50,
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Properties::list::Properties::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Start-15553.json::Properties::list::Properties::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fcomponents%2Fcontent%2FHero.tsx%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Start-15553.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fcomponents%2Fcontent%2FHero.tsx%22%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Properties::list::Properties::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fcomponents%2Fcontent%2FHero.tsx%22%7D"
                     },
-                    "width": 30,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -417,7 +416,7 @@
               },
               {
                 "type": "stack",
-                "width": 70,
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -431,7 +430,6 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D"
                     },
-                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -447,17 +445,18 @@
         "maximisedItemId": null
       },
       "tabs": {
-        "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Properties::list::Properties::%7B%7D": {
-          "name": "Properties",
-          "icon": "list",
+        "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fcomponents%2Fcontent%2FHero.tsx%22%7D": {
+          "name": "Code",
+          "icon": "code",
           "accepts": "function",
           "render": "function",
-          "viewId": "Properties",
-          "width": 30,
-          "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Properties::list::Properties::%7B%7D",
+          "viewId": "Code",
+          "viewProps": {
+            "spaceId": "/components/content/Hero.tsx"
+          },
+          "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fcomponents%2Fcontent%2FHero.tsx%22%7D",
           "state": {
-            "__signal": null,
-            "value": null
+            "__signal": "error"
           }
         },
         "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D": {
@@ -466,7 +465,6 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
-          "width": 70,
           "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
