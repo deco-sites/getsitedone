@@ -51,36 +51,37 @@ function Hero(
   const id = useId();
   return (
     <div class="w-full" style={{ backgroundColor }} id={sectionId}>
-      <div class="container flex flex-col justify-center items-center py-6 md:py-16 gap-4 md:gap-8 w-full md:w-11/12 relative">
-        {text && <div class="w-full px-2 md:px-0 text-sm md:text-base leading-tight md:leading-normal" dangerouslySetInnerHTML={{ __html: text }} />}
+      <div class="container flex flex-col justify-center items-center py-8 md:py-16 gap-6 md:gap-10 w-full md:w-11/12 relative">
+        {text && <div class="w-full px-4 md:px-0 text-base md:text-2xl leading-tight md:leading-normal text-center" dangerouslySetInnerHTML={{ __html: text }} />}
         <form
           onSubmit={(event) => {
             event.preventDefault();
+            const inputValue = input.current?.value;
             const whatsText = defaultMessage
-              ? `${defaultMessage}${input.current?.value}`
-              : input.current?.value;
+              ? `${defaultMessage}${inputValue}`
+              : inputValue;
             globalThis.open(
               `https://wa.me/${number}?text=${whatsText}`,
               "_blank",
             );
           }}
-          class="w-full max-w-sm flex flex-col md:flex-row items-center gap-4 relative mt-4"
+          class="w-full max-w-lg flex flex-col md:flex-row items-center gap-4 relative mt-4"
         >
           <input
             ref={input}
-            class="w-full h-10 md:h-12 rounded-full border border-[#DA8FFF] shadow-lg px-4 focus:outline-none focus:border-[#DA8FFF] mb-2 md:mb-0 text-sm"
+            class="w-full h-14 rounded-full border border-[#DA8FFF] shadow-lg px-4 focus:outline-none focus:border-[#DA8FFF] mb-2 md:mb-0 text-base md:text-lg"
             type="text"
             placeholder={placeholder}
           />
-          <button class="bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full h-10 md:h-12 text-white px-6 py-2 mt-2 md:mt-0 hover:shadow-lg hover:scale-105 transition-transform duration-300 text-sm">
+          <button class="bg-[#b442ed] rounded-full h-14 text-white px-8 py-2 mt-2 md:mt-0 hover:shadow-lg hover:scale-105 transition-transform duration-300 text-base md:text-lg">
             {buttonText}
           </button>
         </form>
 
-        {singleText && <p class="text-center text-[#616b6b] font-regular px-2 md:px-0 text-sm md:text-base mt-4">
+        {singleText && <p class="text-center text-[#616b6b] font-regular px-4 md:px-0 text-sm md:text-base mt-4">
           {singleText}
         </p>}
-        {carousel && <div class="w-full max-w-md relative mt-6" id={id}>
+        {carousel && <div class="w-full max-w-lg relative mt-6" id={id}>
           <Slider class="carousel carousel-start flex items-center gap-2 md:gap-4">
             {carousel.map(({ text }, index) => (
               <Slider.Item class="carousel-item" index={index}>
