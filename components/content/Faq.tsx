@@ -10,7 +10,7 @@ export interface Accordion {
 
 export interface Props {
   title?: string;
-  titlePosition: "aside" | "collum";
+  titlePosition: "aside" | "column";
   accordions: Accordion[];
   section?: Section;
   id?: string;
@@ -18,18 +18,23 @@ export interface Props {
 
 function Faq({ accordions, title, titlePosition, section }: Props) {
   return (
-    <div class="container flex flex-col gap-20 py-28">
-      <div
-        class={`flex gap-20 max-lg:flex-wrap ${titlePosition === "aside"
-          ? "justify-between"
-          : "flex-col items-center justify-center"
-          }`}
-      >
-        {title && <p class="font-bold text-5xl text-black max-md:text-3xl">{title}</p>}
-        <div class="flex flex-col justify-start gap-4">
-          {accordions.map(({ title, description }) => (
-            <Collapse title={title}>
-              <div dangerouslySetInnerHTML={{ __html: description }} />
+    <div class="container mx-auto px-4 flex flex-col items-center gap-12 py-16">
+      {title && (
+        <h1 class="text-6xl font-extrabold text-center text-gray-900 mb-12">
+          {title}
+        </h1>
+      )}
+      <div class={`flex ${titlePosition === "aside"
+        ? "flex-row justify-between items-start max-lg:flex-wrap"
+        : "flex-col items-center justify-center"
+        } w-full max-w-3xl`}>
+        <div class="flex flex-col w-full gap-8">
+          {accordions.map(({ title, description }, index) => (
+            <Collapse key={index} title={title} >
+              <div
+                class="mt-2 text-gray-800 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: description }}
+              />
             </Collapse>
           ))}
         </div>
