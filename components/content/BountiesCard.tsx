@@ -56,7 +56,7 @@ const Card = (
             </div>
             <div class="flex gap-1">
               <Icon
-                class="text-[#9900E5]"
+                class="text-[#9300E5]"
                 id="Calendar"
                 width={16}
                 height={17}

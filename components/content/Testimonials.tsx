@@ -68,18 +68,19 @@ function Testimonials({ testimonials, title, id: sectionId }: Props) {
     <div class="container flex flex-col gap-20 pb-28 pt-6" id={sectionId}>
       {title && <p class="text-center font-bold text-[48px] max-md:text-3xl">{title}</p>}
       <div class="flex flex-col gap-8 relative xl:ml-[256px]" id={id}>
-        <Slider class="carousel carousel-start flex gap-28">
+        <Slider class="carousel carousel-start flex gap-28" loop>
           {testimonials.map(({ user, project }, index) => (
-            <Slider.Item class="carousel-item max-lg:w-full" index={index}>
+            <Slider.Item class="carousel-item max-lg:w-full" index={index} key={index}>
               <Testimonial user={user} project={project} />
             </Slider.Item>
           ))}
         </Slider>
-        <div class="flex items-center gap-2 mx-auto lg:hidden w-fit">
+        <div class="flex items-center gap-2 mx-auto mt-4">
           {testimonials.map((_, index) => (
             <Slider.Dot
               index={index}
-              class="focus:outline-none w-2 h-2 disabled:w-4  disabled:bg-[#9900E5]  bg-[#E0E0E0] rounded-full"
+              class="focus:outline-none w-2 h-2 disabled:w-4 disabled:bg-[#9900E5] bg-[#E0E0E0] rounded-full"
+              key={index}
             />
           ))}
         </div>
@@ -87,7 +88,7 @@ function Testimonials({ testimonials, title, id: sectionId }: Props) {
           <Icon id="Next" width={16} height={16} />
         </Slider.NextButton>
         <div class="absolute inset-y-0 right-0 w-12 max-xl:hidden xl:w-48 bg-[#fdfdfd]/40 pointer-events-none" />
-        <SliderJS rootId={id} isPerItem gap={112} />
+        <SliderJS rootId={id} isPerItem gap={112}/>
       </div>
     </div>
   );
