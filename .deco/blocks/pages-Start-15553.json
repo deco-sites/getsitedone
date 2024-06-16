@@ -67,6 +67,44 @@
       "id": "bt-click-enviar"
     },
     {
+      "__resolveType": "site/sections/Content/Cards.tsx",
+      "title": "<p style=\"text-align: center; font-size: 40px; font-weight: bold;\" data-mce-style=\"text-align: center; font-size: 40px; font-weight: bold;\">Como funciona</p>",
+      "id": "steps",
+      "cards": [
+        {
+          "height": 580,
+          "title": "Descreva o seu site para um humano REAL",
+          "description": "<p>Descreva o que você precisa – desde design e funcionalidade até o prazo. Anexe referências ou um link do Figma para guiar nossos devs.</p>",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/93e3ca16-62a3-4337-9a1a-b7147b8cea72",
+          "alt": "One",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/0419ce91-92c4-4e97-a7ee-a843934e69f0",
+          "imageAlt": "Items",
+          "width": 390
+        },
+        {
+          "width": 390,
+          "height": 580,
+          "title": "Conecte-se com desenvolvedores",
+          "description": "<p>Acesse a comunidade de experts da deco.cx e seja conectado ao dev ideal para o seu projeto.</p>",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/362af3c1-dda9-4c26-91e9-e93175adb841",
+          "alt": "Two",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/30744973-954c-4555-80da-9871c8e8d1f4",
+          "imageAlt": "Desenvolvedor"
+        },
+        {
+          "alt": "three",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/c995b5c0-315c-4cfc-a24a-1803c32a116a",
+          "title": "Receba seu site em poucos dias",
+          "description": "<p>Após a publicação do seu site, você mantém controle total do conteúdo usando o CMS com Editor Visual – sem precisar mexer no código ou solicitar ajuda do dev.</p>",
+          "width": 390,
+          "height": 580,
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/6248a58c-23d9-40a6-813d-264b549309ec",
+          "imageAlt": "Site"
+        }
+      ],
+      "backgroundColor": "#fafafa"
+    },
+    {
       "__resolveType": "site/sections/Content/Testimonials.tsx",
       "title": "Sites implementados pelo GetSiteDone",
       "id": "sitesDones",
@@ -111,44 +149,6 @@
           }
         }
       ]
-    },
-    {
-      "__resolveType": "site/sections/Content/Cards.tsx",
-      "title": "<p style=\"text-align: center; font-size: 40px; font-weight: bold;\" data-mce-style=\"text-align: center; font-size: 40px; font-weight: bold;\">Como funciona</p>",
-      "id": "steps",
-      "cards": [
-        {
-          "height": 580,
-          "title": "Descreva o seu site para um humano REAL",
-          "description": "<p>Descreva o que você precisa – desde design e funcionalidade até o prazo. Anexe referências ou um link do Figma para guiar nossos devs.</p>",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/93e3ca16-62a3-4337-9a1a-b7147b8cea72",
-          "alt": "One",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/0419ce91-92c4-4e97-a7ee-a843934e69f0",
-          "imageAlt": "Items",
-          "width": 390
-        },
-        {
-          "width": 390,
-          "height": 580,
-          "title": "Conecte-se com desenvolvedores",
-          "description": "<p>Acesse a comunidade de experts da deco.cx e seja conectado ao dev ideal para o seu projeto.</p>",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/362af3c1-dda9-4c26-91e9-e93175adb841",
-          "alt": "Two",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/30744973-954c-4555-80da-9871c8e8d1f4",
-          "imageAlt": "Desenvolvedor"
-        },
-        {
-          "alt": "three",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/c995b5c0-315c-4cfc-a24a-1803c32a116a",
-          "title": "Receba seu site em poucos dias",
-          "description": "<p>Após a publicação do seu site, você mantém controle total do conteúdo usando o CMS com Editor Visual – sem precisar mexer no código ou solicitar ajuda do dev.</p>",
-          "width": 390,
-          "height": 580,
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/6248a58c-23d9-40a6-813d-264b549309ec",
-          "imageAlt": "Site"
-        }
-      ],
-      "backgroundColor": "#fafafa"
     },
     {
       "__resolveType": "site/sections/Content/Cards.tsx",
