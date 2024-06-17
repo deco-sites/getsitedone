@@ -32,15 +32,15 @@ function Cards({ cards, title, backgroundColor, id }: Props) {
           {cards.map(({ alt, description, icon, image, imageAlt, title, width, height }) => (
             <div
               key={title}
-              className="flex flex-col items-center gap-6 border-2 border-gray-300 rounded-2xl bg-white p-8 text-black transition-transform duration-300 ease-in-out transform hover:scale-105 hover:border-[#9900e5]"
+              className="flex flex-col items-start gap-6 border-2 border-gray-300 rounded-2xl bg-white p-8 text-black transition-transform duration-300 ease-in-out transform hover:scale-105 hover:border-[#9900e5]"
               style={{ width, minHeight: height }}
             >
               <Image src={icon} alt={alt} width={40} height={40} />
               {image && (
                 <Image src={image} alt={imageAlt} width={266} height={200} />
               )}
-              <p className="text-3xl font-bold text-center">{title}</p>
-              <div className="text-center" dangerouslySetInnerHTML={{ __html: description }} />
+              <p className="text-3xl font-bold">{title}</p>
+              <div dangerouslySetInnerHTML={{ __html: description }} />
             </div>
           ))}
         </div>
