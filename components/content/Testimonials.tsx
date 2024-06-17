@@ -75,11 +75,11 @@ function Testimonials({ testimonials, title, id: sectionId }: Props) {
             </Slider.Item>
           ))}
         </Slider>
-        <div class="flex items-center gap-2 mx-auto mt-4">
+        <div class="flex items-center gap-2 mx-auto mt-4 justify-center">
           {testimonials.map((_, index) => (
             <Slider.Dot
               index={index}
-              class="focus:outline-none w-2 h-2 disabled:w-4 disabled:bg-[#9900E5] bg-[#E0E0E0] rounded-full"
+              class="focus:outline-none w-2 h-2 disabled:w-4 disabled:bg-[#9900E5] bg-[#E0E0E0] rounded-full transition-transform transform"
               key={index}
             />
           ))}
@@ -88,7 +88,7 @@ function Testimonials({ testimonials, title, id: sectionId }: Props) {
           <Icon id="Next" width={16} height={16} />
         </Slider.NextButton>
         <div class="absolute inset-y-0 right-0 w-12 max-xl:hidden xl:w-48 bg-[#fdfdfd]/40 pointer-events-none" />
-        <SliderJS rootId={id} isPerItem gap={112}/>
+        <SliderJS rootId={id} isPerItem infinite gap={112}/>
       </div>
     </div>
   );

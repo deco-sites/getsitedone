@@ -69,24 +69,16 @@ const setup = (
 
   const firstItem = items[0].cloneNode(true) as HTMLElement;
   firstItem.setAttribute("data-slider-item", items.length.toString());
-  const secondItem = items[1].cloneNode(true) as HTMLElement;
-  secondItem.setAttribute("data-slider-item", (items.length + 1).toString());
   slider.appendChild(firstItem);
-  slider.appendChild(secondItem);
-
-  const itemsWithClone = root?.querySelectorAll(
-    `[${ATTRIBUTES["data-slider-item"]}]`,
-  );
-  const sliderWithClone = root?.querySelector(`[${ATTRIBUTES["data-slider"]}]`);
 
   let itemIndex = 0;
 
   const getElementsInsideContainer = () => {
     const indices: number[] = [];
-    const sliderRect = sliderWithClone!.getBoundingClientRect();
+    const sliderRect = slider!.getBoundingClientRect();
 
-    for (let index = 0; index < itemsWithClone.length; index++) {
-      const item = itemsWithClone.item(index);
+    for (let index = 0; index < items.length; index++) {
+      const item = items.item(index);
       const rect = item.getBoundingClientRect();
 
       const ratio = intersectionX(
@@ -103,7 +95,7 @@ const setup = (
   };
 
   const goToItem = (index: number, reset?: boolean) => {
-    const item = itemsWithClone.item(index);
+    const item = items.item(index);
 
     if (!isHTMLElement(item)) {
       console.warn(
@@ -114,22 +106,15 @@ const setup = (
     }
     const distance = !index ? index : (index === 1 ? gap : gap * 2);
     const offSet = item.clientWidth * index + distance;
-    sliderWithClone!.scrollTo({
+    slider!.scrollTo({
       top: 0,
       behavior: reset ? "instant" : scroll,
       left: offSet,
     });
   };
 
-  function verifyHover() {
-    items?.forEach(() => {
-      clearInterval(timeout);
-    });
-  }
-
   const onClickPrev = () => {
     const indices = getElementsInsideContainer();
-    // Wow! items per page is how many elements are being displayed inside the container!!
     const itemsPerPage = indices.length;
 
     const isShowingFirst = indices[0] === 0;
@@ -143,27 +128,18 @@ const setup = (
   const onClickNext = () => {
     const indices = getElementsInsideContainer();
     const isShowingLast =
-      indices[indices.length - 1] === itemsWithClone.length - 1;
-    if (!isPerItem) {
-      // Wow! items per page is how many elements are being displayed inside the container!!
-      const itemsPerPage = indices.length;
+      indices[indices.length - 1] === items.length - 1;
 
+    if (!isPerItem) {
+      const itemsPerPage = indices.length;
       const pageIndex = Math.floor(indices[0] / itemsPerPage);
 
       goToItem(isShowingLast ? 0 : (pageIndex + 1) * itemsPerPage);
     } else {
       const nextIndex = itemIndex + 1;
-      itemIndex = (items.length < nextIndex || isShowingLast) ? 0 : nextIndex;
+      itemIndex = (items.length <= nextIndex || isShowingLast) ? 0 : nextIndex;
       goToItem(itemIndex);
     }
-  };
-
-  const scrollEndHandler = () => {
-    goToItem(0, true);
-  };
-
-  const scrollEndHandler2 = () => {
-    goToItem(1, true);
   };
 
   const observer = new IntersectionObserver(
@@ -171,20 +147,13 @@ const setup = (
       elements.forEach((item) => {
         const index = Number(item.target.getAttribute("data-slider-item")) || 0;
         const dot = dots?.item(index);
-        if (index === items.length) {
-          sliderWithClone?.addEventListener("scrollend", scrollEndHandler);
-        } else if (index === items.length + 1) {
-          sliderWithClone?.addEventListener("scrollend", scrollEndHandler2);
-        } else {
-          sliderWithClone?.removeEventListener("scrollend", scrollEndHandler);
-          sliderWithClone?.removeEventListener("scrollend", scrollEndHandler2);
-        }
 
         if (item.isIntersecting) {
           dot?.setAttribute("disabled", "");
         } else {
           dot?.removeAttribute("disabled");
         }
+
         if (!infinite) {
           if (index === 0) {
             if (item.isIntersecting) {
@@ -193,7 +162,7 @@ const setup = (
               prev?.removeAttribute("disabled");
             }
           }
-          if (index === itemsWithClone.length - 1) {
+          if (index === items.length - 1) {
             if (item.isIntersecting) {
               next?.setAttribute("disabled", "");
             } else {
@@ -205,7 +174,7 @@ const setup = (
     { threshold: THRESHOLD, root: slider },
   );
 
-  itemsWithClone.forEach((item) => observer.observe(item));
+  items.forEach((item) => observer.observe(item));
 
   for (let it = 0; it < (dots?.length ?? 0); it++) {
     dots?.item(it).addEventListener("click", () => goToItem(it));
@@ -220,15 +189,15 @@ const setup = (
     next?.addEventListener("click", onClickNext);
     prev?.addEventListener("click", onClickPrev);
   };
-  sliderWithClone?.addEventListener("scroll", removeClickEvent);
-  sliderWithClone?.addEventListener("scrollend", addClickEvent);
+  slider?.addEventListener("scroll", removeClickEvent);
+  slider?.addEventListener("scrollend", addClickEvent);
 
   addClickEvent();
 
   let timeout = interval && setInterval(onClickNext, interval);
 
   items.forEach((item) => {
-    item.addEventListener("mouseover", verifyHover);
+    item.addEventListener("mouseover", () => clearInterval(timeout));
   });
 
   items.forEach((item) => {
