@@ -33,15 +33,15 @@ export interface Props {
 const Testimonial = ({ user, project }: Testimonial) => {
   return (
     <a href={project.link} target="_blank">
-      <div class="flex flex-col p-6 gap-4 border border-[#EFF0F0] bg-[#FAFAFA] w-[800px] h-[540px] rounded-[32px] max-lg:w-full max-md:justify-center">
+      <div class="flex flex-col p-6 gap-6 border border-[#EFF0F0] bg-[#FAFAFA] w-[800px] h-[540px] rounded-[32px] max-lg:w-full max-md:justify-center">
         <div class="flex justify-start items-center gap-6">
           <Image src={user.avatar} alt={user.alt} width={80} height={80} />
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col gap-3">
             <p class="font-semibold text-xl text-[#0D1717]">{user.name}</p>
             <p class="text-lg text-[#0D1717] font-normal">{user.headline}</p>
           </div>
         </div>
-        <p class="flex items-center border border-[#C9CFCF] input py-4 px-2 rounded-full font-medium w-full max-md:rounded-lg max-md:h-auto">
+        <p class="flex items-center border border-[#C9CFCF] input py-4 px-6 rounded-full font-medium w-full max-md:rounded-lg max-md:h-auto">
           {project.title}
         </p>
         <Image
@@ -67,7 +67,7 @@ function Testimonials({ testimonials, title, id: sectionId }: Props) {
   return (
     <div class="container flex flex-col gap-20 pb-28 pt-6" id={sectionId}>
       {title && <p class="text-center font-bold text-[48px] max-md:text-3xl">{title}</p>}
-      <div class="flex flex-col gap-8 relative xl:ml-[256px]" id={id}>
+      <div class="flex flex-col gap-10 relative xl:ml-[256px]" id={id}>
         <Slider class="carousel carousel-start flex gap-28" loop>
           {testimonials.map(({ user, project }, index) => (
             <Slider.Item class="carousel-item max-lg:w-full" index={index} key={index}>
@@ -87,8 +87,8 @@ function Testimonials({ testimonials, title, id: sectionId }: Props) {
         <Slider.NextButton class="absolute top-1/2 transform -translate-y-1/2 left-[824px] rounded-full border border-black p-4 max-lg:hidden">
           <Icon id="Next" width={16} height={16} />
         </Slider.NextButton>
-        <div class="absolute inset-y-0 right-0 w-12 max-xl:hidden xl:w-48 bg-[#fdfdfd]/40 pointer-events-none" />
-        <SliderJS rootId={id} isPerItem infinite gap={112}/>
+        <div class="absolute inset-y-0 right-0 w-12 max-xl:hidden xl:w-48 bg-[#fdfdfd]/20 pointer-events-none" />
+        <SliderJS rootId={id} isPerItem infinite gap={112} />
       </div>
     </div>
   );
