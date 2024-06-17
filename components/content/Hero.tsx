@@ -38,7 +38,7 @@ const HeroForm = ({
   buttonText,
   number,
   defaultMessage,
-  inputRef
+  inputRef,
 }: {
   placeholder?: string;
   buttonText: string;
@@ -62,7 +62,7 @@ const HeroForm = ({
   >
     <input
       ref={inputRef}
-      class="w-full h-14 rounded-full border border-[#DA8FFF] shadow-lg px-4 focus:outline-none focus:border-[#DA8FFF] mb-2 md:mb-0 text-base md:text-lg"
+      class="w-full h-14 rounded-full border border-[#DA8FFF] shadow-lg px-4 focus:outline-none focus:border-[#DA8FFF] mb-2 md:mb-0 text-base md:text-lg transition-transform duration-300"
       type="text"
       placeholder={placeholder}
     />
@@ -72,51 +72,49 @@ const HeroForm = ({
   </form>
 );
 
-const HeroCarousel = ({ carousel, id }: { carousel?: Carousel[], id: string }) => (
-  <div class="w-full max-w-lg relative mt-6" id={id}>
-    <Slider class="carousel carousel-start flex items-center gap-2 md:gap-4">
+const HeroCarousel = ({ carousel, id }: { carousel?: Carousel[]; id: string }) => (
+  <div class="w-full relative mt-6" id={id}>
+    <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+    <div class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+    <Slider class="carousel carousel-start flex items-center gap-2 md:gap-4 px-4 md:px-0">
       {carousel?.map(({ text }, index) => (
         <Slider.Item class="carousel-item" index={index}>
-          <div class="flex items-center gap-2 h-5">
+          <div class="flex items-center gap-2 p-4 bg-white rounded-md transition-transform duration-300 transform hover:scale-105 w-full">
             <Icon
-              class="flex-shrink-0"
+              class="flex-shrink-0 text-[#b442ed]"
               id="circleCheck"
-              height={17}
-              width={17}
+              height={20}
+              width={20}
             />
-            <p class="whitespace-nowrap text-xs md:text-sm">{text}</p>
+            <p class="whitespace-nowrap text-sm md:text-lg text-gray-800 w-full text-center">{text}</p>
           </div>
         </Slider.Item>
       ))}
     </Slider>
-    <div class="absolute inset-y-0 left-0 w-8 md:w-12 bg-gradient-to-l from-transparent to-transparent md:to-white"></div>
-    <div class="absolute inset-y-0 right-0 w-8 md:w-12 bg-gradient-to-r from-transparent to-white"></div>
     <SliderJSInfinite rootId={id} interval={2 * 1e3} isPerItem={true} />
   </div>
 );
 
-function Hero(
-  {
-    placeholder,
-    buttonText,
-    text,
-    carousel,
-    backgroundImage,
-    number,
-    defaultMessage,
-    backgroundColor,
-    singleText,
-    id: sectionId
-  }: Props,
-) {
+function Hero({
+  placeholder,
+  buttonText,
+  text,
+  carousel,
+  backgroundImage,
+  number,
+  defaultMessage,
+  backgroundColor,
+  singleText,
+  id: sectionId,
+}: Props) {
   const input = useRef<HTMLInputElement>(null);
   const id = useId();
   return (
     <div class="w-full" style={{ backgroundColor }} id={sectionId}>
-      <div class="container flex flex-col justify-center items-center py-8 md:py-16 gap-6 md:gap-10 w-full md:w-11/12 relative">
+      <div class="container flex flex-col justify-center items-center py-8 md:py-16 gap-6 md:gap-10 w-full md:w-11/12 lg:w-8/12 relative">
         {text && (
           <div
-            class="w-full px-1 md:px-0 text-base md:text-1xl leading-tight md:leading-normal text-center"
+            class="w-full px-4 md:px-0 text-base md:text-xl leading-tight md:leading-normal text-center"
             dangerouslySetInnerHTML={{ __html: text }}
           />
         )}
