@@ -114,7 +114,7 @@ function Hero({
       <div class="container flex flex-col justify-center items-center py-8 md:py-16 gap-6 md:gap-10 w-full md:w-11/12 lg:w-8/12 relative">
         {text && (
           <div
-            class="w-full px-4 md:px-0 text-base md:text-xl leading-tight md:leading-normal text-center"
+            class="w-full px-4 md:px-0 text-sm md:text-base lg:text-xl leading-tight md:leading-normal text-center"
             dangerouslySetInnerHTML={{ __html: text }}
           />
         )}
