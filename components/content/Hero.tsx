@@ -66,20 +66,20 @@ const HeroForm = ({
       type="text"
       placeholder={placeholder}
     />
-    <button class="bg-[#b442ed] rounded-full h-14 text-white px-8 py-2 mt-2 md:mt-0 hover:shadow-lg hover:scale-105 transition-transform duration-300 text-base md:text-lg">
+    <button class="bg-[#b442ed] rounded-full h-14 text-white px-8 py-2 mt-2 md:mt-0 hover:shadow-lg transition-transform duration-300 text-base md:text-lg">
       {buttonText}
     </button>
   </form>
 );
 
 const HeroCarousel = ({ carousel, id }: { carousel?: Carousel[]; id: string }) => (
-  <div class="w-full relative mt-6" id={id}>
+  <div class="w-full relative mt-6 flex justify-center" id={id}>
     <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
     <div class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
     <Slider class="carousel carousel-start flex items-center gap-2 md:gap-4 px-4 md:px-0">
       {carousel?.map(({ text }, index) => (
         <Slider.Item class="carousel-item" index={index}>
-          <div class="flex items-center gap-2 p-4 bg-white rounded-md transition-transform duration-300 transform hover:scale-105 w-full">
+          <div class="flex items-center gap-2 p-4 bg-white rounded-md w-full">
             <Icon
               class="flex-shrink-0 text-[#b442ed]"
               id="circleCheck"
