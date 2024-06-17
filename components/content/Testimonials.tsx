@@ -75,11 +75,11 @@ function Testimonials({ testimonials, title, id: sectionId }: Props) {
             </Slider.Item>
           ))}
         </Slider>
-        <div class="flex items-center gap-2 mx-auto mt-4 justify-center">
+        <div class="flex items-center gap-2 mx-center mt-2 ml 8 justify-center">
           {testimonials.map((_, index) => (
             <Slider.Dot
               index={index}
-              class="focus:outline-none w-2 h-2 disabled:w-4 disabled:bg-[#9900E5] bg-[#E0E0E0] rounded-full transition-transform transform"
+              class="focus:outline-none w-6 h-3 disabled:w-7 disabled:bg-[#9900E5] bg-[#E0E0E0] rounded-full transition-transform transform "
               key={index}
             />
           ))}
