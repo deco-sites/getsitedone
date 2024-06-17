@@ -395,7 +395,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 41.66666666666667,
+                "width": 24.943820224719104,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -417,7 +417,7 @@
               },
               {
                 "type": "stack",
-                "width": 58.333333333333336,
+                "width": 58.20224719101124,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -432,6 +432,27 @@
                       "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D"
                     },
                     "width": 70,
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 16.853932584269664,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Page%20SEO::world-search::Page%20SEO::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Start-15553.json::Page%20SEO::world-search::Page%20SEO::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Page%20SEO::world-search::Page%20SEO::%7B%7D"
+                    },
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -456,7 +477,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D": {
@@ -469,6 +491,18 @@
           "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
+          }
+        },
+        "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Page%20SEO::world-search::Page%20SEO::%7B%7D": {
+          "name": "Page SEO",
+          "icon": "world-search",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Page SEO",
+          "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Page%20SEO::world-search::Page%20SEO::%7B%7D",
+          "state": {
+            "__signal": null,
+            "value": null
           }
         }
       }

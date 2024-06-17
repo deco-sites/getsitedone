@@ -230,9 +230,6 @@
       },
       "credits": "© 2024 deco.cx. All rights reserved.",
       "backgroundColor": "#fbf4ff"
-    },
-    {
-      "__resolveType": "SEO Home"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
@@ -245,6 +242,6 @@
     "title": "GetSiteDone | Sites de alta-performance construídos por desenvolvedores ",
     "description": "GetSiteDone conecta negócios com desenvolvedores para construírem seus sites",
     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/974ab453-21b3-4103-8164-41f7aaf28c3f",
-    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/9f308313-768f-44df-b31e-ccb5ea924bb8"
+    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/3f749d21-d54f-477e-931c-702da057e20f"
   }
 }
