@@ -6,8 +6,10 @@ export interface Props {
 
 function Cta({ title, buttonText, url }: Props) {
   return (
-    <div class="container flex flex-col items-center justify-center gap-6">
-      <p class="font-bold text-4xl text-black text-center">{title}</p>
+    <div class="container flex flex-col items-center justify-center gap-8">
+      <p class="font-bold text-5xl text-black text-center whitespace-nowrap">
+        {title}
+      </p>
       <a
         href={url}
         class="btn rounded-full py-3 px-6 bg-transparent border border-black"
