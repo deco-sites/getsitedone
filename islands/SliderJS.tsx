@@ -17,8 +17,6 @@ const ATTRIBUTES = {
   "data-dot": "data-dot",
 };
 
-// Percentage of the item that has to be inside the container
-// for it it be considered as inside the container
 const THRESHOLD = 0.8;
 
 const intersectionX = (element: DOMRect, container: DOMRect): number => {
@@ -43,9 +41,7 @@ const intersectionX = (element: DOMRect, container: DOMRect): number => {
   return element.width;
 };
 
-// as any are ok in typeguard functions
 const isHTMLElement = (x: Element): x is HTMLElement =>
-  // deno-lint-ignore no-explicit-any
   typeof (x as any).offsetLeft === "number";
 
 const setup = (
@@ -104,12 +100,12 @@ const setup = (
 
       return;
     }
-    const distance = !index ? index : (index === 1 ? gap : gap * 2);
-    const offSet = item.clientWidth * index + distance;
+
+    const distance = index * (item.clientWidth + gap);
     slider!.scrollTo({
       top: 0,
       behavior: reset ? "instant" : scroll,
-      left: offSet,
+      left: distance,
     });
   };
 
