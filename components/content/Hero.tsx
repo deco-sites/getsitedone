@@ -61,21 +61,20 @@ const HeroForm = ({
     class="w-full flex items-center relative mt-4"
     style={{ maxWidth: "40rem" }} 
   >
-     <div class="flex w-full border rounded-full overflow-hidden shadow-lg relative" style={{ border: "2px solid #DA8FFF", padding: "2px", boxShadow: "0 0 8px #DA8FFF" }}>
+    <div class="flex w-full border rounded-full overflow-hidden shadow-lg relative" style={{ border: "1px solid #9900E5", padding: "2px", boxShadow: "0 0 12px #DA8FFF" }}>
       <input
         ref={inputRef}
         class="flex-grow h-14 px-4 pl-12 pr-32 text-base md:text-lg focus:outline-none"
         type="text"
         placeholder={placeholder}
-        style={{ border: "none", paddingRight: "120px",paddingLeft: "20px" }}
+        style={{ border: "none", paddingRight: "120px", paddingLeft: "20px" }}
       />
       <button 
-  class="absolute right-0 h-12 text-white px-8 transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-700 hover:shadow-lg hover:shadow-purple-500/50"
-  style={{ backgroundColor: "#b442ed", borderRadius: "50px", fontSize: "16px", margin: "4px" }}
->
-  {buttonText}
-</button>
-
+        class="absolute right-0 h-12 text-white px-8 transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-600 hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105"
+        style={{ backgroundColor: "#9900E5", borderRadius: "50px", fontSize: "16px", margin: "4px" }}
+      >
+        {buttonText}
+      </button>
     </div>
   </form>
 );
