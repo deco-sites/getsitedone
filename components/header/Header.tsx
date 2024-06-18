@@ -20,7 +20,7 @@ function Header({ title, navItens }: Props) {
   return (
     <header class="container h-[85px] py-6 flex justify-between items-center">
       <p
-        class="text-[25px] text-[#0D1717] font-bold"
+        class="text-[25px] text-[#9900E5  ] font-bold"
         style={clx(title.position)}
       >
         {title.text}
@@ -35,7 +35,7 @@ function Header({ title, navItens }: Props) {
       )}
       {/** MOBILE */}
       {navItens && <Drawer>
-        <ul class="flex flex-col bg-white gap-4 h-full px-4 py-4 w-full">{navItens.map(({ label, url }) =>
+        <ul class="flex flex-col text-[#9900E5] bg-white gap-4 h-full px-4 py-4 w-xl">{navItens.map(({ label, url }) =>
           <a href={url}>
             <li>{label}</li>
           </a>)}

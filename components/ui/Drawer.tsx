@@ -36,16 +36,26 @@ function Drawer({ children }: Props) {
         <div className="drawer drawer-end w-fit lg:hidden">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
-                <label htmlFor="my-drawer-4" className="drawer-button btn btn-circle btn-sm btn-ghost bg-black text-secondary hover:text-black">
+                <label 
+                    htmlFor="my-drawer-4" 
+                    className="drawer-button btn btn-circle btn-sm btn-ghost bg-[#9900E5] text-secondary hover:text-white transition-colors duration-300"
+                >
                     <Icon id="Bars3" width={20} height={20} strokeWidth={0.01} />
                 </label>
             </div>
             <div className="drawer-side z-50">
                 <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                <Aside title="Menu" drawer="my-drawer-4">{children}</Aside>
+                <div className="p-4 w-64 h-full bg-white shadow-lg rounded-lg transform transition-transform duration-300 ease-in-out">
+                    <Aside title="Menu" drawer="my-drawer-4">
+                        <div className="flex flex-col space-y-4">
+                            {children}
+                        </div>
+                    </Aside>
+                </div>
             </div>
         </div>
     );
 }
+
 
 export default Drawer;
