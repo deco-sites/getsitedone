@@ -84,7 +84,7 @@ function Testimonials({ testimonials, title, id: sectionId }: Props) {
             />
           ))}
         </div>
-        <Slider.NextButton class="absolute top-1/2 transform -translate-y-1/2 left-[824px] rounded-full border border-black p-4 max-lg:hidden hover:bg-[#9900E5] transition-colors duration-300">
+        <Slider.NextButton class="absolute top-1/2 transform -translate-y-1/2 left-[824px] rounded-full border border-black p-4 max-lg:hidden hover:bg-[#fffa] transition-colors duration-300">
           <Icon id="Next" width={16} height={16} />
         </Slider.NextButton>
         <div class="absolute inset-y-0 right-0 w-12 max-xl:hidden xl:w-43 bg-[#fdfdfd]/20 pointer-events-none" />
