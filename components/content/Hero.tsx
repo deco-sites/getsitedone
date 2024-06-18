@@ -58,17 +58,24 @@ const HeroForm = ({
         "_blank",
       );
     }}
-    class="w-full max-w-lg flex flex-col md:flex-row items-center gap-4 relative mt-4"
+    class="w-full max-w-lg flex items-center relative mt-4"
   >
-    <input
-      ref={inputRef}
-      class="w-full h-14 rounded-full border border-[#DA8FFF] shadow-lg px-4 focus:outline-none focus:border-[#DA8FFF] mb-2 md:mb-0 text-base md:text-lg transition-transform duration-300"
-      type="text"
-      placeholder={placeholder}
-    />
-    <button class="bg-[#b442ed] rounded-full h-14 text-white px-8 py-2 mt-2 md:mt-0 hover:shadow-lg transition-transform duration-300 text-base md:text-lg">
-      {buttonText}
-    </button>
+    <div class="flex w-full border rounded-full overflow-hidden shadow-lg relative" style={{ border: "2px solid #DA8FFF", padding: "2px", boxShadow: "0 0 8px #DA8FFF" }}>
+      <input
+        ref={inputRef}
+        class="flex-grow h-14 px-4 pl-10 pr-32 text-base md:text-lg focus:outline-none"
+        type="text"
+        placeholder={placeholder}
+        style={{ border: "none", paddingRight: "120px",paddingLeft: "30px" }}
+      />
+      <button 
+  class="absolute right-0 h-12 text-white px-8 transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-700 hover:shadow-lg hover:shadow-purple-500/50"
+  style={{ backgroundColor: "#b442ed", borderRadius: "50px", fontSize: "16px", margin: "4px" }}
+>
+  {buttonText}
+</button>
+
+    </div>
   </form>
 );
 
@@ -145,4 +152,3 @@ function Hero({
 }
 
 export default Hero;
-  
