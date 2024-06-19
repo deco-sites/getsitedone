@@ -32,7 +32,7 @@ function Faq({ accordions, title, titlePosition, section }: Props) {
           {accordions.map(({ title, description }, index) => (
             <div 
               key={index} 
-              class="border-2 border-transparent hover:bg-black hover:text-white transition-all duration-300">
+              class="border-2 border-transparent transition-all duration-300">
               <Collapse title={title}>
                 <div
                   class="mt-2 text-gray-800 leading-relaxed"

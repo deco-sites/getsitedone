@@ -191,17 +191,25 @@
       "titlePosition": "column",
       "accordions": [
         {
-          "title": "Como a deco.cx seleciona os prestadores de serviços?",
-          "description": "<p><strong id=\"docs-internal-guid-cc836e8d-7fff-265d-2f1d-b5d6e77862fa\">Implementamos um sistema de nível de experiência para nossa comunidade de desenvolvedores e designers. Este sistema permite-nos identificar a experiência e competências de cada indivíduo para ligá-los a projetos que correspondam às suas necessidades.</strong></p>"
-        },
-        {
-          "title": "Levels de experiência",
-          "description": "<p dir=\"ltr\">Existem quatro níveis de dificuldade: fácil, médio, difícil e complexo. Os níveis de dificuldade são definidos pelo cliente ao abrir a recompensa, mas podem ser reavaliados pela equipe deco.<br><br></p><details><summary>Fácil<br><br></summary><p dir=\"ltr\">Estes são projetos que não requerem complexidades técnicas e que iniciantes podem lidar. Podem ser projetos que já têm uma identidade definida, exigem até 2 páginas, possuem funções simples e têm um tempo de entrega confortável. Alguns exemplos incluem:</p><ul style=\"list-style: unset;\" data-mce-style=\"list-style: unset;\"><li dir=\"ltr\" aria-level=\"1\"><p dir=\"ltr\" role=\"presentation\">Personalização de um template de site</p></li><li dir=\"ltr\" aria-level=\"1\"><p dir=\"ltr\" role=\"presentation\">Desenvolvimento ou implementação de uma landing page</p></li><li dir=\"ltr\" aria-level=\"1\"><p dir=\"ltr\" role=\"presentation\">Criação do layout de um blog simples</p></li><li><p dir=\"ltr\">Esses projetos geralmente pagam entre $100 e $200 USD.</p></li></ul></details><p><br><br></p><details><summary>Médio<br><br></summary><p dir=\"ltr\">Estes são projetos que só podem ser realizados por profissionais de nível intermediário que já executaram outros projetos anteriormente. Exemplos incluem:</p><ul><li>Migração de um site institucional com algumas páginas para deco</li><li>Implementação de uma prova de conceito (PoC) de ecommerce</li><li>Desenvolvimento de um site completo</li><li>Esses projetos geralmente pagam entre $200 e $500 USD.</li></ul></details><p><br><br></p><details><summary>Difícil<br><br></summary><p dir=\"ltr\">Estes são projetos que requerem profissionais experientes com experiência anterior no tipo de serviço solicitado, em um nível de complexidade semelhante. Exemplos:</p><ul><li>Implementação completa de uma vitrine headless</li><li>Esses projetos geralmente pagam mais de $500 USD.</li></ul></details><p><br><br></p><details><summary>Complexo<br><br></summary><p dir=\"ltr\">Estes são projetos que requerem profissionais especialistas com ampla experiência anterior no mesmo tipo de serviço solicitado, e que são capazes de lidar com fatores desafiadores, como prazos apertados diante da complexidade exigida pelo projeto.</p><ul><li>Esses projetos geralmente pagam mais de $750 USD.</li></ul></details>"
-        },
-        {
-          "title": "Pagamentos",
-          "description": "<p dir=\"ltr\">Taxa de captação de 0%. Todo o dinheiro investido vai para o desenvolvedor ou designer selecionado.</p><p><strong id=\"docs-internal-guid-baaacebc-7fff-3158-f2a6-63d798d2dfe1\">Assim que seu site estiver pronto, deco.cx oferece planos para implementá-lo de acordo com suas necessidades. Se quiser entender melhor, clique <a data-mce-href=\"https://deco.cx/en/pricing\" href=\"https://deco.cx/en/pricing\" target=\"_blank\" rel=\"noopener\">aqui</a>.</strong></p>"
-        }
+          "title": "O que o GetSiteDone entrega exatamente?",
+          "description": "<p>O GetSiteDone te conecta com o desenvolvedor ideal para o seu projeto, acompanha o desenvolvimento, garantindo a qualidade da entrega. Entendemos melhor a sua demanda e selecionamos em nossa comunidade de desenvolvedores LATAM de alto nível o profissional que possui capacidade técnica e qualidade para executar o seu projeto.</p>"
+      },
+      {
+          "title": "deco.cx & GetSiteDone",
+          "description": "<p>O GetSiteDone tem uma parceria com a deco.cx que tem como intuito levar a tecnologia que já está nos websites das maiores empresas do Brasil (Osklen, Casa & Video, Zee.Dog, entre outras) para todos os negócios e pessoas que querem um site de alta performance. Deco.cx é a plataforma front-end que preenche a lacuna entre os construtores básicos de sites sem código e as configurações complexas de código completo, permitindo que empresas de todos os tamanhos criem experiências web de alto desempenho, totalmente personalizadas e nativas de IA. A plataforma de código aberto reúne o que há de melhor em estrutura, hospedagem, CMS, editor visual e editor de código.</p>"
+      },
+      {
+          "title": "Valores & Pagamentos",
+          "description": "<p>100% do seu investimento vai direto para o desenvolvedor selecionado para o projeto e o pagamento é feito através de PIX. Uma vez que o seu site está pronto, a mensalidade é de R$49 até 50 mil visualizações de página.</p>"
+      },
+      {
+          "title": "Como funcionam os prazos de entrega?",
+          "description": "<p>Os prazos de entrega variam de acordo com a complexidade do projeto. Em geral, eles variam de 1 semana a 4 semanas. Nós seremos responsáveis em manter você atualizado durante as etapas de desenvolvimento do projeto.</p>"
+      },
+      {
+          "title": "Como é a relação entre quem solicita um site e o desenvolvedor?",
+          "description": "<p>A partir do momento em que o desenvolvedor é escolhido para o seu projeto, o GetSiteDone pede autorização para compartilhar o contato entre as partes para o caso de dúvidas sobre o projeto. A comunicação é feita através do WhatsApp.</p>"
+      } 
       ],
       "section": {
         "__resolveType": "site/sections/Content/Cta.tsx",
