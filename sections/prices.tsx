@@ -33,7 +33,7 @@ export default function Section({ }: Props) {
         ].map((service, index) => (
           <div
             key={index}
-            className="bg-white p-8 lg:p-10 rounded-2xl text-left border border-gray-300 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 w-full lg:max-w-xs"
+            className="bg-white p-8 lg:p-10 rounded-2xl text-left border border-gray-300 shadow-lg w-full lg:max-w-xs"
           >
             <h3 className="text-xl lg:text-2xl font-semibold text-gray-900 mb-4">{service.title}</h3>
             <p className="text-[#9900e5] text-2xl lg:text-3xl font-extrabold mb-5">{service.price}</p>

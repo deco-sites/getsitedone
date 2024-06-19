@@ -30,12 +30,16 @@ function Faq({ accordions, title, titlePosition, section }: Props) {
         } w-full max-w-3xl`}>
         <div class="flex flex-col w-full gap-8">
           {accordions.map(({ title, description }, index) => (
-            <Collapse key={index} title={title} >
-              <div
-                class="mt-2 text-gray-800 leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: description }}
-              />
-            </Collapse>
+            <div 
+              key={index} 
+              class="border-2 border-transparent hover:bg-black hover:text-white transition-all duration-300">
+              <Collapse title={title}>
+                <div
+                  class="mt-2 text-gray-800 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: description }}
+                />
+              </Collapse>
+            </div>
           ))}
         </div>
       </div>
