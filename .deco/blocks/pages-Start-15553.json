@@ -185,31 +185,78 @@
       ]
     },
     {
+      "__resolveType": "site/sections/decoads.tsx",
+      "title": "<p>Everything You Need to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span></p>",
+      "tabs": [
+        {
+          "title": "CMS with Visual Editor",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a7933919-5f38-4055-83fc-830ca29fe3ab",
+          "description": "Easily edit content using a visual CMS with real-time preview and real-time collaboration.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+        },
+        {
+          "title": "Automatic content extraction from TS",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4716aca7-9cc1-4f76-8099-89082d7a5573",
+          "description": "\"export interface Props\" becomes an easily editable form to give marketers the freedom to update content.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5fcf67e5-475a-4553-a0fb-b9930115fd49",
+          "title": "In-browser Web IDE",
+          "description": "Integrated code editor made for React, Tailwind and TypeScript. Directly edit in browser & sync with a Git repository.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+        },
+        {
+          "title": "deco.pilot",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/96200ebc-bb33-4f11-9c26-85b68961c743",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
+          "description": "AI assistant for code and content generation to help you get site done faster.",
+          "label": {
+            "name": "NEW!",
+            "color": "#02F67C"
+          }
+        },
+        {
+          "title": "One-click install apps & integrations",
+          "description": "Leverage a rich library of applications, themes, and templates that connect to any API and third-party data sources.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2436533f-d50a-4df8-97c7-cd176dece311"
+        },
+        {
+          "title": "Modern Stack",
+          "description": "Based on an efficient, secure and future-proof stack: Deno, Tailwind, JSX, TypeScript & HTMX.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/32a543e5-ae46-48c8-bcfe-041d86eec2b2",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c80fd09d-36a2-43f1-b9e2-e575115338cc"
+        }
+      ],
+      "trackId": "1"
+    },
+    {
       "__resolveType": "site/sections/Content/Faq.tsx",
-      "id": "faq",
       "title": "FAQ",
+      "id": "faq",
       "titlePosition": "column",
       "accordions": [
         {
           "title": "O que o GetSiteDone entrega exatamente?",
           "description": "<p>O GetSiteDone te conecta com o desenvolvedor ideal para o seu projeto, acompanha o desenvolvimento, garantindo a qualidade da entrega. Entendemos melhor a sua demanda e selecionamos em nossa comunidade de desenvolvedores LATAM de alto nível o profissional que possui capacidade técnica e qualidade para executar o seu projeto.</p>"
-      },
-      {
+        },
+        {
           "title": "deco.cx & GetSiteDone",
           "description": "<p>O GetSiteDone tem uma parceria com a deco.cx que tem como intuito levar a tecnologia que já está nos websites das maiores empresas do Brasil (Osklen, Casa & Video, Zee.Dog, entre outras) para todos os negócios e pessoas que querem um site de alta performance. Deco.cx é a plataforma front-end que preenche a lacuna entre os construtores básicos de sites sem código e as configurações complexas de código completo, permitindo que empresas de todos os tamanhos criem experiências web de alto desempenho, totalmente personalizadas e nativas de IA. A plataforma de código aberto reúne o que há de melhor em estrutura, hospedagem, CMS, editor visual e editor de código.</p>"
-      },
-      {
+        },
+        {
           "title": "Valores & Pagamentos",
           "description": "<p>100% do seu investimento vai direto para o desenvolvedor selecionado para o projeto e o pagamento é feito através de PIX. Uma vez que o seu site está pronto, a mensalidade é de R$49 até 50 mil visualizações de página.</p>"
-      },
-      {
+        },
+        {
           "title": "Como funcionam os prazos de entrega?",
           "description": "<p>Os prazos de entrega variam de acordo com a complexidade do projeto. Em geral, eles variam de 1 semana a 4 semanas. Nós seremos responsáveis em manter você atualizado durante as etapas de desenvolvimento do projeto.</p>"
-      },
-      {
+        },
+        {
           "title": "Como é a relação entre quem solicita um site e o desenvolvedor?",
           "description": "<p>A partir do momento em que o desenvolvedor é escolhido para o seu projeto, o GetSiteDone pede autorização para compartilhar o contato entre as partes para o caso de dúvidas sobre o projeto. A comunicação é feita através do WhatsApp.</p>"
-      } 
+        }
       ],
       "section": {
         "__resolveType": "site/sections/Content/Cta.tsx",

@@ -6,6 +6,8 @@ import * as $_app from "./routes/_app.tsx";
 import * as $Hero from "./islands/Hero.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
 import * as $SliderJSInfinite from "./islands/SliderJSInfinite.tsx";
+import * as $decoadsacoordion from "./islands/decoadsacoordion.tsx";
+import * as $decoadstabs from "./islands/decoadstabs.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -16,6 +18,8 @@ const manifest = {
     "./islands/Hero.tsx": $Hero,
     "./islands/SliderJS.tsx": $SliderJS,
     "./islands/SliderJSInfinite.tsx": $SliderJSInfinite,
+    "./islands/decoadsacoordion.tsx": $decoadsacoordion,
+    "./islands/decoadstabs.tsx": $decoadstabs,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
