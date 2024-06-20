@@ -193,23 +193,23 @@
         {
           "title": "O que o GetSiteDone entrega exatamente?",
           "description": "<p>O GetSiteDone te conecta com o desenvolvedor ideal para o seu projeto, acompanha o desenvolvimento, garantindo a qualidade da entrega. Entendemos melhor a sua demanda e selecionamos em nossa comunidade de desenvolvedores LATAM de alto nível o profissional que possui capacidade técnica e qualidade para executar o seu projeto.</p>"
-      },
-      {
+        },
+        {
           "title": "deco.cx & GetSiteDone",
           "description": "<p>O GetSiteDone tem uma parceria com a deco.cx que tem como intuito levar a tecnologia que já está nos websites das maiores empresas do Brasil (Osklen, Casa & Video, Zee.Dog, entre outras) para todos os negócios e pessoas que querem um site de alta performance. Deco.cx é a plataforma front-end que preenche a lacuna entre os construtores básicos de sites sem código e as configurações complexas de código completo, permitindo que empresas de todos os tamanhos criem experiências web de alto desempenho, totalmente personalizadas e nativas de IA. A plataforma de código aberto reúne o que há de melhor em estrutura, hospedagem, CMS, editor visual e editor de código.</p>"
-      },
-      {
+        },
+        {
           "title": "Valores & Pagamentos",
           "description": "<p>100% do seu investimento vai direto para o desenvolvedor selecionado para o projeto e o pagamento é feito através de PIX. Uma vez que o seu site está pronto, a mensalidade é de R$49 até 50 mil visualizações de página.</p>"
-      },
-      {
+        },
+        {
           "title": "Como funcionam os prazos de entrega?",
           "description": "<p>Os prazos de entrega variam de acordo com a complexidade do projeto. Em geral, eles variam de 1 semana a 4 semanas. Nós seremos responsáveis em manter você atualizado durante as etapas de desenvolvimento do projeto.</p>"
-      },
-      {
+        },
+        {
           "title": "Como é a relação entre quem solicita um site e o desenvolvedor?",
           "description": "<p>A partir do momento em que o desenvolvedor é escolhido para o seu projeto, o GetSiteDone pede autorização para compartilhar o contato entre as partes para o caso de dúvidas sobre o projeto. A comunicação é feita através do WhatsApp.</p>"
-      } 
+        }
       ],
       "section": {
         "__resolveType": "site/sections/Content/Cta.tsx",
@@ -220,8 +220,8 @@
     },
     {
       "__resolveType": "site/sections/Content/Hero.tsx",
-      "backgroundColor": "#fbf4ff",
       "id": "bt-click-enviar",
+      "backgroundColor": "#fbf4ff",
       "number": "552139504860",
       "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/b129906c-bdfc-4738-991c-e37efeec7310",
       "placeholder": "Preciso de um blog para minha empresa",
@@ -232,12 +232,12 @@
     },
     {
       "__resolveType": "site/sections/Footer/Footer.tsx",
+      "backgroundColor": "#fbf4ff",
       "title": {
         "position": "center",
         "text": "GetSiteDone.com"
       },
-      "credits": "© 2024 deco.cx. All rights reserved.",
-      "backgroundColor": "#fbf4ff"
+      "credits": "© 2024 deco.cx. All rights reserved."
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
