@@ -18,9 +18,9 @@ export interface Props {
 
 function Faq({ accordions, title, titlePosition, section }: Props) {
   return (
-    <div class="container mx-auto px-4 flex flex-col items-center gap-12 py-16">
+    <div class="container mx-auto px-8 flex flex-col items-center gap-16 py-16">
       {title && (
-        <h1 class="text-6xl font-extrabold text-center text-gray-900 mb-12">
+        <h1 class="text-6xl font-extrabold text-center text-gray-900 mb-15">
           {title}
         </h1>
       )}
@@ -28,7 +28,7 @@ function Faq({ accordions, title, titlePosition, section }: Props) {
         ? "flex-row justify-between items-start max-lg:flex-wrap"
         : "flex-col items-center justify-center"
         } w-full max-w-3xl`}>
-        <div class="flex flex-col w-full gap-8">
+        <div class="flex flex-col w-full gap-3">
           {accordions.map(({ title, description }, index) => (
             <div 
               key={index} 
