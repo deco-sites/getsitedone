@@ -33,7 +33,7 @@ export interface Props {
 const Testimonial = ({ user, project }: Testimonial) => {
   return (
     <a href={project.link} target="_blank">
-      <div class="flex flex-col p-6 gap-6 border border-[#EFF0F0] bg-[#FAFAFA] w-[800px] h-[540px] rounded-[32px] max-lg:w-full max-md:justify-center">
+      <div class="flex flex-col p-6 gap-6 border border-[#EFF0F0] bg-[#FAFAFA] w-[800px] h-[565px] rounded-[32px] max-lg:w-full max-md:justify-center">
         <div class="flex justify-start items-center gap-6">
           <Image src={user.avatar} alt={user.alt} width={80} height={80} />
           <div class="flex flex-col gap-3">
@@ -65,7 +65,7 @@ const Testimonial = ({ user, project }: Testimonial) => {
 function Testimonials({ testimonials, title, id: sectionId }: Props) {
   const id = useId();
   return (
-    <div class="container flex flex-col gap-20 pb-28 pt-6" id={sectionId}>
+    <div class="container flex flex-col gap-20 pb-28 pt-8" id={sectionId}>
       {title && <p class="text-center font-bold text-[48px] max-md:text-3xl">{title}</p>}
       <div class="flex flex-col gap-10 relative xl:ml-[256px]" id={id}>
         <Slider class="carousel carousel-start flex gap-28" loop>
