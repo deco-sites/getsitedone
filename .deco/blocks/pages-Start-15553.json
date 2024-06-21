@@ -186,7 +186,7 @@
     },
     {
       "__resolveType": "site/sections/decoads.tsx",
-      "title": "<p>Seu site entregue em  <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">deco.cx</span></p>",
+      "title": "<p>Seu site entregue em <strong><span style=\"color: #02F67C\">deco.cx</span></strong></p>",
       "tabs": [
         {
           "title": "Aumente o Core Web Vitals e o PageSpeed",
