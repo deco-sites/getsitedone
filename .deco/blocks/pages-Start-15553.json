@@ -186,7 +186,7 @@
     },
     {
       "__resolveType": "site/sections/decoads.tsx",
-      "title": "<p>Seu site entregue em <strong><span style=\"color: #02F67C\">deco.cx</span></strong></p>",
+      "title": "<p>Seu site entregue em <strong><span style=\"color: rgb(2, 246, 124)\">deco.cx</span></strong></p>",
       "tabs": [
         {
           "title": "Aumente o Core Web Vitals e o PageSpeed",
@@ -224,7 +224,7 @@
         },
         {
           "title": "Tecnologias Modernas",
-          "description": "Baseado em uma conjunto de tecnologias eficientes, seguras e preparadas para o futuro: Deno, Tailwind, JSX, TypeScript e HTMX.",
+          "description": "Baseado em uma conjunto de tecnologias eficiente, segura e preparada para o futuro: Deno, Tailwind, JSX, TypeScript e HTMX.",
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/32a543e5-ae46-48c8-bcfe-041d86eec2b2",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c80fd09d-36a2-43f1-b9e2-e575115338cc"
         }
@@ -242,11 +242,11 @@
           "description": "<p>O GetSiteDone te conecta com o desenvolvedor ideal para o seu projeto, acompanha o desenvolvimento, garantindo a qualidade da entrega. Entendemos melhor a sua demanda e selecionamos em nossa comunidade de desenvolvedores LATAM de alto nível o profissional que possui capacidade técnica e qualidade para executar o seu projeto.</p>"
         },
         {
-          "title": "deco.cx & GetSiteDone",
+          "title": "deco.cx e GetSiteDone",
           "description": "<p>O GetSiteDone tem uma parceria com a deco.cx que tem como intuito levar a tecnologia que já está nos websites das maiores empresas do Brasil (Osklen, Casa & Video, Zee.Dog, entre outras) para todos os negócios e pessoas que querem um site de alta performance. Deco.cx é a plataforma front-end que preenche a lacuna entre os construtores básicos de sites sem código e as configurações complexas de código completo, permitindo que empresas de todos os tamanhos criem experiências web de alto desempenho, totalmente personalizadas e nativas de IA. A plataforma de código aberto reúne o que há de melhor em estrutura, hospedagem, CMS, editor visual e editor de código.</p>"
         },
         {
-          "title": "Valores & Pagamentos",
+          "title": "Valores e Pagamentos",
           "description": "<p>100% do seu investimento vai direto para o desenvolvedor selecionado para o projeto e o pagamento é feito através de PIX. Uma vez que o seu site está pronto, a mensalidade é de R$49 até 50 mil visualizações de página.</p>"
         },
         {
