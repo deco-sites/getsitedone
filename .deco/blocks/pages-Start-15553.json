@@ -186,45 +186,45 @@
     },
     {
       "__resolveType": "site/sections/decoads.tsx",
-      "title": "<p>Everything You Need to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span></p>",
+      "title": "<p>Seu site entregue em  <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">deco.cx</span></p>",
       "tabs": [
         {
-          "title": "CMS with Visual Editor",
+          "title": "Aumente o Core Web Vitals e o PageSpeed",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a7933919-5f38-4055-83fc-830ca29fe3ab",
-          "description": "Easily edit content using a visual CMS with real-time preview and real-time collaboration.",
+          "description": "Obtenha mais visibilidade proporcionando experiências digitais de última geração que carregam instantaneamente.",
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
         },
         {
-          "title": "Automatic content extraction from TS",
+          "title": "Integração perfeita com bases de dados ",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4716aca7-9cc1-4f76-8099-89082d7a5573",
-          "description": "\"export interface Props\" becomes an easily editable form to give marketers the freedom to update content.",
+          "description": "Enriqueça a experiência dos seus visitantes aproveitando facilmente qualquer conteúdo e dados dinâmicos de terceiros.",
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
         },
         {
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5fcf67e5-475a-4553-a0fb-b9930115fd49",
-          "title": "In-browser Web IDE",
-          "description": "Integrated code editor made for React, Tailwind and TypeScript. Directly edit in browser & sync with a Git repository.",
+          "title": "Global edge para velocidade sem espera",
+          "description": "Implemente seu site em uma infraestrutura global de ponta, projetada para escalabilidade instantânea.",
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
         },
         {
           "title": "deco.pilot",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/96200ebc-bb33-4f11-9c26-85b68961c743",
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
-          "description": "AI assistant for code and content generation to help you get site done faster.",
+          "description": "Assistente de IA para geração de código e conteúdo para ajudá-lo a completar seu site mais rápido.",
           "label": {
-            "name": "NEW!",
+            "name": "NOVO!",
             "color": "#02F67C"
           }
         },
         {
-          "title": "One-click install apps & integrations",
-          "description": "Leverage a rich library of applications, themes, and templates that connect to any API and third-party data sources.",
+          "title": "Controle total para editar em tempo real",
+          "description": "Com o CMS da deco.cx, você está equipado para atualizar e editar seu site à medida que seu negócio evolui - sem a necessidade de desenvolvedores!",
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2436533f-d50a-4df8-97c7-cd176dece311"
         },
         {
-          "title": "Modern Stack",
-          "description": "Based on an efficient, secure and future-proof stack: Deno, Tailwind, JSX, TypeScript & HTMX.",
+          "title": "Tecnologias Modernas",
+          "description": "Baseado em uma conjunto de tecnologias eficiente, segura e preparada para o futuro: Deno, Tailwind, JSX, TypeScript e HTMX.",
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/32a543e5-ae46-48c8-bcfe-041d86eec2b2",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c80fd09d-36a2-43f1-b9e2-e575115338cc"
         }
