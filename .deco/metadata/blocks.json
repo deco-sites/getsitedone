@@ -72,5 +72,11 @@
     "path": "/",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-join-818029.json": {
+    "name": "join",
+    "path": "/join",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
