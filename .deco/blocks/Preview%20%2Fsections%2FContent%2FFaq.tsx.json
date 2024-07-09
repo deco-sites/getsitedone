@@ -1,1 +1,5 @@
-{"__resolveType":"site/sections/Content/Faq.tsx"}
+{
+  "__resolveType": "site/sections/Content/Faq.tsx",
+  "titlePosition": "aside",
+  "accordions": []
+}
