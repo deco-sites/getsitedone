@@ -1,7 +1,11 @@
 {
   "name": "join",
   "path": "/join",
-  "sections": [],
+  "sections": [
+    {
+      "__resolveType": "site/sections/signup.tsx"
+    }
+  ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
