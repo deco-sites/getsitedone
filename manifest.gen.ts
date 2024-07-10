@@ -2,8 +2,9 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$$$$$$$$$0 from "./apps/deco/htmx.ts";
+import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$2 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/Content/Bounties.tsx";
 import * as $$$$$$1 from "./sections/Content/BountiesCard.tsx";
 import * as $$$$$$2 from "./sections/Content/Cards.tsx";
@@ -16,7 +17,9 @@ import * as $$$$$$7 from "./sections/Footer.tsx";
 import * as $$$$$$8 from "./sections/Footer/Footer.tsx";
 import * as $$$$$$9 from "./sections/Header/Header.tsx";
 import * as $$$$$$10 from "./sections/ItWorks.tsx";
-import * as $$$$$$13 from "./sections/prices.tsx";
+import * as $$$$$$13 from "./sections/join.tsx";
+import * as $$$$$$14 from "./sections/prices.tsx";
+import * as $$$$$$15 from "./sections/signup.tsx";
 import * as $$$$$$11 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
@@ -33,12 +36,15 @@ const manifest = {
     "site/sections/Footer/Footer.tsx": $$$$$$8,
     "site/sections/Header/Header.tsx": $$$$$$9,
     "site/sections/ItWorks.tsx": $$$$$$10,
-    "site/sections/prices.tsx": $$$$$$13,
+    "site/sections/join.tsx": $$$$$$13,
+    "site/sections/prices.tsx": $$$$$$14,
+    "site/sections/signup.tsx": $$$$$$15,
     "site/sections/Theme/Theme.tsx": $$$$$$11,
   },
   "apps": {
-    "site/apps/decohub.ts": $$$$$$$$$$$0,
-    "site/apps/site.ts": $$$$$$$$$$$1,
+    "site/apps/deco/htmx.ts": $$$$$$$$$$$0,
+    "site/apps/decohub.ts": $$$$$$$$$$$1,
+    "site/apps/site.ts": $$$$$$$$$$$2,
   },
   "name": "site",
   "baseUrl": import.meta.url,
