@@ -2,8 +2,8 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $$$$$$$$$$$0 from "./apps/deco/htmx.ts";
-import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$0 from "./apps/deco/analytics.ts";
+import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/Content/Bounties.tsx";
 import * as $$$$$$1 from "./sections/Content/BountiesCard.tsx";
@@ -44,8 +44,8 @@ const manifest = {
     "site/sections/Theme/Theme.tsx": $$$$$$12,
   },
   "apps": {
-    "site/apps/deco/htmx.ts": $$$$$$$$$$$0,
-    "site/apps/decohub.ts": $$$$$$$$$$$1,
+    "site/apps/deco/analytics.ts": $$$$$$$$$$$0,
+    "site/apps/deco/htmx.ts": $$$$$$$$$$$1,
     "site/apps/site.ts": $$$$$$$$$$$2,
   },
   "name": "site",

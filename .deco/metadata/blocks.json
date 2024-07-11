@@ -27,14 +27,6 @@
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
   },
-  "/.deco/blocks/decohub.json": {
-    "blockType": "apps",
-    "__resolveType": "site/apps/decohub.ts"
-  },
-  "/.deco/blocks/htmx.json": {
-    "blockType": "apps",
-    "__resolveType": "decohub/apps/htmx.ts"
-  },
   "/.deco/blocks/site.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/site.ts"
@@ -100,5 +92,13 @@
   "/.deco/blocks/Preview%20%2Fsections%2FPricesUS.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/PricesUS.tsx"
+  },
+  "/.deco/blocks/deco-analytics.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/deco/analytics.ts"
+  },
+  "/.deco/blocks/deco-htmx.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/deco/htmx.ts"
   }
 }
