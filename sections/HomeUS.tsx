@@ -1,5 +1,5 @@
-import clx from "../../sdk/clx.ts";
-import Drawer from "site/components/ui/Drawer.tsx";
+import clx from "../sdk/clx.ts";
+import Drawer from "../components/ui/Drawer.tsx";
 
 /** @titleBy label */
 export interface NavItem {
@@ -18,8 +18,8 @@ export interface Props {
 }
 
 function Header({ title, navItens, currentPath }: Props) {
-  const isEnglish = currentPath === '/us';
-  const toggleLanguageUrl = isEnglish ? '/' : '/us';
+  const isEnglish = currentPath === '/';
+  const toggleLanguageUrl = isEnglish ? '/' : '/';
 
   return (
     <header class="container h-[85px] py-6 flex justify-between items-center">
@@ -51,8 +51,8 @@ function Header({ title, navItens, currentPath }: Props) {
               class="absolute w-8 h-8 bg-white rounded-full shadow-md transform transition-transform duration-300"
               style={{ left: isEnglish ? '10px' : '0px' }}
             />
-            <span class="absolute left-2 text-sm text-black">PT</span>
-            <span class="absolute right-2 text-sm text-white">EN</span>
+            <span class="absolute left-2 text-sm text-black">EN</span>
+            <span class="absolute right-2 text-sm text-white">PT</span>
           </a>
         </div>
       )}

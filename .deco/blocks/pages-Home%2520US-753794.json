@@ -3,29 +3,7 @@
   "path": "/us",
   "sections": [
     {
-      "__resolveType": "site/sections/Header/Header.tsx",
-      "title": {
-        "text": "GetSiteDone.com",
-        "position": "left"
-      },
-      "navItens": [
-        {
-          "url": "#steps",
-          "label": "How it works"
-        },
-        {
-          "label": "Completed sites",
-          "url": "#sitesDones"
-        },
-        {
-          "url": "#benefits",
-          "label": "Benefits"
-        },
-        {
-          "label": "FAQ",
-          "url": "#faq"
-        }
-      ]
+      "__resolveType": "Preview /sections/HomeUS.tsx"
     },
     {
       "__resolveType": "site/sections/Content/Hero.tsx",

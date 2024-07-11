@@ -100,5 +100,9 @@
   "/.deco/blocks/deco-htmx.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/deco/htmx.ts"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FHomeUS.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/HomeUS.tsx"
   }
 }

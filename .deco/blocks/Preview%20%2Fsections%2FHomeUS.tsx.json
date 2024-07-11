@@ -1,0 +1,25 @@
+{
+  "__resolveType": "site/sections/HomeUS.tsx",
+  "title": {
+    "position": "left",
+    "text": "Getsitedone.com"
+  },
+  "navItens": [
+    {
+      "url": "#steps",
+      "label": "How it works"
+    },
+    {
+      "label": "Completed sites",
+      "url": "#sitesDones"
+    },
+    {
+      "url": "#benefits",
+      "label": "Benefits"
+    },
+    {
+      "label": "FAQ",
+      "url": "#faq"
+    }
+  ]
+}
