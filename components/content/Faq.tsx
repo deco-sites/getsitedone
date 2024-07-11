@@ -16,9 +16,9 @@ export interface Props {
   id?: string;
 }
 
-function Faq({ accordions, title, titlePosition, section }: Props) {
+function Faq({ accordions, title, titlePosition, section, id }: Props) {
   return (
-    <div class="container mx-auto px-8 flex flex-col items-center gap-16 py-16">
+    <div id={id || "faq"} class="container mx-auto px-8 flex flex-col items-center gap-16 py-16">
       {title && (
         <h1 class="text-6xl font-extrabold text-center text-gray-900 mb-15">
           {title}
