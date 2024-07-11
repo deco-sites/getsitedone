@@ -32,32 +32,32 @@
       "number": "552139504860",
       "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/b129906c-bdfc-4738-991c-e37efeec7310",
       "carousel": [
-    {
-      "text": "Get a professional website proposal in 1 day"
-    },
-    {
-      "text": "Built by experts from around the world"
-    },
-    {
-      "text": "Fully editable with analytics using deco.cx"
-    },
-    {
-      "text": "Get a professional website proposal in 1 day"
-    },
-    {
-      "text": "Built by experts from around the world"
-    },
-    {
-      "text": "Fully editable with analytics using deco.cx"
-    },
-    {
-      "text": "Get a professional website proposal in 1 day"
-    },
-    {
-      "text": "Built by experts from around the world"
-    },
-    {
-      "text": "Fully editable with analytics using deco.cx"
+        {
+          "text": "Get a professional website proposal in 1 day"
+        },
+        {
+          "text": "Built by experts from around the world"
+        },
+        {
+          "text": "Fully editable with analytics using deco.cx"
+        },
+        {
+          "text": "Get a professional website proposal in 1 day"
+        },
+        {
+          "text": "Built by experts from around the world"
+        },
+        {
+          "text": "Fully editable with analytics using deco.cx"
+        },
+        {
+          "text": "Get a professional website proposal in 1 day"
+        },
+        {
+          "text": "Built by experts from around the world"
+        },
+        {
+          "text": "Fully editable with analytics using deco.cx"
         }
       ],
       "placeholder": "I need a website for my fintech",
@@ -105,7 +105,7 @@
       "backgroundColor": "#fafafa"
     },
     {
-      "__resolveType": "site/sections/prices.tsx"
+      "__resolveType": "Preview /sections/prices.tsx"
     },
     {
       "__resolveType": "site/sections/Content/Testimonials.tsx",
