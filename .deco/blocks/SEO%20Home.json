@@ -1,1 +1,12 @@
-{"__resolveType":"website/sections/Seo/SeoV2.tsx","titleTemplate":"%s","descriptionTemplate":"%s","type":"website","jsonLDs":[],"title":"GetSiteDone | Sites de alta-performance construídos por desenvolvedores ","description":"GetSiteDone conecta negócios com desenvolvedores para construírem seus sites","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/974ab453-21b3-4103-8164-41f7aaf28c3f","favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/3f749d21-d54f-477e-931c-702da057e20f","canonical":"https://getsitedone.pro"}
+{
+  "__resolveType": "website/sections/Seo/SeoV2.tsx",
+  "titleTemplate": "%s",
+  "descriptionTemplate": "%s",
+  "type": "website",
+  "jsonLDs": [],
+  "title": "GetSiteDone | Sites de alta-performance construídos por desenvolvedores ",
+  "description": "GetSiteDone conecta negócios com desenvolvedores para construírem seus sites",
+  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/974ab453-21b3-4103-8164-41f7aaf28c3f",
+  "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/ccfbd34a-0d3c-4118-9207-6c007e02ed35",
+  "canonical": "https://getsitedone.pro"
+}
