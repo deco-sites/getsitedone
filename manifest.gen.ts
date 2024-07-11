@@ -19,9 +19,10 @@ import * as $$$$$$9 from "./sections/Header/Header.tsx";
 import * as $$$$$$10 from "./sections/HomeUS.tsx";
 import * as $$$$$$11 from "./sections/ItWorks.tsx";
 import * as $$$$$$15 from "./sections/join.tsx";
-import * as $$$$$$16 from "./sections/prices.tsx";
+import * as $$$$$$16 from "./sections/joinen.tsx";
+import * as $$$$$$17 from "./sections/prices.tsx";
 import * as $$$$$$12 from "./sections/PricesUS.tsx";
-import * as $$$$$$17 from "./sections/signup.tsx";
+import * as $$$$$$18 from "./sections/signup.tsx";
 import * as $$$$$$13 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
@@ -40,9 +41,10 @@ const manifest = {
     "site/sections/HomeUS.tsx": $$$$$$10,
     "site/sections/ItWorks.tsx": $$$$$$11,
     "site/sections/join.tsx": $$$$$$15,
-    "site/sections/prices.tsx": $$$$$$16,
+    "site/sections/joinen.tsx": $$$$$$16,
+    "site/sections/prices.tsx": $$$$$$17,
     "site/sections/PricesUS.tsx": $$$$$$12,
-    "site/sections/signup.tsx": $$$$$$17,
+    "site/sections/signup.tsx": $$$$$$18,
     "site/sections/Theme/Theme.tsx": $$$$$$13,
   },
   "apps": {

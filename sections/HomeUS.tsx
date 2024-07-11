@@ -37,7 +37,7 @@ function Header({ title, navItens, currentPath }: Props) {
           ))}
           <a
             class="bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-2 px-4 border border-[#9900E5] hover:border-transparent rounded-full"
-            href="/join"
+            href="/joinen"
             style={{ padding: '10px 20px', borderRadius: '25px' }}
           >
             Sign Up for Makers

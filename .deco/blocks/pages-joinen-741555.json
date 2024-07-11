@@ -1,9 +1,9 @@
 {
-  "name": "joinpt",
-  "path": "/joinpt",
+  "name": "joinen",
+  "path": "/joinen",
   "sections": [
     {
-      "__resolveType": "site/sections/signup.tsx"
+      "__resolveType": "Preview /sections/joinen.tsx"
     }
   ],
   "seo": {

@@ -66,7 +66,7 @@
     "__resolveType": "website/pages/Page.tsx"
   },
   "/.deco/blocks/pages-join-818029.json": {
-    "name": "join",
+    "name": "joinpt",
     "path": "/joinpt",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
@@ -104,5 +104,19 @@
   "/.deco/blocks/Preview%20%2Fsections%2FHomeUS.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/HomeUS.tsx"
+  },
+  "/.deco/blocks/pages-joinen-741555.json": {
+    "name": "joinen",
+    "path": "/joinen",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2Fjoin.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/join.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2Fjoinen.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/joinen.tsx"
   }
 }

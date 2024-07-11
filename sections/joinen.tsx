@@ -4,8 +4,8 @@ export default function Section() {
   return (
     <div>
       <iframe
-        id="softr-27973f8d-e3fe-43c0-a6fd-acd092f8bad4-user-accounts1"
-        src="https://experts.deco.cx/embed/pages/27973f8d-e3fe-43c0-a6fd-acd092f8bad4/blocks/user-accounts1"
+        id="softr-5ecab925-9994-41b5-8983-f22223958eaf-user-accounts1"
+        src="https://experts.deco.cx/embed/pages/5ecab925-9994-41b5-8983-f22223958eaf/blocks/user-accounts1"
         width="100%"
         height="1000"
         scrolling="no"
@@ -14,7 +14,7 @@ export default function Section() {
       ></iframe>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>
       <script>
-        {`iFrameResize({ checkOrigin: false, log: true }, '#softr-27973f8d-e3fe-43c0-a6fd-acd092f8bad4-user-accounts1');`}
+        {`iFrameResize({ checkOrigin: false, log: true }, '#softr-5ecab925-9994-41b5-8983-f22223958eaf-user-accounts1');`}
       </script>
     </div>
   );
