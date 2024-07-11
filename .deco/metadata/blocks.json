@@ -67,7 +67,7 @@
   },
   "/.deco/blocks/pages-join-818029.json": {
     "name": "join",
-    "path": "/join",
+    "path": "/joinpt",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
@@ -77,7 +77,7 @@
   },
   "/.deco/blocks/pages-Home%2520US-753794.json": {
     "name": "Home US",
-    "path": "/us",
+    "path": "/en",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },

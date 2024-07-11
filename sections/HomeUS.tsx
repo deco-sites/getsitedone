@@ -81,8 +81,8 @@ function Header({ title, navItens, currentPath }: Props) {
                 class="absolute w-8 h-8 bg-white rounded-full shadow-md transform transition-transform duration-300"
                 style={{ left: isEnglish ? '10px' : '0px' }}
               />
-              <span class="absolute left-2 text-sm text-black">PT</span>
-              <span class="absolute right-2 text-sm text-white">EN</span>
+              <span class="absolute left-2 text-sm text-black">EN</span>
+              <span class="absolute right-2 text-sm text-white">PT</span>
             </a>
           </ul>
         </Drawer>
