@@ -106,8 +106,8 @@
     "__resolveType": "site/sections/HomeUS.tsx"
   },
   "/.deco/blocks/pages-joinen-741555.json": {
-    "name": "joinen",
-    "path": "/joinen",
+    "name": "join",
+    "path": "/join",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },

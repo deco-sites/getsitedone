@@ -1,6 +1,6 @@
 {
-  "name": "joinen",
-  "path": "/joinen",
+  "name": "join",
+  "path": "/join",
   "sections": [
     {
       "__resolveType": "Preview /sections/joinen.tsx"
