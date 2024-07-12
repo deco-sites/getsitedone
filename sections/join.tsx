@@ -1,4 +1,3 @@
-interface Props {}
 
 export default function Section() {
   return (
