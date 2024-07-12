@@ -36,7 +36,7 @@ function Header({ title, navItens, currentPath }: Props) {
             class="bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-2 px-4 border border-[#9900E5] hover:border-transparent rounded-full px-5 py-2.5"
             href="/joinpt"
           >
-            Inscreva-se para criadores
+            Inscreva-se para Makers
           </a>
           <a
             href={toggleLanguageUrl}
@@ -62,7 +62,7 @@ function Header({ title, navItens, currentPath }: Props) {
                 class="bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-2 px-4 border border-[#9900E5] hover:border-transparent rounded-full px-5 py-2.5"
                 href="/join"
               >
-                Inscreva-se para criadores  
+                Inscreva-se para Makers
               </a>
             </li>
             <li>
