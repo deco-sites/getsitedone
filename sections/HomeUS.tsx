@@ -1,52 +1,70 @@
-import Drawer from "../components/ui/Drawer.tsx";
+import Drawer from "site/components/ui/Drawer.tsx";
+import Image from "apps/website/components/Image.tsx";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
-/** @titleBy label */
 export interface NavItem {
   url: string;
   label: string;
 }
 
+export interface ActionButton {
+  label: string;
+  url: string;
+  style: string; // Can be used for additional styles or classes
+  isLanguageToggle?: boolean; // To identify the language toggle button
+}
+
 export interface Props {
   title: {
-    text: string;
+    image: ImageWidget;
     position: "center" | "left" | "right";
   };
 
   navItens?: NavItem[];
-  currentPath: string; // Adicione esta prop para passar a rota atual
+  actionButtons?: ActionButton[];
+  currentPath: string;
 }
 
-function Header({ title, navItens, currentPath }: Props) {
-  const isEnglish = currentPath === '/';
-  const toggleLanguageUrl = isEnglish ? '/pt' : '/';
+function Header({ title, navItens, actionButtons, currentPath }: Props) {
+  const isEnglish = currentPath === '/en';
+  const toggleLanguageUrl = isEnglish ? '/' : '/en';
 
   return (
     <header class="container h-[85px] py-6 flex justify-between items-center">
-      <p class={`text-[25px] text-[#9900E5] font-bold ${title.position === 'center' ? 'text-center' : title.position === 'left' ? 'text-left' : 'text-right'}`}>
-        {title.text}
-      </p>
+      <Image
+        src={title.image}
+        alt="Title Image"
+        class={`h-10 ${title.position === 'center' ? 'mx-auto' : title.position === 'left' ? 'ml-0' : 'mr-0'}`}
+      />
       {/** DESKTOP */}
       {navItens && (
         <div class="flex justify-start gap-6 h-5 items-center max-lg:hidden">
           {navItens.map(({ label, url }) => (
             <a class="text-sm font-medium text-[#616B6B]" href={url} key={url}>{label}</a>
           ))}
-          <a
-            class="bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-2 px-4 border border-[#9900E5] hover:border-transparent rounded-full"
-            href="/join"
-          >
-            Sign Up for Makers
-          </a>
-          <a
-            href={toggleLanguageUrl}
-            class="relative inline-flex items-center h-8 w-20 rounded-full cursor-pointer transition-colors duration-300 focus:outline-none bg-[#9900E4]"
-          >
-            <span
-              class={`absolute w-8 h-8 bg-white rounded-full shadow-md transform transition-transform duration-300 ${isEnglish ? 'translate-x-12' : 'translate-x-0'}`}
-            />
-            <span class="absolute left-2 text-sm text-black">EN</span>
-            <span class="absolute right-2 text-sm text-white">PT</span>
-          </a>
+          {actionButtons?.map(({ label, url, style, isLanguageToggle }) => (
+            !isLanguageToggle ? (
+              <a
+                class={`bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-2 px-4 border border-[#9900E5] hover:border-transparent rounded-full px-5 py-2.5 ${style}`}
+                href={url}
+                key={url}
+              >
+                {label}
+              </a>
+            ) : (
+              <a
+                href={toggleLanguageUrl}
+                class="relative inline-flex items-center h-8 w-20 rounded-full cursor-pointer transition-colors duration-300 focus:outline-none bg-[#9900E4]"
+                key={url}
+              >
+                <span
+                  class={`absolute w-8 h-8 bg-white rounded-full shadow-md transform transition-transform duration-300 ${isEnglish ? 'left-2' : 'left-0'}`}
+                />
+                <span class="absolute left-2 text-sm text-black">EN</span>
+                <span class="absolute right-2 text-sm text-white">PT</span>
+              </a>
+            )
+          ))}
         </div>
       )}
       {/** MOBILE */}
@@ -56,26 +74,31 @@ function Header({ title, navItens, currentPath }: Props) {
             {navItens.map(({ label, url }) => (
               <li key={url}><a href={url}>{label}</a></li>
             ))}
-            <li>
-              <a
-                class="bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-2 px-4 border border-[#9900E5] hover:border-transparent rounded-full"
-                href="/join"
-              >
-                Sign Up for Makers
-              </a>
-            </li>
-            <li>
-              <a
-                href={toggleLanguageUrl}
-                class="relative inline-flex items-center h-8 w-20 rounded-full cursor-pointer transition-colors duration-300 focus:outline-none bg-[#9900E4]"
-              >
-                <span
-                  class={`absolute w-8 h-8 bg-white rounded-full shadow-md transform transition-transform duration-300 ${isEnglish ? 'translate-x-12' : 'translate-x-0'}`}
-                />
-                <span class="absolute left-2 text-sm text-black">EN</span>
-                <span class="absolute right-2 text-sm text-white">PT</span>
-              </a>
-            </li>
+            {actionButtons?.map(({ label, url, style, isLanguageToggle }) => (
+              !isLanguageToggle ? (
+                <li key={url}>
+                  <a
+                    class={`bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-2 px-4 border border-[#9900E5] hover:border-transparent rounded-full px-5 py-2.5 ${style}`}
+                    href={url}
+                  >
+                    {label}
+                  </a>
+                </li>
+              ) : (
+                <li key={url}>
+                  <a
+                    href={toggleLanguageUrl}
+                    class="relative inline-flex items-center h-8 w-20 rounded-full cursor-pointer transition-colors duration-300 focus:outline-none bg-[#9900E4]"
+                  >
+                    <span
+                      class={`absolute w-8 h-8 bg-white rounded-full shadow-md transform transition-transform duration-300 ${isEnglish ? 'left-2' : 'left-0'}`}
+                    />
+                    <span class="absolute left-2 text-sm text-black">PT</span>
+                    <span class="absolute right-2 text-sm text-white">EN</span>
+                  </a>
+                </li>
+              )
+            ))}
           </ul>
         </Drawer>
       )}
