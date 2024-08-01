@@ -46,7 +46,7 @@ function Header({ title, navItens, actionButtons, currentPath }: Props) {
           {actionButtons?.map(({ label, url, style, isLanguageToggle }) => (
             !isLanguageToggle ? (
               <a
-                class={`bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-2 px-4 border border-[#9900E5] hover:border-transparent rounded-full px-5 py-2.5 ${style}`}
+                class={`bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-albertsans hover:text-white py-1.5 px-4 border border-[#9900E5] hover:border-transparent rounded-full ${style}`}
                 href={url}
                 key={url}
               >
@@ -79,7 +79,7 @@ function Header({ title, navItens, actionButtons, currentPath }: Props) {
               !isLanguageToggle ? (
                 <li key={url}>
                   <a
-                    class={`bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-2 px-4 border border-[#9900E5] hover:border-transparent rounded-full px-5 py-2.5 ${style} block text-center text-xs`}
+                    class={`bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-1.5 px-4 border border-[#9900E5] hover:border-transparent rounded-full ${style} block text-center text-xs`}
                     href={url}
                   >
                     {label}
