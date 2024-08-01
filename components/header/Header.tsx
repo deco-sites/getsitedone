@@ -34,6 +34,7 @@ function Header({ title, navItens, actionButtons, currentPath }: Props) {
       <Image
         src={title.image}
         alt="Title Image"
+        width={185} 
         class={`h-10 ${title.position === 'center' ? 'mx-auto' : title.position === 'left' ? 'ml-0' : 'mr-0'}`}
       />
       {/** DESKTOP */}
@@ -78,7 +79,7 @@ function Header({ title, navItens, actionButtons, currentPath }: Props) {
               !isLanguageToggle ? (
                 <li key={url}>
                   <a
-                    class={`bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-2 px-4 border border-[#9900E5] hover:border-transparent rounded-full px-5 py-2.5 ${style} block text-center text-xs`} // Alterações feitas aqui
+                    class={`bg-transparent hover:bg-[#9900E5] text-[#9900E5] font-semibold hover:text-white py-2 px-4 border border-[#9900E5] hover:border-transparent rounded-full px-5 py-2.5 ${style} block text-center text-xs`}
                     href={url}
                   >
                     {label}
