@@ -35,8 +35,8 @@
         {
           "isLanguageToggle": true,
           "label": ".",
-          "url": ".",
-          "style": "."
+          "style": ".",
+          "url": "/"
         }
       ],
       "currentPath": "."
