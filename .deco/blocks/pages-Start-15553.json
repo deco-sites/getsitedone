@@ -10,7 +10,7 @@
       "title": {
         "text": "GetSiteDone.com",
         "position": "left",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/8130c606-206d-48f2-a5f7-1030c853a4a4"
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/fe8cf852-0fd0-49f4-b327-bca3b7ce8474"
       },
       "navItens": [
         {
@@ -122,7 +122,40 @@
       "backgroundColor": "#fafafa"
     },
     {
-      "__resolveType": "site/sections/prices.tsx"
+      "__resolveType": "site/sections/prices.tsx",
+      "services": [
+        {
+          "features": [
+            "Header ",
+            "4 seções ",
+            "Footer"
+          ],
+          "title": "Landing Page simples",
+          "price": "R$499"
+        },
+        {
+          "features": [
+            "Landing page complexa",
+            "3 páginas em um site único"
+          ],
+          "title": "Landing Page complexa",
+          "price": "R$999"
+        },
+        {
+          "features": [
+            "Website com infraestrutura (back-end) e banco de dados."
+          ],
+          "title": "Site com integrações",
+          "price": "R$2499"
+        },
+        {
+          "features": [
+            "Ecommerce de produto único com integração com sistemas de pagamento."
+          ],
+          "title": "Website Ecommerce",
+          "price": "R$4999"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Content/Testimonials.tsx",
