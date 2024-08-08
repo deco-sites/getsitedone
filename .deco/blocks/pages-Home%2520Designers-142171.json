@@ -1,6 +1,6 @@
 {
-  "name": "Home",
-  "path": "/",
+  "name": "Home Designers",
+  "path": "/designers",
   "sections": [
     {
       "__resolveType": "SEO Home"
@@ -10,7 +10,7 @@
       "title": {
         "text": "GetSiteDone.com",
         "position": "left",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/8130c606-206d-48f2-a5f7-1030c853a4a4"
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/08ac4b39-e092-4206-9445-092c2dfca510"
       },
       "navItens": [
         {
@@ -42,7 +42,8 @@
           "url": ".",
           "style": "."
         }
-      ]
+      ],
+      "currentPath": "/designers"
     },
     {
       "__resolveType": "site/sections/Content/Hero.tsx",
@@ -79,7 +80,7 @@
         }
       ],
       "placeholder": "Preciso de um site para minha fintech",
-      "text": "<div style=\"display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 8px;\"><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 4.5vw;\">Solicite sites que </span></p><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 4.5vw;\">seguem a sua</span></p><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 4.5vw;\">identidade visual.</span></p><p>&nbsp;</p></div><p class=\"subheading\" style=\"font-weight: 400; font-size: 1.2vw; line-height: 2vw; letter-spacing: -0.4px; color: #616b6b; text-align: center;\">Descreva seu site! Em poucas semanas, o desenvolvedor ideal entregará seu projeto.</p><style>@media only screen and (max-width: 600px) {.heading {font-size: 7vw !important; line-height: 8.5vw !important;} .heading span {font-size: 10.5vw !important;} .subheading {font-size: 3.8vw !important; line-height: 5vw !important;}}  @media only screen and (min-width: 601px) and (max-width: 1024px) {.heading {font-size: 5.5vw !important; line-height: 5vw !important;} .heading span {font-size: 7vw !important;} .subheading {font-size: 3.5vw !important; line-height: 3.5vw !important;}}</style>",
+      "text": "<div style=\"display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 12px;\" data-mce-style=\"display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 12px;\"><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\" data-mce-style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 54px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\" data-mce-style=\"font-size: 54px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">Continue criando </span></p><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\" data-mce-style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 54px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\" data-mce-style=\"font-size: 54px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">enquanto </span><span style=\"font-size: 54px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\" data-mce-style=\"font-size: 54px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">nós</span></p><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\" data-mce-style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 54px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\" data-mce-style=\"font-size: 54px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">implementamos</span><span style=\"font-size: 54px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\" data-mce-style=\"font-size: 54px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">&nbsp;</span></p><p><br data-mce-bogus=\"1\"></p></div><p class=\"subheading\" style=\"font-weight: 400; font-size: 1.2vw; line-height: 2vw; letter-spacing: -0.4px; color: #616b6b; text-align: center;\" data-mce-style=\"font-weight: 400; font-size: 1.2vw; line-height: 2vw; letter-spacing: -0.4px; color: #616b6b; text-align: center;\"><span style=\"font-size: 16pt;\" data-mce-style=\"font-size: 16pt;\">Envie seu protótipo e experencie sua materialização pixel-perfect em até 15 dias</span></p>",
       "defaultMessage": "Oi! Gostaria de saber como poderia fazer o meu site:",
       "buttonText": "Enviar"
     },
@@ -90,8 +91,8 @@
       "cards": [
         {
           "height": 580,
-          "title": "Descreva o seu site para um humano ",
-          "description": "<p>Descreva o que você precisa – desde design e funcionalidade até o prazo. Anexe referências ou um link do Figma para guiar os desenvolvedores.</p>",
+          "title": "Envie seu protótipo para análise da equipe GetSiteDone",
+          "description": "<p>Descreva o que você precisa – desde design e funcionalidade até o prazo. Anexe um link do Figma para guiar os desenvolvedores.</p>",
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/93e3ca16-62a3-4337-9a1a-b7147b8cea72",
           "alt": "One",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/0419ce91-92c4-4e97-a7ee-a843934e69f0",
@@ -111,7 +112,7 @@
         {
           "alt": "three",
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/c995b5c0-315c-4cfc-a24a-1803c32a116a",
-          "title": "Receba seu site em poucos dias",
+          "title": "Receba o site em poucos dias pixel-perfect",
           "description": "<p>Assuma o controle do seu site com deco.cx: a plataforma permite total autonomia, sem precisar programar ou acionar o desenvolvedor.</p>",
           "width": 390,
           "height": 580,
@@ -137,7 +138,7 @@
             "alt": "Mariana"
           },
           "project": {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/c92b79d9-2a96-4e00-ad85-51ba1fb2eb33",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/42c318bc-4080-465a-8299-fd6821e0e8a0",
             "title": "Preciso de um site para minha startup que forneça serviços de educação corporativa.",
             "link": "https://www.mira.lc"
           }
@@ -151,21 +152,21 @@
           },
           "project": {
             "title": "Preciso de uma landing page para apresentar startups de empreendedores brasileiros de tech.",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/abb5c3d8-7a15-4856-9728-884261351976",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/960acf40-d483-4124-bfc2-3773b7b076df",
             "link": "https://www.madeinbrazil.tech"
           }
         },
         {
           "user": {
-            "headline": "Nutricionista",
-            "name": "Taíssa Castello, Nutricionista",
-            "alt": "Taíssa",
-            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/a54d8aee-85e1-47a1-bdc3-c0df293355dd"
+            "headline": "Co-Founder at deX",
+            "name": "Gustavo Beltrami",
+            "alt": "Gustavo",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/7698aa5f-4eec-458f-8015-ab44bd5e6a27"
           },
           "project": {
-            "link": "https://www.taissacastello.com.br",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/16d2b94b-241b-4695-b172-4f9242ed7491",
-            "title": "site institucional de nutricionista, com seção sobre, novidades, receitas e cta ao final."
+            "link": "https://dexlabs.deco.site/",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/6443031c-5a72-4717-9e97-1adf50c94823",
+            "title": "Landing page para a minha plataforma de análises, ciência de dados e IA "
           }
         }
       ]
@@ -178,10 +179,10 @@
         {
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/fe60fb5e-b4d3-4fdd-9058-1daf36ad9187",
           "alt": "edit",
-          "description": "<p>Tenha acesso à equipe GetSiteDone pelo WhatsApp com humanos de verdade para qualquer necessidade do início ao fim da implementação do seu site. </p>",
+          "description": "<p>Tenha contato direto com o desenvolvedor para qualquer necessidade do início ao fim da implementação do seu site. </p>",
           "width": 416,
           "height": 324,
-          "title": "Suporte completo da equipe GetSiteDone"
+          "title": "Suporte completo do desenvolvedor "
         },
         {
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/82ddfed5-4492-40ba-a7e9-9e39270d02df",
@@ -195,7 +196,7 @@
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/a1aa515c-f3c6-4fba-be50-897a0e0868d0",
           "alt": "users",
           "title": "Comunidade orientada pela excelência",
-          "description": "<p>Acesse a criatividade e a experiência de mais de 3.000 desenvolvedores avaliados na nossa comunidade.</p>",
+          "description": "<p>Acesse a criatividade e a experiência de mais de 4.500 desenvolvedores avaliados e treinados na nossa comunidade.</p>",
           "width": 416,
           "height": 320
         }
@@ -206,44 +207,44 @@
       "title": "<p>Seu site entregue em <strong><span style=\"color: rgb(2, 246, 124)\">deco.cx</span></strong></p>",
       "tabs": [
         {
-          "title": "Aumente o Core Web Vitals e o PageSpeed",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a7933919-5f38-4055-83fc-830ca29fe3ab",
-          "description": "Obtenha mais visibilidade proporcionando experiências digitais de última geração que carregam instantaneamente.",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+          "title": "Controle total para editar em tempo real",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/96891fef-e54d-473f-a29f-156756d38176",
+          "description": "Com o CMS da deco.cx, você está equipado para atualizar e editar seu site à medida que seu negócio evolui - sem a necessidade de desenvolvedores!",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/258cb790-f265-425b-ab4e-82d87be60dd3"
         },
         {
-          "title": "Integração perfeita com bases de dados ",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4716aca7-9cc1-4f76-8099-89082d7a5573",
-          "description": "Enriqueça a experiência dos seus visitantes aproveitando facilmente qualquer conteúdo e dados dinâmicos de terceiros.",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+          "title": "Tecnologias Modernas",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c80fd09d-36a2-43f1-b9e2-e575115338cc",
+          "description": "Baseado em uma conjunto de tecnologias eficiente, segura e preparada para o futuro: Deno, Tailwind, JSX, TypeScript e HTMX.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/32a543e5-ae46-48c8-bcfe-041d86eec2b2"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5fcf67e5-475a-4553-a0fb-b9930115fd49",
-          "title": "Global edge para velocidade sem espera",
-          "description": "Implemente seu site em uma infraestrutura global de ponta, projetada para escalabilidade instantânea.",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/f708dcf7-c44b-4ba1-a382-34f574cda3fd",
+          "title": "Configurações avançadas de SEO",
+          "description": "Configurações nativas que fornecem todas as ferramentas necessárias para otimização de mecanismos de pesquisa em qualquer plataforma.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/7d056ade-d5f4-4f4b-8ec6-56083f1e332e"
+        },
+        {
+          "title": "Global edge para velocidade máxima",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/81091552-e5d6-4b9d-9748-ce9fbc9e0c28",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/00c7735f-8d2b-4723-9e11-fca1917d08cb",
+          "description": "Implemente seu site em uma infraestrutura global de ponta, projetada para escalabilidade instantânea."
         },
         {
           "title": "deco.pilot",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/96200ebc-bb33-4f11-9c26-85b68961c743",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
           "description": "Assistente de IA para geração de código e conteúdo para ajudá-lo a completar seu site mais rápido.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/96200ebc-bb33-4f11-9c26-85b68961c743",
           "label": {
             "name": "NOVO!",
             "color": "#02F67C"
           }
         },
         {
-          "title": "Controle total para editar em tempo real",
-          "description": "Com o CMS da deco.cx, você está equipado para atualizar e editar seu site à medida que seu negócio evolui - sem a necessidade de desenvolvedores!",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2436533f-d50a-4df8-97c7-cd176dece311"
-        },
-        {
-          "title": "Tecnologias Modernas",
-          "description": "Baseado em uma conjunto de tecnologias eficiente, segura e preparada para o futuro: Deno, Tailwind, JSX, TypeScript e HTMX.",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/32a543e5-ae46-48c8-bcfe-041d86eec2b2",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c80fd09d-36a2-43f1-b9e2-e575115338cc"
+          "title": "Integração perfeita com bases de dados ",
+          "description": "Enriqueça a experiência dos seus visitantes aproveitando facilmente qualquer conteúdo e dados dinâmicos de terceiros.",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/4c1d1923-0714-41d3-a199-bed7ec5ae096",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/a835c775-8e31-4be8-802e-ea2dc92dd30b"
         }
       ],
       "trackId": "1"
@@ -256,15 +257,15 @@
       "accordions": [
         {
           "title": "O que o GetSiteDone entrega exatamente?",
-          "description": "<p>O GetSiteDone te conecta com o desenvolvedor ideal para o seu projeto, acompanha o desenvolvimento, garantindo a qualidade da entrega. Entendemos melhor a sua demanda e selecionamos em nossa comunidade de desenvolvedores LATAM de alto nível o profissional que possui capacidade técnica e qualidade para executar o seu projeto.</p>"
+          "description": "<p>O GetSiteDone te conecta com o desenvolvedor ideal para o seu projeto e acompanha o desenvolvimento da entrega. Entendemos melhor a sua demanda e selecionamos em nossa comunidade de desenvolvedores LATAM de alto nível o profissional que possui capacidade técnica e qualidade para executar o seu projeto.</p>"
         },
         {
           "title": "deco.cx e GetSiteDone",
-          "description": "<p>O GetSiteDone tem uma parceria com a deco.cx que tem como intuito levar a tecnologia que já está nos websites das maiores empresas do Brasil (Osklen, Casa & Video, Zee.Dog, entre outras) para todos os negócios e pessoas que querem um site de alta performance. Deco.cx é a plataforma front-end que preenche a lacuna entre os construtores básicos de sites sem código e as configurações complexas de código completo, permitindo que empresas de todos os tamanhos criem experiências web de alto desempenho, totalmente personalizadas e nativas de IA. A plataforma de código aberto reúne o que há de melhor em estrutura, hospedagem, CMS, editor visual e editor de código.</p>"
+          "description": "<p>O GetSiteDone é uma iniciativa da deco.cx que tem como intuito levar a tecnologia que já está nos websites das maiores empresas do Brasil (Osklen, Casa &amp; Video, Zee.Dog, entre outras) para todos os negócios e pessoas que querem um site de alta performance. Deco.cx é a plataforma front-end que preenche a lacuna entre os construtores básicos de sites sem código e as configurações complexas de código completo, permitindo que empresas de todos os tamanhos criem experiências web de alto desempenho, totalmente personalizadas e nativas de IA. A plataforma de código aberto reúne o que há de melhor em estrutura, hospedagem, CMS, editor visual e editor de código.</p>"
         },
         {
           "title": "Valores e Pagamentos",
-          "description": "<p>100% do seu investimento vai direto para o desenvolvedor selecionado para o projeto e o pagamento é feito através de PIX. Uma vez que o seu site está pronto, a mensalidade é de R$49 até 50 mil visualizações de página.</p>"
+          "description": "<p>O pagamento pode ser feito através de cartão de crédito, boleto ou PIX.</p><p>Uma vez que o seu site está pronto, será cobrada a mensalidade do plano PRO, da deco.cx, de R$49 até 50 mil pageviews de página mensais. A partir disso, é cobrado R$40 a cada 10 mil pageviews além do valor base.</p><p><br></p>"
         },
         {
           "title": "Como funcionam os prazos de entrega?",
@@ -272,7 +273,7 @@
         },
         {
           "title": "Como é a relação entre quem solicita um site e o desenvolvedor?",
-          "description": "<p>A partir do momento em que o desenvolvedor é escolhido para o seu projeto, o GetSiteDone pede autorização para compartilhar o contato entre as partes para o caso de dúvidas sobre o projeto. A comunicação é feita através do WhatsApp.</p>"
+          "description": "<p>A partir do momento em que o desenvolvedor é escolhido para o seu projeto, o GetSiteDone pede autorização para compartilhar o contato entre as partes para o caso de dúvidas sobre o projeto. A comunicação é feita através do Whatsapp e reuniões remotas, quando necessário.<!-- notionvc: 11e9c238-a102-4611-8346-45c65085f0ff --></p>"
         }
       ],
       "section": {
@@ -304,16 +305,8 @@
       "backgroundColor": "#fbf4ff"
     }
   ],
-  "__resolveType": "website/pages/Page.tsx",
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "titleTemplate": "%s",
-    "descriptionTemplate": "%s",
-    "type": "website",
-    "jsonLDs": [],
-    "title": "GetSiteDone | Sites de alta-performance construídos por desenvolvedores ",
-    "description": "GetSiteDone conecta negócios com desenvolvedores para construírem seus sites",
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/974ab453-21b3-4103-8164-41f7aaf28c3f",
-    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/3f749d21-d54f-477e-931c-702da057e20f"
-  }
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
 }
