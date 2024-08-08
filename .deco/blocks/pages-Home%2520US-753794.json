@@ -119,12 +119,46 @@
       "backgroundColor": "#fafafa"
     },
     {
-      "__resolveType": "Preview /sections/PricesUS.tsx"
+      "__resolveType": "site/sections/prices.tsx",
+      "services": [
+        {
+          "features": [
+            "Header",
+            "4 sections",
+            "Footer"
+          ],
+          "title": "Simple Landing Page",
+          "price": "U$99"
+        },
+        {
+          "features": [
+            "Complex landing page",
+            "3 pages in a single site"
+          ],
+          "title": "Complex Landing Page",
+          "price": "U$199"
+        },
+        {
+          "features": [
+            "Website with infrastructure (back-end) and database"
+          ],
+          "title": "Site with integrations",
+          "price": "U$499"
+        },
+        {
+          "features": [
+            "Single product e-commerce with payment system integration"
+          ],
+          "title": "E-commerce Website",
+          "price": "U$999"
+        }
+      ],
+      "title": "<p>Services</p>"
     },
     {
       "__resolveType": "site/sections/Content/Testimonials.tsx",
-      "id": "sitesDones",
       "title": "Clients",
+      "id": "sitesDones",
       "testimonials": [
         {
           "user": {
@@ -247,8 +281,8 @@
     },
     {
       "__resolveType": "site/sections/Content/Faq.tsx",
-      "id": "faq",
       "title": "FAQ",
+      "id": "faq",
       "titlePosition": "column",
       "accordions": [
         {
@@ -281,8 +315,8 @@
     },
     {
       "__resolveType": "site/sections/Content/Hero.tsx",
-      "backgroundColor": "#fbf4ff",
       "id": "bt-click-enviar",
+      "backgroundColor": "#fbf4ff",
       "number": "552139504860",
       "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/b129906c-bdfc-4738-991c-e37efeec7310",
       "placeholder": "I need a blog for my company.",
@@ -293,12 +327,12 @@
     },
     {
       "__resolveType": "site/sections/Footer/Footer.tsx",
+      "backgroundColor": "#fbf4ff",
       "title": {
         "position": "center",
         "text": "GetSiteDone.com"
       },
-      "credits": "© 2024 deco.cx. All rights reserved.",
-      "backgroundColor": "#fbf4ff"
+      "credits": "© 2024 deco.cx. All rights reserved."
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

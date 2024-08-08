@@ -122,5 +122,9 @@
   "/.deco/blocks/Preview%20%2Fsections%2FHeader%2FHeader.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Header/Header.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FContent%2FCards.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Content/Cards.tsx"
   }
 }
