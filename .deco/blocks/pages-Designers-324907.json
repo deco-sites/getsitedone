@@ -35,12 +35,6 @@
           "label": "Inscreva-se para Makers",
           "url": "/joinpt",
           "style": "black"
-        },
-        {
-          "isLanguageToggle": true,
-          "label": ".",
-          "url": ".",
-          "style": "."
         }
       ]
     },
