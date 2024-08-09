@@ -35,11 +35,11 @@ function Cards({ cards, title, backgroundColor, id }: Props) {
         )}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {cards.map((
-            { alt, description, icon, image, imageAlt, title, width, height },
+            { alt, description, icon, image, imageAlt, title,  },
           ) => (
             <div
               key={title}
-              className="flex flex-col items-start gap-4 border-2 border-gray-300 rounded-2xl bg-white p-6 text-black"
+              className="flex flex-col items-start gap-4 border-4  rounded-3xl bg-white p-6 text-black shadow-lg"
               style={{ width: "100%", minHeight: "300px" }} // Ajustar altura mínima dos cards
             >
               <Image src={icon} alt={alt} width={40} height={40} />

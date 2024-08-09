@@ -147,15 +147,9 @@
           ],
           "title": "Site com integrações",
           "price": "R$2499"
-        },
-        {
-          "features": [
-            "Ecommerce de produto único com integração com sistemas de pagamento."
-          ],
-          "title": "Website Ecommerce",
-          "price": "R$4999"
         }
-      ]
+      ],
+      "title": "<p>Serviços desenvolvidos</p>"
     },
     {
       "__resolveType": "site/sections/Content/Testimonials.tsx",
