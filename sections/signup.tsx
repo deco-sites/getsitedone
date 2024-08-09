@@ -11,11 +11,17 @@ export default function Section() {
         scrolling="no"
         frameBorder="0"
         style={{ border: "none" }}
-      ></iframe>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>
-      <script dangerouslySetInnerHTML={{ __html: `
+      >
+      </iframe>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js">
+      </script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
         iFrameResize({ checkOrigin: false, log: true }, '#softr-27973f8d-e3fe-43c0-a6fd-acd092f8bad4-user-accounts1');
-      `}} />
+      `,
+        }}
+      />
     </div>
   );
 }

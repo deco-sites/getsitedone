@@ -59,9 +59,16 @@ const HeroForm = ({
       );
     }}
     class="w-full flex items-center relative mt-4"
-    style={{ maxWidth: "40rem" }} 
+    style={{ maxWidth: "40rem" }}
   >
-    <div class="flex w-full border rounded-full overflow-hidden shadow-lg relative" style={{ border: "1px solid #9900E5", padding: "2px", boxShadow: "0 0 12px #DA8FFF" }}>
+    <div
+      class="flex w-full border rounded-full overflow-hidden shadow-lg relative"
+      style={{
+        border: "1px solid #9900E5",
+        padding: "2px",
+        boxShadow: "0 0 12px #DA8FFF",
+      }}
+    >
       <input
         ref={inputRef}
         class="flex-grow h-14 px-4 pl-12 pr-32 text-base md:text-lg focus:outline-none"
@@ -69,9 +76,14 @@ const HeroForm = ({
         placeholder={placeholder}
         style={{ border: "none", paddingRight: "120px", paddingLeft: "20px" }}
       />
-      <button 
+      <button
         class="absolute right-0 h-12 text-white px-8 transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-600 hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105"
-        style={{ backgroundColor: "#9900E5", borderRadius: "50px", fontSize: "16px", margin: "4px" }}
+        style={{
+          backgroundColor: "#9900E5",
+          borderRadius: "50px",
+          fontSize: "16px",
+          margin: "4px",
+        }}
       >
         {buttonText}
       </button>
@@ -79,10 +91,14 @@ const HeroForm = ({
   </form>
 );
 
-const HeroCarousel = ({ carousel, id }: { carousel?: Carousel[]; id: string }) => (
+const HeroCarousel = (
+  { carousel, id }: { carousel?: Carousel[]; id: string },
+) => (
   <div class="w-full relative mt-6 flex justify-center" id={id}>
-    <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
-    <div class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+    <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent pointer-events-none">
+    </div>
+    <div class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none">
+    </div>
     <Slider class="carousel carousel-start flex items-center gap-2 md:gap-4 px-4 md:px-0">
       {carousel?.map(({ text }, index) => (
         <Slider.Item class="carousel-item" index={index}>
@@ -93,7 +109,9 @@ const HeroCarousel = ({ carousel, id }: { carousel?: Carousel[]; id: string }) =
               height={20}
               width={20}
             />
-            <p class="whitespace-nowrap text-sm md:text-lg text-gray-800 w-full text-center">{text}</p>
+            <p class="whitespace-nowrap text-sm md:text-lg text-gray-800 w-full text-center">
+              {text}
+            </p>
           </div>
         </Slider.Item>
       ))}

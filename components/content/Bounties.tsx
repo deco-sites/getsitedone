@@ -142,7 +142,9 @@ const Arrows = () => {
   );
 };
 
-function Bounties({ bounties, isDesktop, title, id: sectionId }: ReturnType<typeof loader>) {
+function Bounties(
+  { bounties, isDesktop, title, id: sectionId }: ReturnType<typeof loader>,
+) {
   const id = useId();
   return (
     <div class="container flex flex-col gap-20 py-16" id={sectionId}>

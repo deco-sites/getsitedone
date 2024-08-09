@@ -66,11 +66,17 @@ function Testimonials({ testimonials, title, id: sectionId }: Props) {
   const id = useId();
   return (
     <div class="container flex flex-col gap-20 pb-28 pt-8" id={sectionId}>
-      {title && <p class="text-center font-bold text-[48px] max-md:text-3xl">{title}</p>}
+      {title && (
+        <p class="text-center font-bold text-[48px] max-md:text-3xl">{title}</p>
+      )}
       <div class="flex flex-col gap-10 relative xl:ml-[256px]" id={id}>
         <Slider class="carousel carousel-start flex gap-28" loop>
           {testimonials.map(({ user, project }, index) => (
-            <Slider.Item class="carousel-item max-lg:w-full" index={index} key={index}>
+            <Slider.Item
+              class="carousel-item max-lg:w-full"
+              index={index}
+              key={index}
+            >
               <Testimonial user={user} project={project} />
             </Slider.Item>
           ))}

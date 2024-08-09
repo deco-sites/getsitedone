@@ -37,12 +37,15 @@ const Card = (
   const year = dateObject.getFullYear().toString().slice(-2);
   return (
     <div class="relative flex flex-col gap-4 p-6 w-[360px] min-h-[205px] border border-[#C9CFCF] rounded-2xl shadow-2xl transition-transform transform hover:-translate-y-4 hover:shadow-2xl hover:border-[#9900E5]">
-      <div class="absolute inset-0 bg-gradient-to-r from-[#9900E5] to-[#330099] opacity-10 rounded-2xl"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#9900E5] to-[#330099] opacity-10 rounded-2xl">
+      </div>
       <p class="relative px-4 py-1 w-fit text-xl text-white bg-gradient-to-r from-[#9900E5] to-[#330099] rounded-full shadow-md">
         {price}
       </p>
       <div class="relative flex flex-col">
-        <p class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#9900E5] to-[#330099]">{title}</p>
+        <p class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#9900E5] to-[#330099]">
+          {title}
+        </p>
         <div class="flex flex-col gap-2">
           <p class="text-base font-normal text-[#949E9E]">{name}</p>
           <div class="flex gap-4">

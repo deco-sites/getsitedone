@@ -123,8 +123,7 @@ const setup = (
 
   const onClickNext = () => {
     const indices = getElementsInsideContainer();
-    const isShowingLast =
-      indices[indices.length - 1] === items.length - 1;
+    const isShowingLast = indices[indices.length - 1] === items.length - 1;
 
     if (!isPerItem) {
       const itemsPerPage = indices.length;
