@@ -71,6 +71,7 @@ const HeroForm = ({
               src={buttonImage}
               alt="Icon"
               class="mr-2 h-6 w-6 md:h-8 md:w-8 z-10"
+              loading="lazy"
             />
           )}
           <span class="flex items-center z-10 text-current">{buttonText}</span>
@@ -131,7 +132,10 @@ const HerowithButton = ({
 
   useEffect(() => {
     const handleResize = () => {
-      isMobile.value = window.innerWidth <= 768;
+      const isCurrentlyMobile = window.innerWidth <= 768;
+      if (isCurrentlyMobile !== isMobile.value) {
+        isMobile.value = isCurrentlyMobile;
+      }
     };
 
     handleResize(); // Executa na montagem
@@ -142,7 +146,7 @@ const HerowithButton = ({
 
   return (
     <div
-      class={`w-full min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-8 lg:px-12 relative`}
+      class="w-full min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-8 lg:px-12 relative"
       style={{ backgroundColor }}
       id={sectionId}
     >
@@ -152,27 +156,24 @@ const HerowithButton = ({
           src={backgroundImage}
           width={970}
           height={451.44}
+          loading="lazy"
         />
       )}
-      <div
-        class={`container flex flex-col justify-center items-center py-8 gap-6 md:gap-8 lg:gap-10 w-full md:w-11/12 lg:w-8/12 relative`}
-      >
+      <div class="container flex flex-col justify-center items-center py-8 gap-6 md:gap-8 lg:gap-10 w-full md:w-11/12 lg:w-8/12 relative">
         { text && (
-  <div
-    class="w-full text-center text-gray-900 break-words text-5xl md:text-[80px] mt-[-90px]" // text-4xl (40px) para mobile, md:text-8xl (80px) para desktop
-    style={{ fontFamily: 'Albert Sans', fontWeight: 500, lineHeight: 1.0 }}
-    dangerouslySetInnerHTML={{ __html: text }}
-  />
-)}
-
-{ singleText && (
-  <div
-    class="w-full text-center text-gray-700 mt-[-10px] text-[20px] md:text-[28px]" // Reduzindo a margem superior para -10px
-    style={{ fontFamily: 'Albert Sans', fontWeight: 500 }}
-    dangerouslySetInnerHTML={{ __html: singleText }}
-  />
-)}
-
+          <div
+            class="w-full text-center text-gray-900 break-words text-5xl md:text-[80px] mt-[-90px]"
+            style={{ fontFamily: 'Albert Sans', fontWeight: 500, lineHeight: 1.0 }}
+            dangerouslySetInnerHTML={{ __html: text }}
+          />
+        )}
+        { singleText && (
+          <div
+            class="w-full text-center text-gray-700 mt-[-10px] text-[20px] md:text-[28px]"
+            style={{ fontFamily: 'Albert Sans', fontWeight: 500 }}
+            dangerouslySetInnerHTML={{ __html: singleText }}
+          />
+        )}
         <HeroForm
           placeholder={placeholder}
           buttonText={buttonText}
