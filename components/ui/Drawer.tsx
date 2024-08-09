@@ -15,8 +15,7 @@ function Aside(
   return (
     <div
       data-aside
-      class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y w-full md:!max-w-[400px]"
-      style={{ maxWidth: "90vw" }}
+      class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y w-full max-w-[90vw] md:!max-w-[400px]"
     >
       <div class="flex justify-between items-center">
         <h1 class="px-4 py-3">

@@ -21,9 +21,10 @@ export default function Section(
 ) {
   return (
     <div
-      style={{ backgroundColor }}
+      className={`flex flex-col items-center py-20 bg-[#fafafa] ${
+        backgroundColor ? `bg-[${backgroundColor}]` : ""
+      }`}
       id={id}
-      className="flex flex-col items-center py-20 bg-[#fafafa]"
     >
       {title && (
         <h2
