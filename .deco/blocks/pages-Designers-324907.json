@@ -144,13 +144,6 @@
           ],
           "title": "Site com integrações",
           "price": "R$3125"
-        },
-        {
-          "features": [
-            "Ecommerce de produto único com integração com sistemas de pagamento."
-          ],
-          "title": "Website Ecommerce",
-          "price": "R$4999"
         }
       ]
     },
@@ -167,7 +160,7 @@
             "alt": "Mariana"
           },
           "project": {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/c92b79d9-2a96-4e00-ad85-51ba1fb2eb33",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/b0600ff0-463d-4392-a19b-8779ffa3dbde",
             "title": "Preciso de um site para minha startup que forneça serviços de educação corporativa.",
             "link": "https://www.mira.lc"
           }
@@ -181,21 +174,21 @@
           },
           "project": {
             "title": "Preciso de uma landing page para apresentar startups de empreendedores brasileiros de tech.",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/abb5c3d8-7a15-4856-9728-884261351976",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/ded909ae-b6f3-4972-8e87-e6299a73e039",
             "link": "https://www.madeinbrazil.tech"
           }
         },
         {
           "user": {
-            "headline": "Nutricionista",
-            "name": "Gustavo Beltrami, Nutricionista",
+            "headline": "Co-founder deX",
+            "name": "Gustavo Beltrami",
             "alt": "Gustavo",
-            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/a54d8aee-85e1-47a1-bdc3-c0df293355dd"
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/48a6e7ef-8d4e-4c34-9d28-13fcd239324c"
           },
           "project": {
-            "link": "https://www.taissacastello.com.br",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/16d2b94b-241b-4695-b172-4f9242ed7491",
-            "title": "site institucional de nutricionista, com seção sobre, novidades, receitas e cta ao final."
+            "link": "https://www.dexlabs.io/",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/aeb6a405-4982-437a-8eb5-83f6b5c9d8a9",
+            "title": "Landing page para a minha plataforma de análises, ciência de dados e AI"
           }
         }
       ]
@@ -208,10 +201,10 @@
         {
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/fe60fb5e-b4d3-4fdd-9058-1daf36ad9187",
           "alt": "edit",
-          "description": "<p>Tenha acesso à equipe GetSiteDone pelo WhatsApp com humanos de verdade para qualquer necessidade do início ao fim da implementação do seu site. </p>",
+          "description": "<p>Tenha contato direto com o desenvolvedor para qualquer necessidade do início ao fim da implementação do seu site. </p>",
           "width": 416,
           "height": 324,
-          "title": "Suporte completo da equipe GetSiteDone"
+          "title": "Suporte completo do desenvolvedor "
         },
         {
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/82ddfed5-4492-40ba-a7e9-9e39270d02df",
@@ -225,7 +218,7 @@
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/a1aa515c-f3c6-4fba-be50-897a0e0868d0",
           "alt": "users",
           "title": "Comunidade orientada pela excelência",
-          "description": "<p>Acesse a criatividade e a experiência de mais de 3.000 desenvolvedores avaliados na nossa comunidade.</p>",
+          "description": "<p>Acesse a criatividade e a experiência de mais de 4.500 desenvolvedores avaliados e treinados em nossa comunidade.</p>",
           "width": 416,
           "height": 320
         }
