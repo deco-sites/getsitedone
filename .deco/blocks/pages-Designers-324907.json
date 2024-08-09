@@ -45,9 +45,8 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Content/Hero.tsx",
-      "id": "bt-click-enviar",
-      "number": "552139504860",
+      "__resolveType": "site/sections/HeaderwithButton.tsx",
+      "number": "5583998172964",
       "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/b129906c-bdfc-4738-991c-e37efeec7310",
       "carousel": [
         {
@@ -78,10 +77,14 @@
           "text": "Totalmente editável e com análises usando deco.cx"
         }
       ],
-      "placeholder": "Preciso de um site para minha fintech",
-      "text": "<div style=\"display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 8px;\"><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 4.5vw;\">Solicite sites que </span></p><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 4.5vw;\">seguem a sua</span></p><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 4.5vw;\">identidade visual.</span></p><p>&nbsp;</p></div><p class=\"subheading\" style=\"font-weight: 400; font-size: 1.2vw; line-height: 2vw; letter-spacing: -0.4px; color: #616b6b; text-align: center;\">Descreva seu site! Em poucas semanas, o desenvolvedor ideal entregará seu projeto.</p><style>@media only screen and (max-width: 600px) {.heading {font-size: 7vw !important; line-height: 8.5vw !important;} .heading span {font-size: 10.5vw !important;} .subheading {font-size: 3.8vw !important; line-height: 5vw !important;}}  @media only screen and (min-width: 601px) and (max-width: 1024px) {.heading {font-size: 5.5vw !important; line-height: 5vw !important;} .heading span {font-size: 7vw !important;} .subheading {font-size: 3.5vw !important; line-height: 3.5vw !important;}}</style>",
-      "defaultMessage": "Oi! Gostaria de saber como poderia fazer o meu site:",
-      "buttonText": "Enviar"
+      "text": "<p>Continue criando</p><p>&nbsp;enquanto nós</p><p><span style=\"color: rgb(185, 106, 217);\" data-mce-style=\"color: rgb(185, 106, 217);\">implementamos</span></p>",
+      "buttonText": "Enviar protótipo",
+      "singleText": "<p>Envie seu protótipo e experencie sua</p><p>materialização pixel-perfect em até 15 dias</p>",
+      "buttonImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/baada3e3-2765-468b-9ce9-e9ac5ecee128",
+      "desktopFontSize": "80",
+      "desktopSingleTextSize": "30",
+      "mobileSingleTextSize": "15",
+      "mobileFontSize": "60"
     },
     {
       "__resolveType": "site/sections/Content/Cards.tsx",
@@ -283,8 +286,8 @@
     },
     {
       "__resolveType": "site/sections/Content/Faq.tsx",
-      "id": "faq",
       "title": "FAQ",
+      "id": "faq",
       "titlePosition": "column",
       "accordions": [
         {
@@ -317,8 +320,8 @@
     },
     {
       "__resolveType": "site/sections/Content/Hero.tsx",
-      "backgroundColor": "#fbf4ff",
       "id": "bt-click-enviar",
+      "backgroundColor": "#fbf4ff",
       "number": "552139504860",
       "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/b129906c-bdfc-4738-991c-e37efeec7310",
       "placeholder": "Preciso de um blog para minha empresa",
@@ -329,12 +332,51 @@
     },
     {
       "__resolveType": "site/sections/Footer/Footer.tsx",
+      "backgroundColor": "#fbf4ff",
       "title": {
         "position": "center",
         "text": "GetSiteDone.com"
       },
-      "credits": "© 2024 deco.cx. All rights reserved.",
-      "backgroundColor": "#fbf4ff"
+      "credits": "© 2024 deco.cx. All rights reserved."
+    },
+    {
+      "__resolveType": "site/sections/Content/Hero.tsx",
+      "id": "bt-click-enviar",
+      "number": "552139504860",
+      "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/b129906c-bdfc-4738-991c-e37efeec7310",
+      "carousel": [
+        {
+          "text": "Receba uma proposta de site profissional em 1 dia"
+        },
+        {
+          "text": "Construído por especialistas de todo o mundo"
+        },
+        {
+          "text": "Totalmente editável e com análises usando deco.cx"
+        },
+        {
+          "text": "Receba uma proposta de site profissional em 1 dia"
+        },
+        {
+          "text": "Construído por especialistas de todo o mundo"
+        },
+        {
+          "text": "Totalmente editável e com análises usando deco.cx"
+        },
+        {
+          "text": "Receba uma proposta de site profissional em 1 dia"
+        },
+        {
+          "text": "Construído por especialistas de todo o mundo"
+        },
+        {
+          "text": "Totalmente editável e com análises usando deco.cx"
+        }
+      ],
+      "placeholder": "Preciso de um site para minha fintech",
+      "text": "<div style=\"display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 8px;\"><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 4.5vw;\">Solicite sites que </span></p><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 4.5vw;\">seguem a sua</span></p><p class=\"heading\" style=\"color: #0d1717; font-weight: 600; font-size: 3vw; line-height: 3.5vw; letter-spacing: -1%; text-align: center;\"><span style=\"font-size: 4.5vw;\">identidade visual.</span></p><p>&nbsp;</p></div><p class=\"subheading\" style=\"font-weight: 400; font-size: 1.2vw; line-height: 2vw; letter-spacing: -0.4px; color: #616b6b; text-align: center;\">Descreva seu site! Em poucas semanas, o desenvolvedor ideal entregará seu projeto.</p><style>@media only screen and (max-width: 600px) {.heading {font-size: 7vw !important; line-height: 8.5vw !important;} .heading span {font-size: 10.5vw !important;} .subheading {font-size: 3.8vw !important; line-height: 5vw !important;}}  @media only screen and (min-width: 601px) and (max-width: 1024px) {.heading {font-size: 5.5vw !important; line-height: 5vw !important;} .heading span {font-size: 7vw !important;} .subheading {font-size: 3.5vw !important; line-height: 3.5vw !important;}}</style>",
+      "defaultMessage": "Oi! Gostaria de saber como poderia fazer o meu site:",
+      "buttonText": "Enviar"
     }
   ],
   "seo": {
