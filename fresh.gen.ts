@@ -3,6 +3,7 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $HeaderwithButton from "./islands/HeaderwithButton.tsx";
 import * as $Hero from "./islands/Hero.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
 import * as $SliderJSInfinite from "./islands/SliderJSInfinite.tsx";
@@ -15,6 +16,7 @@ const manifest = {
     "./routes/_app.tsx": $_app,
   },
   islands: {
+    "./islands/HeaderwithButton.tsx": $HeaderwithButton,
     "./islands/Hero.tsx": $Hero,
     "./islands/SliderJS.tsx": $SliderJS,
     "./islands/SliderJSInfinite.tsx": $SliderJSInfinite,
