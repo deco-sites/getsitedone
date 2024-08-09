@@ -126,5 +126,11 @@
   "/.deco/blocks/Preview%20%2Fsections%2FContent%2FCards.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Content/Cards.tsx"
+  },
+  "/.deco/blocks/pages-Designers-324907.json": {
+    "name": "Designers",
+    "path": "/designers",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
