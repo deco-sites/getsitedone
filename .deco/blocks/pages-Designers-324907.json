@@ -3,7 +3,17 @@
   "path": "/designers",
   "sections": [
     {
-      "__resolveType": "SEO Home"
+      "__resolveType": "website/sections/Seo/SeoV2.tsx",
+      "titleTemplate": "%s",
+      "descriptionTemplate": "%s",
+      "type": "website",
+      "jsonLDs": [],
+      "title": "GetSiteDone | Sites de alta-performance construídos por desenvolvedores ",
+      "description": "GetSiteDone conecta negócios com desenvolvedores para construírem seus sites",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/cc64137c-319d-4c1d-ab13-8387555b8250",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/42e28a1a-e882-4b1d-add0-9984517b227f",
+      "noIndexing": false,
+      "canonical": "https://getsitedone.com"
     },
     {
       "__resolveType": "site/sections/Header/Header.tsx",
