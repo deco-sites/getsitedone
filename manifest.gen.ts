@@ -12,18 +12,19 @@ import * as $$$$$$3 from "./sections/Content/Cta.tsx";
 import * as $$$$$$4 from "./sections/Content/Faq.tsx";
 import * as $$$$$$5 from "./sections/Content/Hero.tsx";
 import * as $$$$$$6 from "./sections/Content/Testimonials.tsx";
-import * as $$$$$$14 from "./sections/decoads.tsx";
+import * as $$$$$$15 from "./sections/decoads.tsx";
 import * as $$$$$$7 from "./sections/Footer.tsx";
 import * as $$$$$$8 from "./sections/Footer/Footer.tsx";
 import * as $$$$$$9 from "./sections/Header/Header.tsx";
-import * as $$$$$$10 from "./sections/HomeUS.tsx";
-import * as $$$$$$11 from "./sections/ItWorks.tsx";
-import * as $$$$$$15 from "./sections/join.tsx";
-import * as $$$$$$16 from "./sections/joinen.tsx";
-import * as $$$$$$17 from "./sections/prices.tsx";
-import * as $$$$$$12 from "./sections/PricesUS.tsx";
-import * as $$$$$$18 from "./sections/signup.tsx";
-import * as $$$$$$13 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$10 from "./sections/HeaderwithButton.tsx";
+import * as $$$$$$11 from "./sections/HomeUS.tsx";
+import * as $$$$$$12 from "./sections/ItWorks.tsx";
+import * as $$$$$$16 from "./sections/join.tsx";
+import * as $$$$$$17 from "./sections/joinen.tsx";
+import * as $$$$$$18 from "./sections/prices.tsx";
+import * as $$$$$$13 from "./sections/PricesUS.tsx";
+import * as $$$$$$19 from "./sections/signup.tsx";
+import * as $$$$$$14 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -34,18 +35,19 @@ const manifest = {
     "site/sections/Content/Faq.tsx": $$$$$$4,
     "site/sections/Content/Hero.tsx": $$$$$$5,
     "site/sections/Content/Testimonials.tsx": $$$$$$6,
-    "site/sections/decoads.tsx": $$$$$$14,
+    "site/sections/decoads.tsx": $$$$$$15,
     "site/sections/Footer.tsx": $$$$$$7,
     "site/sections/Footer/Footer.tsx": $$$$$$8,
     "site/sections/Header/Header.tsx": $$$$$$9,
-    "site/sections/HomeUS.tsx": $$$$$$10,
-    "site/sections/ItWorks.tsx": $$$$$$11,
-    "site/sections/join.tsx": $$$$$$15,
-    "site/sections/joinen.tsx": $$$$$$16,
-    "site/sections/prices.tsx": $$$$$$17,
-    "site/sections/PricesUS.tsx": $$$$$$12,
-    "site/sections/signup.tsx": $$$$$$18,
-    "site/sections/Theme/Theme.tsx": $$$$$$13,
+    "site/sections/HeaderwithButton.tsx": $$$$$$10,
+    "site/sections/HomeUS.tsx": $$$$$$11,
+    "site/sections/ItWorks.tsx": $$$$$$12,
+    "site/sections/join.tsx": $$$$$$16,
+    "site/sections/joinen.tsx": $$$$$$17,
+    "site/sections/prices.tsx": $$$$$$18,
+    "site/sections/PricesUS.tsx": $$$$$$13,
+    "site/sections/signup.tsx": $$$$$$19,
+    "site/sections/Theme/Theme.tsx": $$$$$$14,
   },
   "apps": {
     "site/apps/deco/analytics.ts": $$$$$$$$$$$0,
