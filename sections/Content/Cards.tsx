@@ -8,7 +8,7 @@ export interface Card {
   imageAlt?: string;
   alt: string;
   title: string;
-  /** @format html */
+  
   description: string;
   width: number;
   height: number;
@@ -25,17 +25,22 @@ export interface Props {
 
 function Cards({ cards, title, backgroundColor, id }: Props) {
   return (
-    <div style={{ backgroundColor }} id={id} className="p-4">
+    <div
+      className={`w-full py-20 ${
+        backgroundColor ? `bg-[${backgroundColor}]` : "bg-[#fafafa]"
+      }`}
+      id={id}
+    >
       <div className="container mx-auto flex flex-col gap-8 py-12">
         {title && (
-          <div
-            className="text-center mb-8"
+          <h2
+            className="text-5xl font-extrabold mb-16 text-center text-gray-800"
             dangerouslySetInnerHTML={{ __html: title }}
           />
         )}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {cards.map((
-            { alt, description, icon, image, imageAlt, title,  },
+            { alt, description, icon, image, imageAlt, title },
           ) => (
             <div
               key={title}
@@ -46,7 +51,7 @@ function Cards({ cards, title, backgroundColor, id }: Props) {
               {image && (
                 <Image src={image} alt={imageAlt} width={266} height={200} />
               )}
-              <p className="text-2xl font-bold">{title}</p>
+              <h3 className="text-2xl font-bold">{title}</h3>
               <div dangerouslySetInnerHTML={{ __html: description }} />
             </div>
           ))}
