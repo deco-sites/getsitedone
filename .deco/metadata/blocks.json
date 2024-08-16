@@ -132,5 +132,11 @@
     "path": "/designers",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Agencies-622980.json": {
+    "name": "Agencies",
+    "path": "/agencies",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
