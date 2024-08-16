@@ -1,6 +1,6 @@
 {
-  "name": "Designers",
-  "path": "/designers",
+  "name": "Agencies",
+  "path": "/agencies",
   "sections": [
     {
       "__resolveType": "website/sections/Seo/SeoV2.tsx",
@@ -49,7 +49,46 @@
       ]
     },
     {
-      "__resolveType": "Hero principal"
+      "__resolveType": "site/sections/HeaderwithButton.tsx",
+      "number": "+5521986368356",
+      "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/b129906c-bdfc-4738-991c-e37efeec7310",
+      "carousel": [
+        {
+          "text": "Receba uma proposta de site profissional em 1 dia"
+        },
+        {
+          "text": "Construído por especialistas de todo o mundo"
+        },
+        {
+          "text": "Totalmente editável e com análises usando deco.cx"
+        },
+        {
+          "text": "Receba uma proposta de site profissional em 1 dia"
+        },
+        {
+          "text": "Construído por especialistas de todo o mundo"
+        },
+        {
+          "text": "Totalmente editável e com análises usando deco.cx"
+        },
+        {
+          "text": "Receba uma proposta de site profissional em 1 dia"
+        },
+        {
+          "text": "Construído por especialistas de todo o mundo"
+        },
+        {
+          "text": "Totalmente editável e com análises usando deco.cx"
+        }
+      ],
+      "buttonText": "Enviar protótipo",
+      "singleText": "<p>Não dependa de um time de desenvolvedores. Envie sua </p><p>demanda e nossa comunidade implementará 10x mais rápido.</p>",
+      "buttonImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/baada3e3-2765-468b-9ce9-e9ac5ecee128",
+      "desktopFontSize": "100",
+      "desktopSingleTextSize": "600",
+      "mobileSingleTextSize": "15",
+      "mobileFontSize": "10",
+      "text": "<p>Implemente projetos</p><p>&nbsp;pela <span style=\"color: rgb(185, 106, 217);\" data-mce-style=\");\">metade do preço</span>"
     },
     {
       "__resolveType": "site/sections/Content/Cards.tsx",
@@ -58,7 +97,7 @@
       "cards": [
         {
           "height": 580,
-          "title": "Envie seu protótipo para análise da equipe GetSiteDone",
+          "title": "Envie seu protótipo/site a ser implementado",
           "description": "<p>Descreva o que você precisa – desde design e funcionalidade até o prazo. Anexe um link do Figma para guiar os desenvolvedores.</p>",
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/93e3ca16-62a3-4337-9a1a-b7147b8cea72",
           "alt": "One",
@@ -94,7 +133,7 @@
       "services": [
         {
           "features": [
-            "Header ",
+            "Header",
             "4 seções ",
             "Footer"
           ],

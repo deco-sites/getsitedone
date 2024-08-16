@@ -102,8 +102,8 @@ const HeroCarousel = ({
             <Icon
               class="flex-shrink-0 text-[#b442ed]"
               id="circleCheck"
-              height={20}
-              width={20}
+              height={15}
+              width={15}
             />
             <p class="whitespace-nowrap text-base md:text-lg text-gray-900 w-full text-center">
               {text}
@@ -116,6 +116,7 @@ const HeroCarousel = ({
     <SliderJSInfinite rootId={id} interval={2000} isPerItem />
   </div>
 );
+
 const HerowithButton = ({
   placeholder,
   buttonText,
@@ -152,30 +153,28 @@ const HerowithButton = ({
     <div
       class={`w-full min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-8 lg:px-12 relative ${
         backgroundColor ? `bg-[${backgroundColor}]` : ""
-      } ${isMobile.value ? "mb-4" : "mb-12"}`}
+      }`}
       id={sectionId}
     >
       {backgroundImage && (
         <Image
-          class="absolute -z-10 w-full object-cover opacity-120 h-[70vh] md:h-full bottom-0"
+          class="absolute -z-10 w-full h-full object-cover opacity-120"
           src={backgroundImage}
           width={970}
           height={451.44}
-          style={{ marginBottom: '-200px' }}
           loading="lazy"
         />
       )}
-
-      <div class="container flex flex-col justify-center items-center py-4 gap-4 md:gap-6 lg:gap-8 w-full md:w-11/12 lg:w-8/12 relative">
+      <div class="container flex flex-col justify-center items-center py-8 gap-6 md:gap-8 lg:gap-10 w-full md:w-11/12 lg:w-8/12 relative">
         {text && (
           <div
-            class="w-full text-center text-gray-900 break-words text-[36px] md:text-[70px] mt-[-10px] md:mt-[-20px] font-[500] leading-[1] font-albertsans"
+            class="w-full text-center text-gray-900 break-words text-[40px] md:text-[80px] mt-[-90px] font-[500] leading-[1] font-albertsans"
             dangerouslySetInnerHTML={{ __html: text }}
           />
         )}
         {singleText && (
           <div
-            class="w-full text-center text-gray-700 mt-[-5px] text-[16px] md:text-[24px] font-[500] font-albertsans"
+            class="w-full text-center text-gray-700 mt-[-10px] text-[18px] md:text-[28px] font-[500] font-albertsans"
             dangerouslySetInnerHTML={{ __html: singleText }}
           />
         )}

@@ -1,0 +1,42 @@
+{
+  "__resolveType": "site/sections/HeaderwithButton.tsx",
+  "number": "+5521986368356",
+  "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/b129906c-bdfc-4738-991c-e37efeec7310",
+  "carousel": [
+    {
+      "text": "Receba uma proposta de site profissional em 1 dia"
+    },
+    {
+      "text": "Construído por especialistas de todo o mundo"
+    },
+    {
+      "text": "Totalmente editável e com análises usando deco.cx"
+    },
+    {
+      "text": "Receba uma proposta de site profissional em 1 dia"
+    },
+    {
+      "text": "Construído por especialistas de todo o mundo"
+    },
+    {
+      "text": "Totalmente editável e com análises usando deco.cx"
+    },
+    {
+      "text": "Receba uma proposta de site profissional em 1 dia"
+    },
+    {
+      "text": "Construído por especialistas de todo o mundo"
+    },
+    {
+      "text": "Totalmente editável e com análises usando deco.cx"
+    }
+  ],
+  "text": "<p>Continue criando</p><p>&nbsp;enquanto nós</p><p><span style=\"color: rgb(185, 106, 217);\" data-mce-style=\"color: rgb(185, 106, 217);\">implementamos</span></p>",
+  "buttonText": "Enviar protótipo",
+  "singleText": "<p>Envie seu protótipo e experencie sua</p><p>materialização pixel-perfect em até 15 dias</p>",
+  "buttonImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/9209/baada3e3-2765-468b-9ce9-e9ac5ecee128",
+  "desktopFontSize": "80",
+  "desktopSingleTextSize": "30",
+  "mobileSingleTextSize": "15",
+  "mobileFontSize": "60"
+}
