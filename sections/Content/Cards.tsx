@@ -26,7 +26,7 @@ export interface Props {
 function Cards({ cards, title, backgroundColor, id }: Props) {
   return (
     <div
-      className={`w-full py-10 relative -mt-80 md:-mt-64 ${ // -mt-80 para mobile e -mt-64 para desktop
+    className={`w-full py-20 ${
         backgroundColor ? `bg-[${backgroundColor}]` : "bg-[#fafafa]"
       }`}
       id={id}
@@ -44,8 +44,8 @@ function Cards({ cards, title, backgroundColor, id }: Props) {
           ) => (
             <div
               key={title}
-              className="flex flex-col items-start gap-4 border-4 rounded-3xl bg-white p-6 text-black shadow-lg"
-              style={{ width: "100%", minHeight: "300px" }}
+              className="flex flex-col items-start gap-4 border-4  rounded-3xl bg-white p-6 text-black shadow-lg"
+              style={{ width: "100%", minHeight: "300px" }} // Ajustar altura mínima dos cards
             >
               <Image src={icon} alt={alt} width={40} height={40} />
               {image && (
