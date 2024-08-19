@@ -55,9 +55,7 @@
     "preview": "deno run -A main.ts",
     "dev": "deno run -A --env --unstable --unstable-hmr dev.ts"
   },
-  "githooks": {
-    "pre-commit": "check"
-  },
+  "githooks": { "pre-commit": "check" },
   "exclude": [
     "node_modules",
     "static/",
@@ -66,14 +64,7 @@
     "**/_fresh/*",
     ".deco/**"
   ],
-  "lint": {
-    "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
-    }
-  },
+  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
   "nodeModulesDir": false,
   "compilerOptions": {
     "jsx": "react-jsx",

@@ -26,8 +26,8 @@ export interface Props {
 }
 
 function HeaderUS({ title, navItens, actionButtons, currentPath }: Props) {
-  const isEnglish = currentPath === "/en";
-  const toggleLanguageUrl = isEnglish ? "/" : "/en";
+  const isEnglish = currentPath === "/";
+  const toggleLanguageUrl = isEnglish ? "/" : "/";
 
   return (
     <header class="container h-[85px] py-6 flex justify-between items-center">
