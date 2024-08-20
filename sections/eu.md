@@ -1,7 +1,10 @@
-import { useEffect, useRef, useState } from "preact/hooks";
+  const AIRTABLE_API_KEY = "patP6hRQTYDdRkHay.eafbc06c91eb1f0622bf025af73574027ffcd3e41e7409bc593f415b952c001f";
+  const AIRTABLE_BASE_ID = "appMr1aubhSLavVGL";
+  const AIRTABLE_TABLE_NAME = "tbljfzuJ9BmGDeeOG";
+
+  import { useEffect, useRef, useState } from "preact/hooks";
 import { useSignal } from "@preact/signals";
 import { useId } from "../sdk/useId.ts";
-import { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Carousel {
   text: string;
@@ -14,16 +17,13 @@ export interface Props {
   number: string;
   defaultMessage?: string;
   buttonText: string;
-  buttonImage?: ImageWidget;
+  buttonImage?: string;
   secondButtonText?: string;
-  secondButtonImage?: ImageWidget;
-  backgroundImage?: ImageWidget;
+  secondButtonImage?: string;
+  backgroundImage?: string;
   backgroundColor?: string;
   carousel?: Carousel[];
   id?: string;
-  popupBackgroundImage?: ImageWidget;
-  popupImage?: ImageWidget;
-  popupTitle?: string;
 }
 
 const HerowithButton = ({
@@ -40,14 +40,10 @@ const HerowithButton = ({
   defaultMessage,
   backgroundColor,
   id: sectionId,
-  popupBackgroundImage,
-  popupImage,
-  popupTitle,
 }: Props) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const id = useId();
   const isMobile = useSignal(false);
-  const isDesktop = useSignal(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [isFormComplete, setIsFormComplete] = useState(false);
   const [showThankYou, setShowThankYou] = useState(false);
@@ -66,9 +62,10 @@ const HerowithButton = ({
 
   useEffect(() => {
     const handleResize = () => {
-      const width = globalThis.innerWidth;
-      isMobile.value = width <= 768;
-      isDesktop.value = width > 1024;
+      const isCurrentlyMobile = globalThis.innerWidth <= 768;
+      if (isCurrentlyMobile !== isMobile.value) {
+        isMobile.value = isCurrentlyMobile;
+      }
     };
 
     handleResize();
@@ -233,24 +230,13 @@ const HerowithButton = ({
       </div>
 
       {isPopupOpen && (
-        <div
-          class={`fixed inset-0 flex items-center justify-center z-30 bg-black bg-opacity-80 p-4 sm:p-6`}
-        >
-          <div
-            class={`bg-white rounded-lg shadow-lg relative w-full max-w-2xl p-6 ${
-              isMobile.value ? "grid gap-4" : "grid grid-cols-3 gap-6"
-            }`}
-            style={{
-              backgroundImage: `url(${popupBackgroundImage})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div class={isDesktop.value ? "col-span-2" : "col-span-full"}>
+        <div class="fixed inset-0 flex items-center justify-center z-30 bg-black bg-opacity-80 p-4 sm:p-6">
+          <div class="bg-white rounded-lg shadow-lg relative w-full max-w-2xl p-6 grid grid-cols-3 gap-6">
+            <div class="col-span-2">
               {!showThankYou ? (
                 <>
                   <h2 class="text-2xl font-bold text-gray-900 mb-6">
-                    {popupTitle || "Ganhe 25% OFF para implementar seu projeto com o GetSiteDone"}
+                    Ganhe 25%OFF para implementar seu projeto com o GetSiteDone
                   </h2>
                   <form class="space-y-4" onSubmit={handleSubmit}>
                     <input
@@ -261,12 +247,12 @@ const HerowithButton = ({
                       onInput={handleInputChange}
                       value={formData.Name}
                     />
-                    <div class={`${isMobile.value ? "grid grid-cols-1 gap-4" : "flex space-x-4"}`}>
+                    <div class="flex space-x-4">
                       <input
                         type="email"
                         name="Email"
                         placeholder="E-mail"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+                        class="w-1/2 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
                         onInput={handleInputChange}
                         value={formData.Email}
                       />
@@ -274,7 +260,7 @@ const HerowithButton = ({
                         type="tel"
                         name="Whatsapp"
                         placeholder="WhatsApp"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+                        class="w-1/2 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
                         onInput={handleInputChange}
                         value={formData.Whatsapp}
                       />
@@ -302,9 +288,7 @@ const HerowithButton = ({
                       type="submit"
                       disabled={!isFormComplete || isSubmitting}
                       class={`w-full py-2 px-4 ${
-                        isFormComplete && !isSubmitting
-                          ? "bg-purple-600 hover:bg-purple-700"
-                          : "bg-gray-400 cursor-not-allowed"
+                        isFormComplete && !isSubmitting ? "bg-purple-600 hover:bg-purple-700" : "bg-gray-400 cursor-not-allowed"
                       } text-white font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2`}
                     >
                       {isSubmitting ? "Enviando..." : "Enviar"}
@@ -318,15 +302,13 @@ const HerowithButton = ({
                 </div>
               )}
             </div>
-            {!isMobile.value && popupImage && (
-              <div class="flex justify-center items-center">
-                <img
-                  src={popupImage}
-                  alt="GetSiteDone"
-                  class="max-w-full"
-                />
-              </div>
-            )}
+            <div class="flex justify-center items-center">
+              <img
+                src="/path/to/logo-or-image.png" // Substitua pelo caminho da sua imagem/logo
+                alt="GetSiteDone"
+                class="max-w-full"
+              />
+            </div>
             <button
               class="absolute top-2 right-2 text-purple-600 hover:text-purple-800 focus:outline-none text-2xl p-2"
               onClick={handleClosePopup}
