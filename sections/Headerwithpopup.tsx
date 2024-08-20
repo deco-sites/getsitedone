@@ -119,7 +119,7 @@ const HerowithButton = ({
       <div class="container flex flex-col justify-center items-center py-8 gap-6 md:gap-8 lg:gap-10 w-full md:w-11/12 lg:w-8/12 relative">
         {text && (
           <div
-            class="w-full text-center text-[#0D1717] break-words text-[50px] sm:text-[60px] leading-[40px] sm:leading-[60px] font-[500] mt-[-90px] font-albert sans"
+            class="w-full text-center text-[#0D1717] break-words text-[40px] sm:text-[60px] leading-[40px] sm:leading-[60px] font-[500] mt-[-90px] font-albert sans"
             dangerouslySetInnerHTML={{ __html: text }}
           />
         )}
