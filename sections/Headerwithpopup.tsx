@@ -54,6 +54,7 @@ const HerowithButton = ({
   const id = useId();
   const isMobile = useSignal(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [iframeLoaded, setIframeLoaded] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -75,10 +76,6 @@ const HerowithButton = ({
     } else {
       document.body.style.overflow = "";
     }
-
-    return () => {
-      document.body.style.overflow = "";
-    };
   }, [isPopupOpen]);
 
   const handleButtonClick = (messageText: string) => {
@@ -134,17 +131,17 @@ const HerowithButton = ({
           />
         )}
 
-        <div class="flex justify-center items-center space-x-4">
+        <div class="flex justify-center items-center space-x-2 md:space-x-4">
           <button
             onClick={() => handleButtonClick(buttonText)}
-            class="relative text-purple-600 bg-white border border-purple-400 rounded-full shadow-xl flex justify-center items-center text-lg md:text-xl font-inter px-6 md:px-8 py-3 md:py-4 transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 z-10"
+            class="relative text-purple-600 bg-white border border-purple-400 rounded-full shadow-xl flex justify-center items-center text-sm sm:text-lg md:text-xl font-inter px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 z-10"
             aria-label={buttonText}
           >
             {buttonImage && (
               <img
                 src={buttonImage}
                 alt="Icon"
-                class="mr-2 h-6 w-6 md:h-8 md:w-8 z-10"
+                class="mr-1 sm:mr-2 h-4 w-4 sm:h-6 sm:w-6 md:h-8 md:w-8 z-10"
                 loading="lazy"
               />
             )}
@@ -153,14 +150,14 @@ const HerowithButton = ({
 
           <button
             onClick={handlePopupButtonClick}
-            class="relative text-white bg-[#B845F2] border border-[#DA8FFF] rounded-full shadow-xl flex justify-center items-center text-lg md:text-xl font-inter px-6 md:px-8 py-3 md:py-4 transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#DA8FFF] focus:ring-offset-2 z-10"
+            class="relative text-white bg-[#B845F2] border border-[#DA8FFF] rounded-full shadow-xl flex justify-center items-center text-sm sm:text-lg md:text-xl font-inter px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#DA8FFF] focus:ring-offset-2 z-10"
             aria-label={secondButtonText}
           >
             {secondButtonImage && (
               <img
                 src={secondButtonImage}
                 alt="Icon"
-                class="mr-2 h-6 w-6 md:h-8 md:w-8 z-10"
+                class="mr-1 sm:mr-2 h-4 w-4 sm:h-6 sm:w-6 md:h-8 md:w-8 z-10"
                 loading="lazy"
               />
             )}
@@ -172,23 +169,22 @@ const HerowithButton = ({
       </div>
 
       {isPopupOpen && (
-        <div class="fixed inset-0 flex items-center justify-center z-30 bg-black bg-opacity-80">
-          <div class="rounded-lg shadow-lg relative flex justify-center items-center w-full max-w-2xl h-[100vh] p-2 md:p-6">
-            {/* O iframe é apenas movido para o centro da tela ao abrir o pop-up */}
+        <div class="fixed inset-0 flex items-center justify-center z-30 bg-black bg-opacity-80 p-4 sm:p-6">
+          <div class="rounded-lg shadow-lg relative flex justify-center items-center w-full max-w-xs sm:max-w-md md:max-w-2xl h-[85vh] md:h-[100vh] p-2 md:p-6 bg-white">
             <iframe
               class="airtable-embed"
               src={popupIframeUrl}
               frameBorder="0"
-              width="80%"
-              height="90%"
+              width="100%"
+              height="100%"
               style={{
                 background: "transparent",
                 border: "1px solid #9900E5",
               }}
+              onLoad={() => setIframeLoaded(true)}
             ></iframe>
-            {/* Botão de Fechar */}
             <button
-              class="absolute top-4 right-4 text-purple-600 hover:text-purple-800 focus:outline-none text-3xl md:text-4xl p-3 md:p-4"
+              class="absolute top-2 right-2 text-purple-600 hover:text-purple-800 focus:outline-none text-2xl sm:text-3xl md:text-4xl p-2 sm:p-3 md:p-4"
               onClick={handleClosePopup}
             >
               ✕
@@ -197,11 +193,10 @@ const HerowithButton = ({
         </div>
       )}
 
-      {/* Iframe escondido para pré-carregamento, absolutamente posicionado fora da viewport */}
       <iframe
         style={{ position: "absolute", top: "-9999px", left: "-9999px" }}
         src={popupIframeUrl}
-        onLoad={() => console.log("Iframe pré-carregado")}
+        onLoad={() => setIframeLoaded(true)}
       />
     </div>
   );
