@@ -57,7 +57,7 @@ const HerowithButton = ({
     Email: "",
     Whatsapp: "",
     Ocupacao: "",
-    ConhecerMais: "não",
+    ConhecerMais: "não",  // Valor padrão como "não"
   });
 
   const AIRTABLE_API_KEY = "patP6hRQTYDdRkHay.eafbc06c91eb1f0622bf025af73574027ffcd3e41e7409bc593f415b952c001f";
@@ -111,6 +111,12 @@ const HerowithButton = ({
     if (isFormComplete && !isSubmitting) {
       setIsSubmitting(true);
       try {
+        // Garantir que o valor seja "não" se o checkbox não estiver marcado
+        const finalFormData = {
+          ...formData,
+          ConhecerMais: formData.ConhecerMais || "não",
+        };
+
         const response = await fetch(
           `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`,
           {
@@ -121,11 +127,11 @@ const HerowithButton = ({
             },
             body: JSON.stringify({
               fields: {
-                Name: formData.Name,
-                Email: formData.Email,
-                Whatsapp: formData.Whatsapp,
-                Ocupacao: formData.Ocupacao,
-                ConhecerMais: formData.ConhecerMais,
+                Name: finalFormData.Name,
+                Email: finalFormData.Email,
+                Whatsapp: finalFormData.Whatsapp,
+                Ocupacao: finalFormData.Ocupacao,
+                ConhecerMais: finalFormData.ConhecerMais,
               },
             }),
           }
@@ -293,6 +299,7 @@ const HerowithButton = ({
                         id="moreInfo"
                         class="h-4 w-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
                         onChange={handleCheckboxChange}
+                        checked={formData.ConhecerMais === "sim"}
                       />
                       <label htmlFor="moreInfo" class="ml-2 block text-sm text-gray-900">
                         Quero conhecer mais sobre o serviço
