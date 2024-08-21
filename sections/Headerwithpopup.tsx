@@ -302,7 +302,7 @@ const HerowithButton = ({
                         checked={formData.ConhecerMais === "sim"}
                       />
                       <label htmlFor="moreInfo" class="ml-2 block text-sm text-gray-900">
-                        Quero conhecer mais sobre o serviço
+                      Gostaria de solicitar uma call para saber mais.
                       </label>
                     </div>
                     <button
