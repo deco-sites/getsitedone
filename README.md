@@ -1,4 +1,4 @@
-# Deco Start — deco.cx template
+# GetSiteDone
 
 Welcome to your [deco.cx](https://deco.cx) site!
 
